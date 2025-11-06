@@ -1,0 +1,58 @@
+services:
+  db:
+    image: "postgres:${POSTGRES_VERSION}"
+    container_name: "${COMPOSE_PROJECT_NAME:-odoo-space}-db"
+    environment:
+      POSTGRES_DB: "${POSTGRES_DB}"
+      POSTGRES_USER: "${POSTGRES_USER}"
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD}"
+      PGDATA: "/var/lib/postgresql/data/pgdata"
+    volumes:
+      - ./docker/postgresql:/var/lib/postgresql/data
+    ports:
+      - "${POSTGRES_HOST_PORT}:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -h localhost -p 5432"]
+      interval: 10s
+      timeout: 5s
+      start_period: 30s
+      retries: 10
+    restart: unless-stopped
+
+  odoo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: "${COMPOSE_PROJECT_NAME:-odoo-space}-odoo"
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "${ODOO_HTTP_PORT}:8069"
+      - "${ODOO_LONGPOLLING_PORT}:8072"
+    volumes:
+      - .:/workspace
+      - ./docker/etc/odoo.conf:/etc/odoo/odoo.conf:ro
+      - ./docker/addons:/mnt/extra-addons
+    working_dir: /workspace
+    command: ["python", "odoo-bin", "-c", "/etc/odoo/odoo.conf"]
+    environment:
+      - TZ=${TZ}
+    restart: unless-stopped
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: "${COMPOSE_PROJECT_NAME:-odoo-space}-pgadmin"
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "${PGADMIN_DEFAULT_EMAIL}"
+      PGADMIN_DEFAULT_PASSWORD: "${PGADMIN_DEFAULT_PASSWORD}"
+      PGADMIN_CONFIG_SERVER_MODE: "True"
+    volumes:
+      - ./docker/pgadmin:/var/lib/pgadmin
+      - ./docker/pgadmin/servers.json:/pgadmin4/servers.json:ro
+    ports:
+      - "${PGADMIN_HOST_PORT}:80"
+    restart: unless-stopped

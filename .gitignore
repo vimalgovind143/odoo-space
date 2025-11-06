@@ -51,3 +51,10 @@ package.json
 /man/
 /share/
 /src/
+
+# Docker volumes and runtime data
+docker/postgresql/*
+!docker/postgresql/README.md
+docker/pgadmin/*
+!docker/pgadmin/README.md
+!docker/pgadmin/servers.json
