@@ -19,6 +19,7 @@ export class CaptionPlugin extends Plugin {
         "selection",
         "baseContainer",
     ];
+    /** @type {import("plugins").EditorResources} */
     resources = {
         user_commands: [
             {
@@ -140,6 +141,10 @@ export class CaptionPlugin extends Plugin {
             // => <figure><img/></figure></p>
             // but still <p><a><figure><img/></figure></p>
             unwrapContents(figure.parentElement);
+            // Figure is contenteditable="false", so selection would jump
+            // to the nearest editable sibling <div>. Setting cursor at
+            // the end ensures caption input receives focus correctly.
+            this.dependencies.selection.setCursorEnd(figure);
         }
         // Set the caption and its ID.
         const captionId = this.getCaptionId();

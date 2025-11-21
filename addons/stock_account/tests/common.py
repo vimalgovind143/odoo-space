@@ -1,4 +1,4 @@
-from odoo import Command
+from odoo import Command, fields
 from odoo.tools.misc import clean_context
 from odoo.tests import Form
 from odoo.addons.base.tests.common import BaseCommon
@@ -19,11 +19,13 @@ class TestStockValuationCommon(BaseCommon):
         invoice_vals = {
             "partner_id": self.vendor.id,
             "move_type": move_type,
+            "invoice_date": fields.Date.today(),
             "invoice_line_ids": [],
         }
         if kwargs.get('reversed_entry_id'):
             invoice_vals["reversed_entry_id"] = kwargs['reversed_entry_id']
         invoice = self.env["account.move"].create(invoice_vals)
+        product_uom = kwargs.get('product_uom') or product.uom_id
         self.env["account.move.line"].create({
             "move_id": invoice.id,
              "display_type": "product",
@@ -31,7 +33,7 @@ class TestStockValuationCommon(BaseCommon):
              "price_unit": price_unit,
              "quantity": quantity,
              "product_id": product.id,
-             "product_uom_id": product.uom_id.id,
+             "product_uom_id": product_uom.id,
              "tax_ids": [(5, 0, 0)],
         })
         if post:

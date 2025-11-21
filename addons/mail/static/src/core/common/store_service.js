@@ -355,13 +355,9 @@ export class Store extends BaseStore {
     }
 
     _fetchStoreDataRpc(fetchParams) {
-        const context = {
-            ...user.context,
-            allowed_company_ids: user.allowedCompanies.map((c) => c.id),
-        };
         return rpc(
             this.fetchReadonly ? "/mail/data" : "/mail/action",
-            { fetch_params: fetchParams, context },
+            { fetch_params: fetchParams, context: user.context },
             { silent: this.fetchSilent }
         );
     }
@@ -482,13 +478,16 @@ export class Store extends BaseStore {
                     });
                 }
             }
-            if (
-                type === "notification-displayed" &&
-                ["mail.thread", "discuss.channel"].includes(payload.model)
-            ) {
-                this.env.services["mail.out_of_focus"]._playSound();
+            if (type === "notification-displayed") {
+                this.onPushNotificationDisplayed(payload);
             }
         });
+    }
+
+    onPushNotificationDisplayed(payload) {
+        if (["mail.thread", "discuss.channel"].includes(payload.model)) {
+            this.env.services["mail.out_of_focus"]._playSound();
+        }
     }
 
     /**

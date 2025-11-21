@@ -29,7 +29,7 @@ class HrVersion(models.Model):
     _rec_name = 'name'
 
     def _get_default_address_id(self):
-        address = self.env.user.company_id.partner_id.address_get(['default'])
+        address = self.env.company.partner_id.address_get(['default'])
         return address['default'] if address else False
 
     def _default_salary_structure(self):
@@ -113,10 +113,10 @@ class HrVersion(models.Model):
             ('contractor', 'Contractor'),
             ('freelance', 'Freelancer'),
         ], string='Employee Type', default='employee', required=True, groups="hr.group_hr_user", tracking=True)
-    department_id = fields.Many2one('hr.department', check_company=True, tracking=True)
+    department_id = fields.Many2one('hr.department', check_company=True, tracking=True, index=True)
     member_of_department = fields.Boolean("Member of department", compute='_compute_part_of_department', search='_search_part_of_department',
         help="Whether the employee is a member of the active user's department or one of it's child department.")
-    job_id = fields.Many2one('hr.job', check_company=True, tracking=True)
+    job_id = fields.Many2one('hr.job', check_company=True, tracking=True, index=True)
     job_title = fields.Char(compute="_compute_job_title", inverse="_inverse_job_title", store=True, readonly=False,
         string="Job Title", tracking=True)
     is_custom_job_title = fields.Boolean(compute='_compute_is_custom_job_title', store=True, default=False, groups="hr.group_hr_user")
@@ -352,6 +352,26 @@ class HrVersion(models.Model):
 
         return super(HrVersion, multiple_versions).write(new_vals)
 
+    def get_formview_action(self, access_uid=None):
+        """
+        Override this method in order to redirect many2one towards the right model
+            - Contract template -> hr.version
+            - Employee record -> hr.employee(.public) with version_id in context
+        """
+        res = super().get_formview_action(access_uid=access_uid)
+        context = res.get('context', {})
+        if self.employee_id:
+            user = self.env.user
+            if access_uid:
+                user = self.env['res.users'].browse(access_uid)
+            res['res_model'] = 'hr.employee' if user.has_group('hr.group_hr_user') else 'hr.employee.public'
+            res['res_id'] = self.employee_id.id
+            res['context'] = dict(context, version_id=self.id)
+        else:
+            if not context.get('form_view_ref', False):
+                res['context'] = dict(context, form_view_ref='hr.hr_contract_template_form_view')
+        return res
+
     @api.depends_context('lang')
     @api.depends('date_version')
     def _compute_display_name(self):
@@ -391,7 +411,10 @@ class HrVersion(models.Model):
         """
         if not (self.contract_date_start and date_from and date_to):
             return False
-        return self.date_start <= date_to and (not self.date_end or self.date_end >= date_from)
+        period_start = date_from or date.min
+        period_end = date_to or date.max
+        contract_end = self.date_end or date.max
+        return period_start <= contract_end and self.date_start <= period_end
 
     def _is_fully_flexible(self):
         """ return True if the version has a fully flexible working calendar """

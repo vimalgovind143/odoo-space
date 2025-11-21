@@ -44,6 +44,20 @@ class MrpProduction(models.Model):
     _order = 'priority desc, date_start asc,id'
 
     @api.model
+    def default_get(self, fields):
+        context = dict(self.env.context)
+        product_qty = context.pop('bom_overview_product_qty', False)
+        picking_type_id = context.pop('bom_overview_picking_type_id', False)
+        defaults = super(MrpProduction, self.with_context(context)).default_get(fields)
+
+        if product_qty:
+            defaults['product_qty'] = product_qty
+        if picking_type_id:
+            defaults['picking_type_id'] = picking_type_id
+
+        return defaults
+
+    @api.model
     def _get_default_date_start(self):
         if self.env.context.get('default_date_deadline'):
             date_finished = fields.Datetime.to_datetime(self.env.context.get('default_date_deadline'))
@@ -385,7 +399,15 @@ class MrpProduction(models.Model):
         # Force to prefetch more than 1000 by 1000
         all_raw_moves._fields['forecast_availability'].compute_value(all_raw_moves)
         for production in productions:
-            if any(move.product_id.uom_id.compare(move.forecast_availability, 0 if move.state == 'draft' else move.product_qty) == -1 for move in production.move_raw_ids):
+            if any(
+                move.product_id
+                and move.product_id.uom_id.compare(
+                    move.forecast_availability,
+                    0 if move.state == 'draft' else move.product_qty,
+                ) == -1
+                for move in production.move_raw_ids
+            ):
+
                 production.components_availability = _('Not Available')
                 production.components_availability_state = 'unavailable'
             else:
@@ -640,7 +662,17 @@ class MrpProduction(models.Model):
             if production.state in ('draft', 'done', 'cancel'):
                 production.reservation_state = False
                 continue
-            relevant_move_state = production.move_raw_ids.filtered(lambda m: not (m.picked or m.product_uom.is_zero(m.product_uom_qty)))._get_relevant_state_among_moves()
+            relevant_move_state = production.move_raw_ids.filtered(
+                lambda m: (
+                    m.product_id
+                    and not (
+                        m.picked
+                        or m.product_uom.is_zero(
+                            m.product_uom_qty,
+                        )
+                    )
+                )
+            )._get_relevant_state_among_moves()
             # Compute reservation state according to its component's moves.
             if relevant_move_state == 'partially_available':
                 if production.workorder_ids.operation_id and production.bom_id.ready_to_produce == 'asap':
@@ -1055,6 +1087,11 @@ class MrpProduction(models.Model):
         if workorders_to_delete:
             workorders_to_delete.unlink()
         return super(MrpProduction, self).unlink()
+
+    @api.ondelete(at_uninstall=True)
+    def _unlink_if_not_done(self):
+        if any(mo.state == 'done' for mo in self):
+            raise UserError(_("You cannot delete a manufacturing order that is already done."))
 
     def copy_data(self, default=None):
         default = dict(default or {})
@@ -1743,6 +1780,8 @@ class MrpProduction(models.Model):
     def action_cancel(self):
         """ Cancels production order, unfinished stock moves and set procurement
         orders in exception """
+        if any(mo.state == 'done' for mo in self):
+            raise UserError(_("You cannot cancel a manufacturing order that is already done."))
         self._action_cancel()
         return True
 

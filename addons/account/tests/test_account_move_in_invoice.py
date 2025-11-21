@@ -943,6 +943,8 @@ class TestAccountMoveInInvoiceOnchanges(AccountTestInvoicingCommon):
         })
 
     def test_in_invoice_line_onchange_currency_1(self):
+        self.other_currency.rounding = 0.001
+
         move_form = Form(self.invoice)
         move_form.currency_id = self.other_currency
         move_form.save()
@@ -2223,7 +2225,7 @@ class TestAccountMoveInInvoiceOnchanges(AccountTestInvoicingCommon):
     def test_in_invoice_line_tax_line_delete(self):
         with self.assertRaisesRegex(ValidationError, "You cannot delete a tax line"):
             with Form(self.invoice) as invoice_form:
-                invoice_form.journal_line_ids.remove(2)
+                invoice_form.line_ids.remove(2)
 
     @freeze_time('2022-06-17')
     def test_fiduciary_mode_date_suggestion(self):
@@ -2789,7 +2791,7 @@ class TestAccountMoveInInvoiceOnchanges(AccountTestInvoicingCommon):
         payment_term_line = self.invoice.line_ids.filtered(lambda l: l.display_type == 'payment_term')
         index = self.invoice.line_ids.ids.index(payment_term_line.id)
         with Form(self.invoice) as move_form:
-            with move_form.journal_line_ids.edit(index) as line_form:
+            with move_form.line_ids.edit(index) as line_form:
                 line_form.name = 'XYZ'
         move_form.save()
         self.invoice.action_post()
@@ -2830,7 +2832,7 @@ class TestAccountMoveInInvoiceOnchanges(AccountTestInvoicingCommon):
     def test_journal_item_on_payable_account(self):
         move_form = Form(self.env['account.move'].with_context(default_move_type='in_invoice'))
 
-        with move_form.journal_line_ids.new() as line_form:
+        with move_form.line_ids.new() as line_form:
             line_form.account_id = self.company_data['default_account_payable']
 
         with self.assertRaisesRegex(UserError, 'Any journal item on a payable account must have a due date and vice versa.'):
