@@ -13,20 +13,21 @@
 # Martin Trigaux, 2023
 # "Tiffany Chang (tic)" <tic@odoo.com>, 2025.
 # Weblate <noreply-mt-weblate@weblate.org>, 2025.
+# Nusara Boonma <nuboo@odoo.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-09 12:16+0000\n"
-"PO-Revision-Date: 2025-11-16 15:12+0000\n"
-"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"POT-Creation-Date: 2026-02-24 14:12+0000\n"
+"PO-Revision-Date: 2026-05-30 09:44+0000\n"
+"Last-Translator: Nusara Boonma <nuboo@odoo.com>\n"
 "Language-Team: Thai <https://translate.odoo.com/projects/odoo-19/base/th/>\n"
 "Language: th\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.12.2\n"
+"X-Generator: Weblate 5.17\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_at_reports
@@ -180,20 +181,18 @@ msgstr ""
 "รองรับเซิร์ฟเวอร์ที่รองรับ POP3/IMAP ทั้งหมด รวมถึงเซิร์ฟเวอร์ที่ต้องใช้\n"
 "การเชื่อมต่อ SSL/TLS ที่เข้ารหัส\n"
 "สามารถใช้เพื่อสร้างเวิร์กโฟลว์ทางอีเมลสำหรับเอกสาร Odoo ที่เปิดใช้งานอีเมลจำนวนมาก เช่น:\n"
-"-------------------------------------------------- "
-"-------------------------------------------------- "
-"-------------------------------------------------- "
-"-------------------------------------------------- ------\n"
+"-------------------------------------------------- -------------------------------------------------- -------------------------------------------------- -------------------------------------------------- ------"
+"\n"
 "* ลูกค้าสัมพันธ์ ลูกค้าเป้าหมาย/ผู้ที่มีโอกาสจะซื้อ\n"
 "* การอ้างสิทธิ์ของลูกค้าสัมพันธ์\n"
-"* ปัญหาโปรเจ็กต์ \n"
-"* งานโปรเจ็กต์\n"
+"* ปัญหาโปรเจกต์ \n"
+"* งานโปรเจกต์\n"
 "* รับสมัครบุคลากร (ผู้สมัคร)\n"
 "เพียงติดตั้งแอปพลิเคชันที่เกี่ยวข้อง คุณสามารถกำหนดประเภทเอกสารเหล่านี้ได้\n"
-"(ลูกค้าเป้าหมาย ปัญหาโปรเจ็กต์) ไปยังบัญชีอีเมลขาเข้าของคุณ อีเมลใหม่จะ\n"
+"(ลูกค้าเป้าหมาย ปัญหาโปรเจกต์) ไปยังบัญชีอีเมลขาเข้าของคุณ อีเมลใหม่จะ\n"
 "วางเอกสารใหม่ในประเภทที่เลือกโดยอัตโนมัติ ดังนั้นจึงเป็นเรื่องง่ายที่จะสร้าง\n"
-"การผสานรวมกล่องจดหมายกับ Odoo ยิ่งไปกว่านั้น: "
-"เอกสารเหล่านี้ทำหน้าที่เป็นเอกสารขนาดเล็กโดยตรง\n"
+"การผสานรวมกล่องจดหมายกับ Odoo ยิ่งไปกว่านั้น: เอกสารเหล่านี้ทำหน้าที่เป็นเอกสารขนาดเล็กโดยตร"
+"ง\n"
 "การสนทนาที่ซิงโครไนซ์ทางอีเมล คุณสามารถตอบกลับจากภายใน Odoo และ\n"
 "คำตอบจะถูกรวบรวมโดยอัตโนมัติเมื่อพวกเขากลับมาและแนบไปกับ\n"
 "เอกสาร *การสนทนา* เดียวกัน\n"
@@ -216,156 +215,72 @@ msgid ""
 "- **Dansk kontoplan**\n"
 "\n"
 "- Dansk moms\n"
-"        - 25% moms\n"
-"        - Resturationsmoms 6,25%\n"
+"        - 25 % moms\n"
+"        - Restaurationsmoms 6,25 %\n"
 "        - Omvendt betalingspligt\n"
 "\n"
 "- Konteringsgrupper\n"
 "        - EU (Virksomhed)\n"
 "        - EU (Privat)\n"
-"        - 3.lande\n"
+"        - Tredjelande\n"
 "\n"
-"- Finans raporter\n"
-"        - Resulttopgørelse\n"
+"- Finansrapporter\n"
+"        - Resultatopgørelse\n"
 "        - Balance\n"
 "        - Momsafregning\n"
 "            - Afregning\n"
 "            - Rubrik A, B og C\n"
 "\n"
-"- **Anglo-Saxon regnskabsmetode**\n"
+"- **Anglo-saksisk regnskabsmetode**\n"
 "\n"
 ".\n"
 "\n"
-"Produkt setup:\n"
-"==============\n"
+"Produktopsætning:\n"
+"=================\n"
 "\n"
 "**Vare**\n"
 "\n"
-"**Salgsmoms:**      Salgmoms 25%\n"
+"**Salgsmoms:**      Salgsmoms 25 %\n"
 "\n"
-"**Salgskonto:**     1010 Salg af vare, m/moms\n"
+"**Salgskonto:**     1.010 Salg af varer inkl. moms\n"
 "\n"
-"**Købsmoms:**       Købsmoms 25%\n"
+"**Købsmoms:**       Købsmoms 25 %\n"
 "\n"
-"**Købskonto:**      2010 Direkte omkostninger vare, m/moms\n"
+"**Købskonto:**      2.010 Direkte vareomkostninger inkl. moms\n"
 "\n"
 ".\n"
 "\n"
 "**Ydelse**\n"
 "\n"
-"**Salgsmoms:**      Salgmoms 25%, ydelser\n"
+"**Salgsmoms:**      Salgsmoms 25 %, ydelser\n"
 "\n"
-"**Salgskonto:**     1011 Salg af ydelser, m/moms\n"
+"**Salgskonto:**     1.011 Salg af ydelser inkl. moms\n"
 "\n"
-"**Købsmoms:**       Købsmoms 25%, ydelser\n"
+"**Købsmoms:**       Købsmoms 25 %, ydelser\n"
 "\n"
-"**Købskonto:**      2011 Direkte omkostninger ydelser, m/moms\n"
+"**Købskonto:**      2.011 Direkte omkostninger ydelser inkl. moms\n"
 "\n"
 ".\n"
 "\n"
 "**Vare med omvendt betalingspligt**\n"
 "\n"
-"**Salgsmoms:**      Salg omvendt betalingspligt\n"
+"**Salgsmoms:**      Salg med omvendt betalingspligt\n"
 "\n"
-"**Salgskonto:**     1012 Salg af vare, u/moms\n"
+"**Salgskonto:**     1.012 Salg af varer ekskl. moms\n"
 "\n"
-"**Købsmoms:**       Køb omvendt betalingspligt\n"
+"**Købsmoms:**       Køb med omvendt betalingspligt\n"
 "\n"
-"**Købskonto:**      2012 Direkte omkostninger vare, u/moms\n"
+"**Købskonto:**      2.012 Direkte vareomkostninger ekskl. moms\n"
 "\n"
 "\n"
 ".\n"
 "\n"
 "**Restauration**\n"
 "\n"
-"**Købsmoms:**       Restaurationsmoms 6,25%, købsmoms\n"
+"**Købsmoms:**       Restaurationsmoms 6,25 %, købsmoms\n"
 "\n"
 "**Købskonto:**      4010 Restaurationsbesøg\n"
-"\n"
-".\n"
-"\n"
 msgstr ""
-"\n"
-"\n"
-"โมดูลการประยุกต์ใช้สำหรับประเทศเดนมาร์ก\n"
-"===============================\n"
-"\n"
-"นี่คือโมดูลสำหรับจัดการ **ผังการบัญชีสำหรับประเทศเดนมาร์ก** ครอบคลุมทั้งธุรกิจแบบใช้คนคนเดียว "
-"รวมถึง I/S, IVS, ApS และ A/S\n"
-"\n"
-"**Modulet opsætter:**\n"
-"\n"
-"- **Dansk kontoplan**\n"
-"\n"
-"- Dansk moms\n"
-"        - 25% moms\n"
-"        - Resturationsmoms 6,25%\n"
-"        - Omvendt betalingspligt\n"
-"\n"
-"- Konteringsgrupper\n"
-"        - EU (Virksomhed)\n"
-"        - EU (Privat)\n"
-"        - 3.lande\n"
-"\n"
-"- Finans raporter\n"
-"        - Resulttopgørelse\n"
-"        - Balance\n"
-"        - Momsafregning\n"
-"            - Afregning\n"
-"            - Rubrik A, B og C\n"
-"\n"
-"- **Anglo-Saxon regnskabsmetode**\n"
-"\n"
-".\n"
-"\n"
-"Produkt setup:\n"
-"==============\n"
-"\n"
-"**Vare**\n"
-"\n"
-"**Salgsmoms:**      Salgmoms 25%\n"
-"\n"
-"**Salgskonto:**     1010 Salg af vare, m/moms\n"
-"\n"
-"**Købsmoms:**       Købsmoms 25%\n"
-"\n"
-"**Købskonto:**      2010 Direkte omkostninger vare, m/moms\n"
-"\n"
-".\n"
-"\n"
-"**Ydelse**\n"
-"\n"
-"**Salgsmoms:**      Salgmoms 25%, ydelser\n"
-"\n"
-"**Salgskonto:**     1011 Salg af ydelser, m/moms\n"
-"\n"
-"**Købsmoms:**       Købsmoms 25%, ydelser\n"
-"\n"
-"**Købskonto:**      2011 Direkte omkostninger ydelser, m/moms\n"
-"\n"
-".\n"
-"\n"
-"**Vare med omvendt betalingspligt**\n"
-"\n"
-"**Salgsmoms:**      Salg omvendt betalingspligt\n"
-"\n"
-"**Salgskonto:**     1012 Salg af vare, u/moms\n"
-"\n"
-"**Købsmoms:**       Køb omvendt betalingspligt\n"
-"\n"
-"**Købskonto:**      2012 Direkte omkostninger vare, u/moms\n"
-"\n"
-"\n"
-".\n"
-"\n"
-"**Restauration**\n"
-"\n"
-"**Købsmoms:**       Restaurationsmoms 6,25%, købsmoms\n"
-"\n"
-"**Købskonto:**      4010 Restaurationsbesøg\n"
-"\n"
-".\n"
-"\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_do
@@ -627,6 +542,16 @@ msgstr ""
 "โมดูลนี้ช่วยให้แคชเชียร์สามารถระบุเปอร์เซ็นต์ได้อย่างรวดเร็ว\n"
 "ส่วนลดให้กับลูกค้า\n"
 "\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_pos_edi_ubl
+msgid ""
+"\n"
+"\n"
+"This module provides helpers for exporting POS orders in various UBL 2.1 "
+"formats.\n"
+"\n"
+msgstr ""
 
 #. module: base
 #. odoo-python
@@ -2229,6 +2154,16 @@ msgstr ""
 " - หากต้องการสร้างไฟล์ตรวจสอบ IRAS ให้ไปที่การบัญชี -> การรายงาน -> ไฟล์ตรวจสอบ IRAS\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_sk_reports
+msgid ""
+"\n"
+"Accounting reports for Slovakia\n"
+"=====================================\n"
+"This module includes accounting reports for Slovakia, including:\n"
+"-Balance Sheet + Profit and Loss (XML export)\n"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_za_reports
 msgid ""
 "\n"
@@ -2245,6 +2180,13 @@ msgid ""
 msgstr ""
 "\n"
 "รายงานทางบัญชีสำหรับประเทศสเปน\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_lk_reports
+msgid ""
+"\n"
+"Accounting reports for Sri Lanka\n"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_se_reports
@@ -2436,6 +2378,14 @@ msgid ""
 msgstr ""
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_ae_faf
+msgid ""
+"\n"
+"Accounting reports:\n"
+"- FTA VAT Audit\n"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_se_returns
 msgid ""
 "\n"
@@ -2534,6 +2484,14 @@ msgid ""
 msgstr ""
 
 #. module: base
+#: model:ir.module.module,description:base.module_purchase_accountant
+msgid ""
+"\n"
+"Add accrued menus and specific filters on purchase order lines for an easier "
+"closing process.\n"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_mx_edi_website_sale
 msgid ""
 "\n"
@@ -2616,12 +2574,9 @@ msgstr ""
 #: model:ir.module.module,description:base.module_l10n_fr_facturx_chorus_pro
 msgid ""
 "\n"
-"Add support to fill three optional fields used when using Chorus Pro, "
-"especially when invoicing public services.\n"
+"Add support to fill three fields used when using Chorus Pro, especially when "
+"invoicing public services.\n"
 msgstr ""
-"\n"
-"เพิ่มการรองรับเพื่อกรอกช่องตัวเลือกสามช่องที่ใช้ เมื่อใช้ Chorus Pro "
-"โดยเฉพาะการออกใบแจ้งหนี้บริการสาธารณะ\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_documents_project
@@ -2775,6 +2730,25 @@ msgstr ""
 "\n"
 "ฟีเจอร์ขั้นสูงสำหรับ PoS เช่น มุมมองที่ดีขึ้น\n"
 "สำหรับการกำหนดค่ากล่อง IoT   \n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_pos_dpopay
+msgid ""
+"\n"
+"Allow DPO POS payments\n"
+"==============================\n"
+"\n"
+"It supports all currencies supported by the terminal device — primarily for "
+"use in the **African region**.\n"
+"It enables customers to pay for their orders using debit/credit cards and "
+"Mobile Money through DPO POS terminals.\n"
+"A DPO merchant account is required to process transactions.\n"
+"Features include:\n"
+"\n"
+"* Quick payments by swiping, scanning, or tapping your credit/debit card or "
+"Mobile Money (Airtel Money / M-Pesa) at the payment terminal.\n"
+"* Supported cards: Visa, MasterCard, American Express etc.\n"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_pos_pine_labs
@@ -3193,10 +3167,10 @@ msgstr ""
 "\n"
 "* รายงานโครงสร้างต้นทุน\n"
 "\n"
-"นอกจากนี้ยังช่วยให้คำนวณต้นทุนของผลิตภัณฑ์ตาม BoM "
-"โดยใช้ต้นทุนของส่วนประกอบและการดำเนินงานของศูนย์งาน\n"
+"นอกจากนี้ยังช่วยให้คำนวณต้นทุนของผลิตภัณฑ์ตาม BoM โดยใช้ต้นทุนของส่วนประกอบและการดำเนินงานขอ"
+"งศูนย์งาน\n"
 "โดยจะเพิ่มปุ่มบนตัวผลิตภัณฑ์ แต่ยังเพิ่มการดำเนินการในมุมมองรายการของผลิตภัณฑ์ด้วย\n"
-"หากการประเมินมูลค่าสินค้าคงคลังแบบอัตโนมัติเปิดใช้งานอยู่ รายการบัญชีที่จำเป็นจะถูกสร้างขึ้น\n"
+"หากการประเมินมูลค่าคลังสินค้าแบบอัตโนมัติเปิดใช้งานอยู่ รายการบัญชีที่จำเป็นจะถูกสร้างขึ้น\n"
 "\n"
 
 #. module: base
@@ -3585,6 +3559,13 @@ msgid ""
 msgstr ""
 "\n"
 "หลีกเลี่ยงการเปิดใช้งานฟีเจอร์เอกสารในโปรเจ็กต์ fsm โดยอัตโนมัติ\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_es_reports_2025
+msgid ""
+"\n"
+"Backports the tax return functionalities in the Spanish localization\n"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_bd_hr_payroll
@@ -4558,6 +4539,22 @@ msgstr ""
 "\n"
 "กำหนดค่าอุปกรณ์ IoT ให้ใช้งานได้บางส่วน\n"
 "ขั้นตอนการวางมาตรการ ถ่ายรูป ...\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_databases
+msgid ""
+"\n"
+"Connect and manage all your client databases\n"
+"============================================\n"
+"\n"
+"The Databases app lets you connect and manage all your client databases from "
+"a\n"
+"single Odoo workspace. Whether you are an accounting firm or an Odoo "
+"partner,\n"
+"you can easily track who manages each database, follow up on timesheets, "
+"tasks\n"
+"and more.\n"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_uk_reports_cis
@@ -5840,10 +5837,9 @@ msgid ""
 "complex logic.\n"
 msgstr ""
 "\n"
-"แม้จะมีจำนวนแพ็คเกจที่ดูเหมือนว่าเป็นเฉพาะแอปพลิเคชันของสต็อกเท่านั้น "
-"แต่เราต้องการฟิลด์สำหรับสิ่งนี้ในใบแจ้งหนี้ เนื่องจากข้อมูลดังกล่าวอาจขึ้นอยู่กับการประกาศ DUS "
-"อีกด้วย\n"
-"เรายังควรพิจารณาว่าอาจมีผู้ใช้ที่ไม่ได้ติดตั้งแอปพลิเคชันสินค้าคงคลังและควรเก็บตรรกะที่ไม่ซับซ้อนมากขึ้น\n"
+"แม้จะมีจำนวนแพ็คเกจที่ดูเหมือนว่าเป็นเฉพาะแอปพลิเคชันของสต็อกเท่านั้น แต่เราต้องการฟิลด์สำหรับสิ่งนี้"
+"ในใบแจ้งหนี้ เนื่องจากข้อมูลดังกล่าวอาจขึ้นอยู่กับการประกาศ DUS อีกด้วย\n"
+"เรายังควรพิจารณาว่าอาจมีผู้ใช้ที่ไม่ได้ติดตั้งแอปพลิเคชันคลังสินค้าและควรเก็บตรรกะที่ไม่ซับซ้อนมากขึ้น\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_hr_skills_event
@@ -5901,6 +5897,21 @@ msgstr ""
 "โมดูลนี้ให้ความสามารถในการเลือกเมืองจากรายการ (ในบางประเทศ)\n"
 "\n"
 "โดยส่วนใหญ่จะใช้สำหรับ EDI ที่อาจต้องใช้รหัสเมืองพิเศษ\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_gt_edi_pos
+msgid ""
+"\n"
+"Extends the Point of Sale module to comply with Guatemalan electronic "
+"invoicing regulations (FEL).\n"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_be_reports_client_nihil
+msgid ""
+"\n"
+"Extension for accounting returns in Belgium\n"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_generator_sale
@@ -6469,7 +6480,19 @@ msgstr ""
 "Builder* เพื่อสร้างแบบฟอร์ม\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_fi_intrastat
+msgid ""
+"\n"
+"Generates Intrastat CSV report for declaration based on invoices for "
+"Finland.\n"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_at_intrastat
 #: model:ir.module.module,description:base.module_l10n_hr_intrastat
+#: model:ir.module.module,description:base.module_l10n_it_intrastat
+#: model:ir.module.module,description:base.module_l10n_pl_intrastat
+#: model:ir.module.module,description:base.module_l10n_pt_intrastat
 msgid ""
 "\n"
 "Generates Intrastat PDF report for declaration based on invoices.\n"
@@ -6709,6 +6732,14 @@ msgstr ""
 "========================\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_hk_hr_payroll_empf
+msgid ""
+"\n"
+"Hong Kong Payroll eMPF.\n"
+"========================\n"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_html_editor
 msgid ""
 "\n"
@@ -6783,6 +6814,25 @@ msgstr ""
 "Amazon\n"
 "    * FBM: การแจ้งเตือนการจัดส่งถูกส่งให้ Amazon สำหรับการเบิกของที่ยืนยันแต่ละครั้ง "
 "(เหมาะสำหรับการจัดส่งบางส่วน)\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_sale_lazada
+msgid ""
+"\n"
+"Import your Lazada orders in Odoo and synchronize deliveries\n"
+"===============================\n"
+"\n"
+"Key Features\n"
+"------------\n"
+"* Import orders from multiple shops\n"
+"* Orders are matched with Odoo products based on their internal reference "
+"(SKU in Lazada)\n"
+"* Support for both Fulfillment by Lazada (FBL), Fulfillment by Merchant "
+"(FBM):\n"
+"* FBL: Importing the completed orders\n"
+"* FBM: Delivery information is fetched from Lazada, track and synchronize "
+"the stock level to Lazada.\n"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_sale_shopee
@@ -7037,7 +7087,8 @@ msgstr ""
 "E-waybill ของประเทศอินเดียสำหรับสต็อก\n"
 "==========================\n"
 "\n"
-"โมดูลนี้ช่วยให้ผู้ใช้สามารถสร้างใบกำกับสินค้าทางอิเล็กทรอนิกส์จากแอปสินค้าคงคลังโดยไม่ต้องสร้างใบแจ้งหนี้\n"
+"โมดูลนี้ช่วยให้ผู้ใช้สามารถสร้างใบกำกับสินค้าทางอิเล็กทรอนิกส์จากแอปคลังสินค้าโดยไม่ต้องสร้างใบแจ้งห"
+"นี้\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_in_hr_payroll
@@ -7084,6 +7135,23 @@ msgstr ""
 "กฎการจ่ายเงินเดือนของประเทศอินโดนีเซีย\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_documents_l10n_mx_hr_payroll_account_edi
+msgid ""
+"\n"
+"Integrates the Mexican payroll with the Documents app so that CFDI XML "
+"files\n"
+"can be attached on payslips emails.\n"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_be_intervat
+msgid ""
+"\n"
+"Integration with Intervat & MyMinfin APIs, allowing to send and receive\n"
+"your electronic VAT declarations.\n"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_account_intrastat
 msgid ""
 "\n"
@@ -7120,13 +7188,13 @@ msgid ""
 "split per delivery.\n"
 msgstr ""
 "\n"
-"การจัดการสินค้าคงคลังสำหรับ Avatax\n"
+"การจัดการคลังสินค้าสำหรับ Avatax\n"
 "=======================================\n"
 "โมดูลนี้ช่วยให้สามารถระบุที่อยู่ของระดับรายการเมื่อรับภาษีจาก avatax\n"
 "\n"
-"ข้อจำกัดปัจจุบันคือมีเพียงหนึ่งรายการสั่งซื้อที่มีมากกว่าหนึ่งการเคลื่อนย้ายสินค้า (เช่น 10 "
-"หน่วยของสินค้า A 2 จากคลังสินค้าหมายเลข 1 และ 8 จากคลังสินค้าหมายเลข 2) ในกรณีนี้ "
-"คำสั่งซื้อขายควรถูกแยกตามการส่งมอบสินค้า\n"
+"ข้อจำกัดปัจจุบันคือมีเพียงหนึ่งรายการสั่งซื้อที่มีมากกว่าหนึ่งการเคลื่อนย้ายสินค้า (เช่น 10 หน่วยของสินค้"
+"า A 2 จากคลังสินค้าหมายเลข 1 และ 8 จากคลังสินค้าหมายเลข 2) ในกรณีนี้ คำสั่งซื้อขายควรถูกแยก"
+"ตามการส่งมอบสินค้า\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_account
@@ -7186,6 +7254,15 @@ msgstr ""
 msgid ""
 "\n"
 "It can be installed running: %s"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_jo_edi_pos
+msgid ""
+"\n"
+"Jordan Accounting EDI for POS\n"
+"=============================\n"
+"Provides electronic invoicing for Jordan in the POS.\n"
 msgstr ""
 
 #. module: base
@@ -7756,7 +7833,7 @@ msgstr ""
 msgid ""
 "\n"
 "Manage time off requests and allocations\n"
-"=====================================\n"
+"========================================\n"
 "\n"
 "This application controls the time off schedule of your company. It allows "
 "employees to request time off. Then, managers can review requests for time "
@@ -7779,27 +7856,6 @@ msgid ""
 "also possible in order to automatically create a meeting when a time off "
 "request is accepted by setting up a type of meeting in time off Type.\n"
 msgstr ""
-"\n"
-"จัดการคำขอการลาและการจัดสรร\n"
-"=====================================\n"
-"\n"
-"แอปพลิเคชันนี้ควบคุมตารางการลาของบริษัทของคุณ ซึ่งจะช่วยให้พนักงานสามารถส่งคำขอลางานได้ "
-"จากนั้น ผู้จัดการสามารถตรวจสอบคำขอและอนุมัติหรือปฏิเสธได้ "
-"และด้วยวิธีนี้คุณสามารถควบคุมการวางแผนการลาโดยรวมไว้กับบริษัทหรือแผนกก็ได้\n"
-"\n"
-"คุณสามารถกำหนดค่าการลาหลายประเภท (เช่น ลาป่วย, วันที่จ่ายค่าจ้าง, ...) "
-"และจัดสรรเวลาการลาให้กับพนักงานหรือแผนกได้อย่างรวดเร็วโดยใช้การจัดสรรเวลาการลา "
-"พนักงานยังสามารถขอวันลาเพิ่มเติมได้โดยการทำการจัดสรรเวลาการลาใหม่ "
-"ซึ่งนั่นจะเพิ่มจำนวนวันที่ใช้ได้ทั้งหมดสำหรับประเภทการลานั้น (หากคำขอได้รับการอนุมัติ)\n"
-"\n"
-"คุณสามารถติดตามการลาได้ในรูปแบบต่างๆ โดยการติดตามรายงานต่อไปนี้:\n"
-"\n"
-"* สรุปการลา\n"
-"* การลาตามแผนก\n"
-"* การวิเคราะห์การลา\n"
-"\n"
-"การซิงโครไนซ์กับตารางการประชุมภายใน (การประชุมของโมดูล CRM) "
-"ยังเป็นไปได้เพื่อสร้างการประชุมโดยอัตโนมัติเมื่อคำขอการลาได้รับการอนุมัติโดยการตั้งค่าประเภทการประชุมในการลา\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_mail_group
@@ -7896,6 +7952,24 @@ msgstr ""
 "ช่วงเวลาสำหรับรายงาน: วัน สัปดาห์ เดือน ... นอกจากนี้ยังสามารถกำหนด\n"
 "สต็อกสำรอง, ปริมาณขั้นต่ำที่ต้องจัดหา และกำหนดปริมาณที่คุณจะ\n"
 "จัดหาด้วยตนเองได้\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_mr_reports
+msgid ""
+"\n"
+"Mauritania accounting reports.\n"
+"====================================================\n"
+"-Profit and Loss\n"
+"-Balance Sheet\n"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_mr
+msgid ""
+"\n"
+"Mauritania basic package that contains the chart of accounts, the taxes, tax "
+"reports, etc.\n"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_mx_hr_payroll
@@ -8607,19 +8681,17 @@ msgstr ""
 "\n"
 "นำเอาระบบนำเข้าไฟล์ของ Odoo มาทำใหม่:\n"
 "\n"
-"* ทางด้านเซิร์ฟเวอร์, "
-"ระบบเดิมบังคับให้มีตรรกะส่วนใหญ่อยู่ที่ไคลเอนต์ซึ่งทำให้มีความซ้ำซ้อนในการพัฒนา (ระหว่างไคลเอนต์) "
-"ทำให้ระบบนำเข้ายากมากขึ้นโดยไม่มีไคลเอนต์ (RPC โดยตรงหรือรูปแบบอัตโนมัติอื่นๆ) "
-"และทำให้ความรู้เกี่ยวกับระบบนำเข้า/"
-"ส่งออกยากมากขึ้นเนื่องจากกระจายอยู่ในโปรเจ็กต์ที่แตกต่างกันอย่างน้อย 3 โปรเจ็กต์\n"
+"* ทางด้านเซิร์ฟเวอร์, ระบบเดิมบังคับให้มีตรรกะส่วนใหญ่อยู่ที่ไคลเอนต์ซึ่งทำให้มีความซ้ำซ้อนในการพัฒน"
+"า (ระหว่างไคลเอนต์) ทำให้ระบบนำเข้ายากมากขึ้นโดยไม่มีไคลเอนต์ (RPC โดยตรงหรือรูปแบบอัตโนมั"
+"ติอื่นๆ) และทำให้ความรู้เกี่ยวกับระบบนำเข้า/ส่งออกยากมากขึ้นเนื่องจากกระจายอยู่ในโปรเจกต์ที่แตกต่า"
+"งกันอย่างน้อย 3 โปรเจกต์\n"
 "\n"
-"* ในลักษณะที่สามารถขยายได้มากขึ้น "
-"เพื่อให้ผู้ใช้และพาร์ทเนอร์สามารถสร้างอินเตอร์เฟซของตนเองเพื่อนำเข้าจากรูปแบบไฟล์อื่น (เช่นไฟล์ "
-"OpenDocument) "
-"ซึ่งอาจง่ายกว่าในการจัดการในกระบวนการทำงานหรือจากแหล่งผลิตข้อมูลของพวกเขา\n"
+"* ในลักษณะที่สามารถขยายได้มากขึ้น เพื่อให้ผู้ใช้และพาร์ทเนอร์สามารถสร้างอินเตอร์เฟซของตนเองเพื่อ"
+"นำเข้าจากรูปแบบไฟล์อื่น (เช่นไฟล์ OpenDocument) ซึ่งอาจง่ายกว่าในการจัดการในกระบวนการทำงา"
+"นหรือจากแหล่งผลิตข้อมูลของพวกเขา\n"
 "\n"
-"* ในรูปแบบโมดูล เพื่อให้ผู้ดูแลระบบและผู้ใช้งาน Odoo "
-"ที่ไม่ต้องการหรือไม่ต้องการนำเข้าออนไลน์สามารถหลีกเลี่ยงการให้มีการใช้งานได้\n"
+"* ในรูปแบบโมดูล เพื่อให้ผู้ดูแลระบบและผู้ใช้งาน Odoo ที่ไม่ต้องการหรือไม่ต้องการนำเข้าออนไลน์สามา"
+"รถหลีกเลี่ยงการให้มีการใช้งานได้\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_ng
@@ -9318,6 +9390,13 @@ msgstr ""
 "สำหรับข้อมูลเพิ่มเติมเกี่ยวกับมาตรฐาน RIBA โปรดดูแนวทางที่ออกโดยสมาคมธนาคารอิตาลี (CBI)\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_ro_intrastat
+msgid ""
+"\n"
+"Romania - Intrastat Declaration\n"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_rw
 msgid ""
 "\n"
@@ -9726,6 +9805,13 @@ msgid ""
 msgstr ""
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_es_intrastat
+msgid ""
+"\n"
+"Spain - Intrastat Report\n"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_es
 msgid ""
 "\n"
@@ -9773,6 +9859,22 @@ msgstr ""
 "ระบุการเช่าสินค้า (สินค้า, ใบเสนอราคา, ใบแจ้งหนี้, ...)\n"
 "จัดการสถานะของสินค้า, การเช่า, ความล่าช้า\n"
 "จัดการการแจ้งเตือนผู้ใช้และผู้จัดการ\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_lk
+msgid ""
+"\n"
+"Sri Lankan Accounting module\n"
+"============================\n"
+"- Chart of Accounts\n"
+"- Fiscal Position\n"
+"- Taxes & Tax Groups\n"
+"\n"
+"Forms\n"
+"=====\n"
+"- VAT001\n"
+"- WHT001\n"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_stock_maintenance
@@ -10389,6 +10491,14 @@ msgid ""
 msgstr ""
 "\n"
 "โมดูลเชื่อมต่อนี้เพิ่มปุ่มอัจฉริยะระหว่างการจัดซื้อและการรับเหมาช่วง\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_tw_edi_ecpay_website_sale
+msgid ""
+"\n"
+"This bridge module allows the user to input Ecpay information in ecommerce "
+"for sending their invoices to the Ecpay system\n"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_mrp_subcontracting_dropshipping
@@ -11155,6 +11265,17 @@ msgstr ""
 "================================================================================\n"
 "    - ผังบัญชีทั่วไป\n"
 "    - โครงสร้างพร้อมภาษี SARS VAT"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_ro_cpv_code
+msgid ""
+"\n"
+"This is the module to add CPV (Common Procurement Vocabulary) identification "
+"number on product.\n"
+"The Romanian CIUS-RO format requires, in some case, the precise "
+"categorisation of products sold to be included in the details of the line of "
+"an invoice.\n"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_ro
@@ -12036,6 +12157,18 @@ msgstr ""
 "นำมาพิจารณาในการประเมินมูลค่าสต็อกของคุณ\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_us_direct_deposit
+msgid ""
+"\n"
+"This module allows you to initiate batch payments directly in Odoo via Wise "
+"(https://wise.com).\n"
+"Once a Wise account is created and credentials are added in Settings, vendor "
+"payments through batches\n"
+"can be initiated digitally from within Odoo and redirect to be completed "
+"within Wise via Direct Debit ACH, Standard ACH, FedWire, or Wise Balance.\n"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_partnership
 msgid ""
 "\n"
@@ -12168,6 +12301,14 @@ msgstr ""
 "\n"
 "โมดูลนี้ช่วยให้คุณสามารถขายการสมัครสมาชิกในอีคอมเมิร์ซของคุณด้วย\n"
 "มุมมองและทางเลือกการขายที่เหมาะสม\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_pl_reports_account_saft
+msgid ""
+"\n"
+"This module also provides the possibility to generate the JPK_KR_PD in xml, "
+"for Poland.\n"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_hr_hourly_cost
@@ -12451,6 +12592,31 @@ msgstr ""
 "\n"
 "โมดูลนี้ช่วยให้สามารถสร้างไฟล์ที่สอดคล้องกับ Zengin "
 "เพื่อส่งไปยังธนาคารของคุณเพื่อส่งการชำระเงินชุดหนึ่ง\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_tr_nilvera_einvoice_extended
+msgid ""
+"\n"
+"This module enhances the core Nilvera integration by adding additional "
+"invoice scenarios and types required for Turkish e-Invoicing compliance.\n"
+"\n"
+"Features include:\n"
+"    1.Support for invoice scenarios: Basic, Export, and Public Sector\n"
+"    2.Support for invoice types: Sales, Withholding, Tax Exempt, and "
+"Registered for Export\n"
+"    3.Configuration of withholding reasons and exemption reasons\n"
+"    4.Addition of Tax Offices.\n"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_ch_hr_payroll_elm_transmission_5_3
+msgid ""
+"\n"
+"This module extends the certification to ELM 5.1 and ELM 5.3 adds various "
+"quality of life improvements, such as: \n"
+"- Possibility to attribute LPP amounts in %\n"
+"- Add custom amounts for employer parts for LAAC and IJM\n"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_sms
@@ -13054,18 +13220,6 @@ msgstr ""
 "โมดูลนี้รวมเข้ากับอุปกรณ์ eTIMS ของประเทศเคนยา (OSCU)\n"
 
 #. module: base
-#: model:ir.module.module,description:base.module_account_peppol_advanced_fields
-msgid ""
-"\n"
-"This module introduces several advanced Peppol-related fields to the Odoo\n"
-"invoice model (`account.move`) and makes them available on a new "
-"'Additional\n"
-"Information' tab within the 'Other Info' section of the invoice form view.\n"
-"This is designed as a separate, optional module to keep core functionality\n"
-"clean and allow for flexible use cases.\n"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,description:base.module_test_crm_full
 msgid ""
 "\n"
@@ -13170,6 +13324,18 @@ msgid ""
 msgstr ""
 "\n"
 "โมดูลนี้จะแทนที่ฟีเจอร์ของเว็บไซต์คอมมูนิตี้และแนะนำรูปลักษณ์และความรู้สึกขององค์กร\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_be_hr_payroll_fix
+msgid ""
+"\n"
+"This module patches the "
+"'hr.payslip.employee.depature.holiday.attests.time.off.line'\n"
+"transient model to use Floats instead of Integers.\n"
+"\n"
+"This prevents rounding errors when employees have half-days (0.5)\n"
+"in their leave allocations or taken leaves.\n"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_timesheet_grid_holidays
@@ -13759,6 +13925,15 @@ msgstr ""
 "ใช้อีคอมเมิร์ซเพื่อขายบูธกิจกรรมของคุณ\n"
 
 #. module: base
+#. odoo-python
+#: code:addons/models.py:0
+msgid ""
+"\n"
+"User: %(user)s\n"
+"Groups: %(allowed_groups_msg)s"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_sales_team
 msgid ""
 "\n"
@@ -14038,6 +14213,13 @@ msgstr ""
 "และกำหนดค่าการซิงโครไนซ์ใบแจ้งยอดธนาคารเป็นระยะและอัตโนมัติ\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_hr_edi
+msgid ""
+"\n"
+"e-invoicing for Croatia\n"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_rs_edi
 msgid ""
 "\n"
@@ -14128,6 +14310,18 @@ msgstr ""
 #: code:addons/base/models/ir_ui_view.py:0
 msgid "%(method)s on %(model)s is private and cannot be called from a button"
 msgstr "%(method)s บน %(model)s เป็นแบบส่วนตัวและไม่สามารถเรียกจากปุ่มได้"
+
+#. module: base
+#. odoo-python
+#: code:addons/fields.py:0 code:addons/models.py:0
+msgid ""
+"%(previous_message)s\n"
+"\n"
+"Implicitly accessed through '%(document_kind)s' (%(document_model)s)."
+msgstr ""
+"%(previous_message)s\n"
+"\n"
+"เข้าถึงโดยปริยายผ่าน '%(document_kind)s' (%(document_model)s)."
 
 #. module: base
 #. odoo-python
@@ -14277,6 +14471,12 @@ msgid "'new' is reserved, and can not be used as path."
 msgstr "'ใหม่' ถูกสงวนไว้ และไม่สามารถใช้เป็นเส้นทางได้"
 
 #. module: base
+#. odoo-python
+#: code:addons/fields.py:0 code:addons/fields_relational.py:0
+msgid "(Record: %(record)s, User: %(user)s)"
+msgstr ""
+
+#. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_partner_form
 msgid "(Same"
 msgstr ""
@@ -14306,6 +14506,22 @@ msgstr "ต้องการ"
 #: code:addons/base/models/ir_rule.py:0
 msgid "- %(description)s (%(model)s)"
 msgstr "- %(description)s (%(model)s)"
+
+#. module: base
+#. odoo-python
+#: code:addons/models.py:0
+msgid ""
+"- Only a root company can be set on “%(record)s”. Currently set to “%"
+"(company)s”"
+msgstr ""
+
+#. module: base
+#. odoo-python
+#: code:addons/models.py:0
+msgid ""
+"- Record is company “%(company)s” while “%(field)s” (%(fname)s: %(values)s) "
+"belongs to another company."
+msgstr ""
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.report_irmodeloverview
@@ -14361,6 +14577,14 @@ msgid "- size ="
 msgstr "- ขนาด ="
 
 #. module: base
+#. odoo-python
+#: code:addons/models.py:0
+msgid ""
+"- “%(record)s” belongs to company “%(company)s” while “%(field)s” (%"
+"(fname)s: %(values)s) belongs to another company."
+msgstr ""
+
+#. module: base
 #: model:ir.model.fields.selection,name:base.selection__base_enable_profiling_wizard__duration__days_1
 msgid "1 Day"
 msgstr "1 วัน"
@@ -14414,6 +14638,13 @@ msgstr "การคำนวณภาษีของบุคคลที่ส
 #: model:ir.model.fields.selection,name:base.selection__base_enable_profiling_wizard__duration__minutes_5
 msgid "5 Minutes"
 msgstr "5 นาที"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_pe_reports_lib
+msgid ""
+"5th and 6th Set Financial Reports. Inventory and Balance 3.1-3.7, 3.11-3.18, "
+"3.20,3.24 and 3.25"
+msgstr ""
 
 #. module: base
 #: model_terms:res.partner,website_description:base.res_partner_1
@@ -14575,22 +14806,28 @@ msgstr ""
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_users_form
+msgid ""
+"<i class=\"fa fa-fw fa-envelope me-1 text-primary\" title=\"Email\" "
+"invisible=\"login == email\"/>"
+msgstr ""
+
+#. module: base
+#: model_terms:ir.ui.view,arch_db:base.view_users_form
+msgid ""
+"<i class=\"fa fa-fw fa-envelope me-1 text-primary\" title=\"Login / Email\" "
+"invisible=\"login != email\"/>\n"
+"                                        <i class=\"fa fa-fw fa-key me-1 text-"
+"primary\" title=\"Login\" invisible=\"login == email\"/>"
+msgstr ""
+
+#. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_users_form_simple_modif
 msgid "<i class=\"fa fa-fw fa-envelope text-primary\" title=\"Email\"/>"
 msgstr ""
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_users_form
-msgid ""
-"<i class=\"fa fa-fw fa-envelope text-primary\" title=\"Login / Email\" "
-"invisible=\"login != email\"/>\n"
-"                                    <i class=\"fa fa-fw fa-key text-"
-"primary\" title=\"Login\" invisible=\"login == email\"/>"
-msgstr ""
-
-#. module: base
-#: model_terms:ir.ui.view,arch_db:base.view_users_form
-msgid "<i class=\"fa fa-fw fa-phone text-primary\" title=\"Email\"/>"
+msgid "<i class=\"fa fa-fw fa-phone me-1 text-primary\" title=\"Phone\"/>"
 msgstr ""
 
 #. module: base
@@ -15386,6 +15623,11 @@ msgid "AI"
 msgstr "AI"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_esg_csrd_ai
+msgid "AI - ESG CSRD"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_ai_auto_install
 msgid "AI Auto Install"
 msgstr ""
@@ -15440,6 +15682,11 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_ai_crm_livechat
 msgid "AI crm livechat"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,summary:base.module_esg_csrd_ai
+msgid "AI integration with ESG CSRD"
 msgstr ""
 
 #. module: base
@@ -15504,6 +15751,12 @@ msgstr "รายการคีย์ API"
 #: model:ir.model.fields,field_description:base.field_res_groups__api_key_duration
 msgid "API Keys maximum duration days"
 msgstr "ระยะเวลาสูงสุดของคีย์ API"
+
+#. module: base
+#. odoo-python
+#: code:addons/fields_binary.py:0
+msgid "ASCII characters are required for %(value)s in %(field)s"
+msgstr ""
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_model_search
@@ -15610,6 +15863,12 @@ msgstr ""
 
 #. module: base
 #. odoo-python
+#: code:addons/environments.py:0
+msgid "Access to unauthorized or invalid companies."
+msgstr ""
+
+#. module: base
+#. odoo-python
 #: code:addons/base/models/ir_ui_view.py:0
 msgid "Accessible only for the super user"
 msgstr ""
@@ -15618,6 +15877,11 @@ msgstr ""
 #: model:ir.module.module,shortdesc:base.module_account_update_tax_tags
 msgid "Account - Allow updating tax grids"
 msgstr "บัญชี - อนุญาตให้อัปเดตตารางภาษี"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_account_pos_settle_due
+msgid "Account - Point of Sale Settle Due"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_bank_statement_extract
@@ -15680,11 +15944,6 @@ msgstr "หมายเลขบัญชี"
 #: model:ir.module.module,shortdesc:base.module_account_online_payment
 msgid "Account Online Payment"
 msgstr "บัญชีชำระเงินออนไลน์"
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_account_peppol_advanced_fields
-msgid "Account Peppol Advanced Fields"
-msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_qr_code_sepa
@@ -15814,6 +16073,34 @@ msgstr "รายงานทางบัญชีสำหรับประเ
 #: model:ir.module.module,shortdesc:base.module_account_fleet
 msgid "Accounting/Fleet bridge"
 msgstr "การเชื่อมต่อระหว่าง ระบบบัญชี/การขนส่ง"
+
+#. module: base
+#: model_terms:res.partner,website_description:base.res_partner_2
+#: model_terms:res.partner,website_description:base.res_partner_4
+msgid ""
+"Acme Corporation designs, develops, integrates and supports HR and Supply\n"
+"                Chain processes in order to make our customers more "
+"productive,\n"
+"                responsive and profitable."
+msgstr ""
+
+#. module: base
+#: model:res.partner,website_short_description:base.res_partner_2
+#: model:res.partner,website_short_description:base.res_partner_4
+msgid ""
+"Acme Corporation designs, develops, integrates and supports HR and Supply "
+"Chain processes in order to make our customers more productive, responsive "
+"and profitable."
+msgstr ""
+
+#. module: base
+#: model_terms:res.partner,website_description:base.res_partner_2
+#: model_terms:res.partner,website_description:base.res_partner_4
+msgid ""
+"Acme Corporation integrates ERP for Global Companies and supports PME\n"
+"                with Open Sources software to manage their businesses. Our\n"
+"                consultants are experts in the following areas:"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_actions_act_window_view__act_window_id
@@ -16024,6 +16311,11 @@ msgid "Add OdooBot in discussions"
 msgstr "เพิ่ม"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_account_add_gln
+msgid "Add Partner GLN"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,summary:base.module_crm_sms
 msgid "Add SMS capabilities to CRM"
 msgstr "เพิ่มความสามารถ SMS ให้กับ CRM"
@@ -16225,8 +16517,8 @@ msgstr "การเพิ่ม"
 
 #. module: base
 #: model:res.partner,website_short_description:base.res_partner_address_31
-msgid "Addison Olson is a mighty sales representative at Deco Addict."
-msgstr "Addison Olson เป็นตัวแทนขายหลักของ Deco Addict"
+msgid "Addison Olson is a mighty sales representative at Acme Corporation."
+msgstr ""
 
 #. module: base
 #: model_terms:res.partner,website_description:base.res_partner_address_31
@@ -16343,7 +16635,8 @@ msgstr ""
 #: model:ir.module.module,summary:base.module_sale_project_stock
 msgid ""
 "Adds a full traceability of inventory operations on the profitability report."
-msgstr "เพิ่มความสามารถในการติดตามการดำเนินงานสินค้าคงคลังทั้งหมดในรายงานความสามารถในการทำกำไร"
+msgstr ""
+"เพิ่มความสามารถในการติดตามการดำเนินงานคลังสินค้าทั้งหมดในรายงานความสามารถในการทำกำไร"
 
 #. module: base
 #: model:ir.module.module,description:base.module_project_sale_expense
@@ -16377,13 +16670,6 @@ msgstr "เพิ่มกลไกการจัดส่งฟรีในใ
 #: model:ir.module.module,description:base.module_contacts_enterprise
 msgid "Adds notably the map view of contact"
 msgstr "เพิ่มมุมมองแผนที่ของผู้ติดต่อให้โดดเด่น"
-
-#. module: base
-#: model:ir.module.module,summary:base.module_account_peppol_advanced_fields
-msgid ""
-"Adds specific Peppol fields to invoices under an 'Additional Information' "
-"tab."
-msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_auth_ldap
@@ -16972,6 +17258,12 @@ msgstr ""
 "ผู้ติดต่อทั้งหมดต้องมีอีเมลเดียวกัน เฉพาะผู้ดูแลระบบเท่านั้นที่สามารถรวมรายชื่อติดต่อกับอีเมลอื่นได้"
 
 #. module: base
+#: model_terms:res.company,invoice_terms_html:base.demo_company_be
+msgid ""
+"All our contractual relations will be governed exclusively by Belgium law."
+msgstr ""
+
+#. module: base
 #: model_terms:res.company,invoice_terms_html:base.main_company
 msgid ""
 "All our contractual relations will be governed exclusively by United States "
@@ -17161,7 +17453,7 @@ msgstr "อนุญาตให้ส่งข้อความ SMS ไปย�
 #. module: base
 #: model:ir.module.module,summary:base.module_sale_stock_renting
 msgid "Allows use of stock application to manage rentals inventory"
-msgstr "อนุญาตให้ใช้แอปพลิเคชันสต็อกเพื่อจัดการสินค้าคงคลังสำหรับการเช่า"
+msgstr "อนุญาตให้ใช้แอปพลิเคชันสต็อกเพื่อจัดการคลังสินค้าสำหรับการเช่า"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_account_accountant_batch_payment
@@ -18136,6 +18428,14 @@ msgstr "จำเป็นต้องมีอีเมลเพื่อให
 
 #. module: base
 #. odoo-python
+#: code:addons/base/models/ir_model.py:0
+msgid ""
+"An error occurred while evaluating the domain:\n"
+"%(error)s"
+msgstr ""
+
+#. module: base
+#. odoo-python
 #: code:addons/base/models/ir_mail_server.py:0
 msgid ""
 "An option is not supported by the server:\n"
@@ -18199,6 +18499,17 @@ msgstr "แองโกลา"
 #: model:res.country,name:base.ai
 msgid "Anguilla"
 msgstr "แองกวิลลา"
+
+#. module: base
+#. odoo-python
+#: code:addons/models.py:0
+msgid ""
+"Another model is using the record you are trying to delete.\n"
+"\n"
+"The troublemaker is: %(model_display)s\n"
+"Thanks to the following constraint: %(field_display)s\n"
+"How about archiving the record instead?"
+msgstr ""
 
 #. module: base
 #. odoo-python
@@ -19214,6 +19525,11 @@ msgid "Att"
 msgstr "Att"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_documents_l10n_mx_hr_payroll_account_edi
+msgid "Attach Mexican payroll CFDI XML to payslips emails"
+msgstr ""
+
+#. module: base
 #: model_terms:ir.actions.act_window,help:base.action_attachment
 msgid "Attach a new document"
 msgstr "แนบเอกสารใหม่"
@@ -19467,6 +19783,11 @@ msgid "Austrian Financial Reports"
 msgstr "รายงานทางการเงินของประเทศออสเตรีย"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_at_intrastat
+msgid "Austrian Intrastat Declaration"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_at_saft
 msgid "Austrian SAF-T Export"
 msgstr "การส่งออก SAF-T ของประเทศออสเตรีย"
@@ -19686,14 +20007,34 @@ msgid "Avatax Brazil"
 msgstr "Avatax สำหรับประเทศบราซิล"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_br_edi_fiscal_reform
+msgid "Avatax Brazil Fiscal Reform"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_br_edi_pos_fiscal_reform
+msgid "Avatax Brazil POS Fiscal Reform"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_br_avatax_sale
 msgid "Avatax Brazil Sale"
 msgstr "ลดราคา Avatax บราซิล"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_br_edi_sale_fiscal_reform
+msgid "Avatax Brazil Sale Fiscal Reform"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_br_website_sale_fiscal_reform
+msgid "Avatax Brazil eCommerce Fiscal Reform"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_account_avatax_stock
 msgid "Avatax for Inventory"
-msgstr "Avatax สำหรับสินค้าคงคลัง"
+msgstr "Avatax สำหรับคลังสินค้า"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_avatax_sale
@@ -19797,6 +20138,17 @@ msgstr "B9  23  33 x 62 มม."
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_se_bban
 msgid "BBAN Plusgiro Bankgiro"
+msgstr ""
+
+#. module: base
+#: model_terms:res.company,invoice_terms_html:base.demo_company_be
+msgid ""
+"BE Company CoA undertakes to do its best to supply performant services in "
+"due time in accordance with the agreed timeframes. However, none of its "
+"obligations can be considered as being an obligation to achieve results. BE "
+"Company CoA cannot under any circumstances, be required by the client to "
+"appear as a third party in the context of any claim for damages filed "
+"against the client by an end consumer."
 msgstr ""
 
 #. module: base
@@ -20189,6 +20541,11 @@ msgid "Belarus"
 msgstr "เบลารุส"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_be_intervat
+msgid "Belgian Intervat & Myminfin Edi"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_be_intrastat
 msgid "Belgian Intrastat Declaration"
 msgstr "Belgian Intrastat Declaration"
@@ -20202,6 +20559,11 @@ msgstr "การประยุกต์ใช้ของร้านอาห
 #: model:ir.module.module,shortdesc:base.module_l10n_be_hr_payroll_attendance
 msgid "Belgian Payroll - Attendance"
 msgstr "บัญชีเงินเดือนของประเทศเบลเยียม - การเข้างาน"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_be_hr_payroll_fix
+msgid "Belgian Payroll - Holiday Attest Fix"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_blackbox_be
@@ -20232,6 +20594,11 @@ msgstr ""
 #: model:ir.module.module,shortdesc:base.module_l10n_be_reports_sms
 msgid "Belgium - Accounting Reports - SMS"
 msgstr "ประเทศเบลเยียม - รายงานด้านบัญชี - SMS"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_be_reports_client_nihil
+msgid "Belgium - Accounting Reports Client Nihil"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_be_fiscal_categories_fleet
@@ -20314,6 +20681,7 @@ msgid "Belize"
 msgstr "เบลีซ"
 
 #. module: base
+#: model_terms:res.company,invoice_terms_html:base.demo_company_be
 #: model_terms:res.company,invoice_terms_html:base.main_company
 msgid ""
 "Below text serves as a suggestion and doesn’t engage Odoo S.A. "
@@ -20645,6 +21013,11 @@ msgid "Bridge Website Sale for Brazil"
 msgstr "การขายเว็บไซต์เชื่อมต่อสำหรับบราซิล"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_esg_csrd_hr_fleet
+msgid "Bridge between ESG with CSRD and ESG - Fleet"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_iap_crm
 #: model:ir.module.module,summary:base.module_iap_crm
 msgid "Bridge between IAP and CRM"
@@ -20660,6 +21033,11 @@ msgstr "ตัวเชื่อมต่อระหว่าง IAP และ�
 #: model:ir.module.module,summary:base.module_mrp_accountant
 msgid "Bridge between Mrp and Accounting"
 msgstr "ตัวเชื่อมต่อระหว่างระบบการผลิต (Mrp) และระบบบัญชี"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_purchase_accountant
+msgid "Bridge between Purchase and Accounting"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_sale_account_accountant
@@ -21018,6 +21396,11 @@ msgid "CRM in marketing automation"
 msgstr "CRM ในระบบอัตโนมัติทางการตลาด"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_esg_csrd
+msgid "CSRD integration with ESG"
+msgstr ""
+
+#. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__cst6cdt
 msgid "CST6CDT"
 msgstr "CST6CDT"
@@ -21241,6 +21624,12 @@ msgstr "ไม่สามารถคัดลอกการกำหนดค
 
 #. module: base
 #. odoo-python
+#: code:addons/models.py:0
+msgid "Cannot grab a lock on records"
+msgstr ""
+
+#. module: base
+#. odoo-python
 #: code:addons/base/models/ir_model.py:0
 msgid ""
 "Cannot rename/delete fields that are still present in views:\n"
@@ -21250,6 +21639,12 @@ msgstr ""
 "ไม่สามารถเปลี่ยนชื่อ/ลบฟิลด์ที่ยังคงอยู่ในมุมมองได้:\n"
 "ฟิลด์: %(fields)s\n"
 "มุมมอง: %(view)s"
+
+#. module: base
+#. odoo-python
+#: code:addons/models.py:0
+msgid "Cannot update a record without specifying its id or xml_id"
+msgstr ""
 
 #. module: base
 #. odoo-python
@@ -21291,6 +21686,11 @@ msgstr "หมวดหมู่"
 #: model_terms:ir.ui.view,arch_db:base.view_partner_category_list
 msgid "Category"
 msgstr "หมวดหมู่"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_catering
+msgid "Catering"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.ky
@@ -21447,9 +21847,22 @@ msgstr "รวมศูนย์ จัดการ แบ่งปัน แล
 #: model:res.currency,currency_subunit_label:base.UGX
 #: model:res.currency,currency_subunit_label:base.USD
 #: model:res.currency,currency_subunit_label:base.XCD
+#: model:res.currency,currency_subunit_label:base.XCG
 #: model:res.currency,currency_subunit_label:base.ZAR
 msgid "Cents"
 msgstr "Cents"
+
+#. module: base
+#: model_terms:res.company,invoice_terms_html:base.demo_company_be
+msgid ""
+"Certain countries apply withholding at source on the amount of invoices, in "
+"accordance with their internal legislation. Any withholding at source will "
+"be paid by the client to the tax authorities. Under no circumstances can BE "
+"Company CoA become involved in costs related to a country's legislation. The "
+"amount of the invoice will therefore be due to BE Company CoA in its "
+"entirety and does not include any costs relating to the legislation of the "
+"country in which the client is located."
+msgstr ""
 
 #. module: base
 #: model_terms:res.company,invoice_terms_html:base.main_company
@@ -21849,6 +22262,11 @@ msgstr "Cloud Storage Azure"
 #: model:ir.module.module,shortdesc:base.module_cloud_storage_google
 msgid "Cloud Storage Google"
 msgstr "Cloud Storage Google"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_cloud_storage_migration
+msgid "Cloud Storage Migration"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_cf_turnstile
@@ -22534,10 +22952,19 @@ msgstr "ข้อจำกัดที่มีชื่อเดียวกั
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_construction
-#: model:ir.module.module,shortdesc:base.module_construction
 #: model:res.partner.industry,name:base.res_partner_industry_F
 msgid "Construction"
 msgstr "ก่อสร้าง"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_construction
+msgid "Construction Builder"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_construction_developer
+msgid "Construction Developer"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_theme_paptic
@@ -22735,6 +23162,15 @@ msgstr ""
 #: code:addons/base/models/res_partner.py:0
 msgid "Couldn't create contact without email address!"
 msgstr "ไม่สามารถสร้างที่อยู่ติดต่อได้หากไม่มีที่อยู่อีเมล!"
+
+#. module: base
+#. odoo-python
+#: code:addons/fields_relational.py:0
+msgid ""
+"Couldn't generate a company-dependent domain for field %s. The model doesn't "
+"have a 'company_id' or 'company_ids' field, and isn't company-dependent "
+"either."
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_model__count
@@ -23290,6 +23726,11 @@ msgid "Croatia - Accounting Reports"
 msgstr "ประเทศโครเอเชีย - รายงานด้านบัญชี"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_hr_edi
+msgid "Croatia - e-invoicing"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_hr_intrastat
 msgid "Croatian Intrastat Declaration"
 msgstr ""
@@ -23621,6 +24062,11 @@ msgid "DIN 5008"
 msgstr "DIN 5008"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_din5008_expense
+msgid "DIN 5008 - Expenses"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_din5008_industry_fsm
 msgid "DIN 5008 - Field Service"
 msgstr "DIN 5008 - การบริการภาคสนาม"
@@ -23739,6 +24185,12 @@ msgstr "ชื่อฐานข้อมูล"
 #: model:ir.ui.menu,name:base.next_id_9
 msgid "Database Structure"
 msgstr "โครงสร้างฐานข้อมูล"
+
+#. module: base
+#: model:ir.module.category,name:base.module_category_services_databases
+#: model:ir.module.module,shortdesc:base.module_databases
+msgid "Databases"
+msgstr ""
 
 #. module: base
 #. odoo-python
@@ -23860,42 +24312,6 @@ msgid "Decimalized number"
 msgstr "ตัวเลขทศนิยม"
 
 #. module: base
-#: model_terms:res.partner,website_description:base.res_partner_2
-#: model_terms:res.partner,website_description:base.res_partner_4
-msgid ""
-"Deco Addict designs, develops, integrates and supports HR and Supply\n"
-"                Chain processes in order to make our customers more "
-"productive,\n"
-"                responsive and profitable."
-msgstr ""
-"Deco Addict ออกแบบ พัฒนา บูรณาการและรองรับกระบวนการทรัพยากรบุคคล\n"
-"                และซัพพลายเชน เพื่อให้ลูกค้าของเรามีประสิทธิผล\n"
-"                ตอบสนองได้ไวและทำกำไรได้มากขึ้น"
-
-#. module: base
-#: model:res.partner,website_short_description:base.res_partner_2
-#: model:res.partner,website_short_description:base.res_partner_4
-msgid ""
-"Deco Addict designs, develops, integrates and supports HR and Supply Chain "
-"processes in order to make our customers more productive, responsive and "
-"profitable."
-msgstr ""
-"Deco Addict ออกแบบ พัฒนา บูรณาการและรองรับกระบวนการทรัพยากรบุคคลและซัพพลายเชน "
-"เพื่อให้ลูกค้าของเรามีประสิทธิผล ตอบสนองได้ไวและทำกำไรได้มากขึ้น"
-
-#. module: base
-#: model_terms:res.partner,website_description:base.res_partner_2
-#: model_terms:res.partner,website_description:base.res_partner_4
-msgid ""
-"Deco Addict integrates ERP for Global Companies and supports PME\n"
-"                with Open Sources software to manage their businesses. Our\n"
-"                consultants are experts in the following areas:"
-msgstr ""
-"Deco Addict ผสานรวมกับระบบ ERP สำหรับบริษัทระดับโลกและรองรับ PME\n"
-"               ด้วยซอฟต์แวร์แบบโอเพ่นซอร์ส เพื่อจัดการธุรกิจของพวกเขา\n"
-"               ที่ปรึกษาของเราเป็นผู้เชี่ยวชาญในด้านต่อไปนี้:"
-
-#. module: base
 #: model:ir.actions.act_window,name:base.action_partner_deduplicate
 msgid "Deduplicate Contacts"
 msgstr "รายชื่อ"
@@ -24006,6 +24422,14 @@ msgstr "สิทธิ์การลบ"
 #: model_terms:ir.ui.view,arch_db:base.view_server_action_kanban
 msgid "Delete Action"
 msgstr "ลบการกระทำ"
+
+#. module: base
+#. odoo-python
+#: code:addons/base/models/res_users.py:0
+msgid ""
+"Deleting the public user is not allowed. Deleting this profile will "
+"compromise critical functionalities."
+msgstr ""
 
 #. module: base
 #. odoo-python
@@ -24158,6 +24582,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:base.field_ir_module_module_dependency__depend_id
 msgid "Dependency"
 msgstr "จำเป็นต้องใช้ร่วมกับ"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_deposit_management
+msgid "Deposit Management"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_attachment__description
@@ -24434,6 +24863,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base.field_ir_qweb_field_many2many__display_name
 #: model:ir.model.fields,field_description:base.field_ir_qweb_field_many2one__display_name
 #: model:ir.model.fields,field_description:base.field_ir_qweb_field_monetary__display_name
+#: model:ir.model.fields,field_description:base.field_ir_qweb_field_one2many__display_name
 #: model:ir.model.fields,field_description:base.field_ir_qweb_field_qweb__display_name
 #: model:ir.model.fields,field_description:base.field_ir_qweb_field_relative__display_name
 #: model:ir.model.fields,field_description:base.field_ir_qweb_field_selection__display_name
@@ -24675,6 +25105,11 @@ msgid "Documents - Kenyan Payroll"
 msgstr "เอกสาร - บัญชีเงินเดือนของประเทศเคนยา"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_documents_l10n_mx_hr_payroll_account_edi
+msgid "Documents - Mexican Payroll"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_documents_hr_payroll
 msgid "Documents - Payroll"
 msgstr "เอกสาร - บัญชีเงินเดือน"
@@ -24720,6 +25155,12 @@ msgstr "เอกสาร ป้ายโปรเจ็กต์"
 #: model:ir.module.module,summary:base.module_documents_spreadsheet
 msgid "Documents Spreadsheet"
 msgstr "สเปรดชีตเอกสาร"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_test_documents_full
+#: model:ir.module.module,summary:base.module_test_documents_full
+msgid "Documents Testing Module"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_documents_account_peppol
@@ -24833,8 +25274,8 @@ msgstr "Dong"
 
 #. module: base
 #: model:res.partner,website_short_description:base.res_partner_address_3
-msgid "Douglas Fletcher is a mighty functional consultant at Deco Addict"
-msgstr "Douglas Fletcher เป็นที่ปรึกษาด้านการทำงานหลักของ Deco Addict"
+msgid "Douglas Fletcher is a mighty functional consultant at Acme Corporation"
+msgstr ""
 
 #. module: base
 #: model_terms:res.partner,website_description:base.res_partner_address_3
@@ -24955,7 +25396,13 @@ msgid "E-invoicing using SInvoice by Viettel"
 msgstr "การออกใบแจ้งหนี้ทางอิเล็กทรอนิกส์โดยใช้ SInvoice ของ Viettel"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_l10n_tw_edi_ecpay_website_sale
+msgid "ECpay E-invoice bridge module for Ecommerce"
+msgstr ""
+
+#. module: base
 #: model:ir.module.category,name:base.module_category_accounting_localizations_edi
+#: model:ir.module.category,name:base.module_category_website_sale_localizations_edi
 msgid "EDI"
 msgstr "EDI"
 
@@ -24989,6 +25436,16 @@ msgstr "การชำระเงินแบบกลุ่ม EFT"
 #: model:ir.module.module,shortdesc:base.module_esg
 msgid "ESG"
 msgstr "ESG"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_esg_csrd
+msgid "ESG CSRD"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_esg_csrd_hr_fleet
+msgid "ESG CSRD - Fleet"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_esg_hr
@@ -25431,6 +25888,14 @@ msgid "Energy supply"
 msgstr "วิธีการอุปทาน"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_uy_edi_stock
+msgid ""
+"Enhances stock picking operations with compliant electronic delivery guides "
+"(e-Remitos) for Uruguay. This module integrates with the EDI system to "
+"generate e-Remitos according to Uruguayan fiscal requirements."
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,summary:base.module_crm_iap_enrich
 msgid "Enrich Leads/Opportunities using email address domain"
 msgstr "เพิ่มลูกค้าเป้าหมาย/ผู้ที่มีโอกาสจะซื้อโดยใช้โดเมนที่อยู่อีเมล"
@@ -25643,11 +26108,6 @@ msgstr ""
 #: model:res.currency,currency_unit_label:base.CVE
 msgid "Escudo"
 msgstr "Escudo"
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_industry_real_estate
-msgid "Estate Management"
-msgstr "การจัดการอสังหาริมทรัพย์"
 
 #. module: base
 #: model:res.country,name:base.ee
@@ -26465,6 +26925,12 @@ msgid "Export Complete"
 msgstr "ส่งออกสำเร็จ"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_pl_edi
+msgid ""
+"Export FA(3) compliant XML invoices and prepare for integration with KSeF."
+msgstr ""
+
+#. module: base
 #: model:ir.model.fields,field_description:base.field_ir_exports__export_fields
 msgid "Export ID"
 msgstr "ID การส่งออก"
@@ -26744,6 +27210,18 @@ msgstr "ล้มเหลว"
 #: model:ir.actions.server,name:base.demo_failure_action
 msgid "Failed to install demo data for some modules, demo disabled"
 msgstr "ไม่สามารถติดตั้งข้อมูลสาธิตสำหรับบางโมดูล ปิดการใช้งานการสาธิต"
+
+#. module: base
+#. odoo-python
+#: code:addons/fields_relational.py:0
+msgid "Failed to read field %s"
+msgstr ""
+
+#. module: base
+#. odoo-python
+#: code:addons/fields_relational.py:0
+msgid "Failed to write field %s"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_cron__failure_count
@@ -27200,6 +27678,11 @@ msgid "Finland Sale"
 msgstr "การขายของประเทศฟินแลนด์"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_fi_intrastat
+msgid "Finnish Intrastat Declaration"
+msgstr ""
+
+#. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_company__font__fira_mono
 msgid "Fira Mono"
 msgstr "Fira Mono"
@@ -27284,8 +27767,8 @@ msgstr ""
 
 #. module: base
 #: model:res.partner,website_short_description:base.res_partner_address_4
-msgid "Floyd Steward is a mighty analyst at Deco Addict."
-msgstr "Floyd Steward เป็นนักวิเคราะห์หลักของ Deco Addict"
+msgid "Floyd Steward is a mighty analyst at Acme Corporation."
+msgstr ""
 
 #. module: base
 #: model_terms:res.partner,website_description:base.res_partner_address_4
@@ -27482,6 +27965,14 @@ msgstr "การซื้อขายเชื้อเพลิง"
 
 #. module: base
 #. odoo-python
+#: code:addons/models.py:0
+msgid ""
+"Found more than 10 errors and more than one error per 10 records, "
+"interrupted to avoid showing too many errors."
+msgstr ""
+
+#. module: base
+#. odoo-python
 #: code:addons/base/models/ir_fields.py:0
 msgid ""
 "Found multiple matches for value \"%(value)s\" in field \"%%(field)s\" (%"
@@ -27520,14 +28011,14 @@ msgid "France - Accounting Reports"
 msgstr "ประเทศฝรั่งเศส - รายงานด้านบัญชี"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_fr_facturx_chorus_pro
+msgid "France - BIS3 integration for Chorus Pro"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_fr_fec_import
 msgid "France - FEC Import"
 msgstr "ประเทศฝรั่งเศส - การนำเข้า FEC"
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_fr_facturx_chorus_pro
-msgid "France - Factur-X integration with Chorus Pro"
-msgstr "ประเทศฝรั่งเศส - การรวม Factur-X กับ Chorus Pro"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_fr
@@ -28219,6 +28710,12 @@ msgstr "กฎเฉพาะกลุ่มจะรวมกันพร้อ
 
 #. module: base
 #. odoo-python
+#: code:addons/models.py:0
+msgid "Grouping by HTML properties is not supported."
+msgstr ""
+
+#. module: base
+#. odoo-python
 #: code:addons/base/models/res_users.py:0
 #: model:ir.actions.act_window,name:base.action_res_groups
 #: model:ir.model.fields,field_description:base.field_ir_actions_act_window__group_ids
@@ -28303,6 +28800,11 @@ msgid "Guatemala - E-Invoicing"
 msgstr ""
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_gt_edi_pos
+msgid "Guatemalan Accounting EDI for POS"
+msgstr ""
+
+#. module: base
 #: model:res.country,name:base.gg
 msgid "Guernsey"
 msgstr "เกิร์นซีย์"
@@ -28320,6 +28822,7 @@ msgstr ""
 #. module: base
 #: model:res.currency,currency_unit_label:base.ANG
 #: model:res.currency,currency_unit_label:base.AWG
+#: model:res.currency,currency_unit_label:base.XCG
 msgid "Guilder"
 msgstr "Guilder"
 
@@ -28399,6 +28902,11 @@ msgid "HMRC"
 msgstr "HMRC"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_esg_csrd_hr
+msgid "HR - ESG CSRD"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_livechat
 msgid "HR - Livechat"
 msgstr "HR - ไลฟ์แชท"
@@ -28417,6 +28925,11 @@ msgstr "HR Gamification"
 #: model:ir.module.module,shortdesc:base.module_hr_org_chart
 msgid "HR Org Chart"
 msgstr "HR Gamification"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_esg_csrd_hr
+msgid "HR integration with ESG CSRD"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__hst
@@ -28741,6 +29254,11 @@ msgid "Holiday House"
 msgstr ""
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_hr_holidays_homeworking
+msgid "Holidays with Remote Work"
+msgstr ""
+
+#. module: base
 #: model:res.country,name:base.va
 msgid "Holy See (Vatican City State)"
 msgstr "นครรัฐวาติกัน"
@@ -28784,6 +29302,11 @@ msgstr "เขตปกครองพิเศษฮ่องกง - ราย
 #: model:ir.module.module,shortdesc:base.module_l10n_hk_hr_payroll
 msgid "Hong Kong - Payroll"
 msgstr "เขตปกครองพิเศษฮ่องกง - บัญชีเงินเดือน"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_hk_hr_payroll_empf
+msgid "Hong Kong - Payroll eMPF"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_hk_hr_payroll_account
@@ -29007,6 +29530,7 @@ msgstr "บัญชีธนาคาร IBAN"
 #: model:ir.model.fields,field_description:base.field_ir_qweb_field_many2many__id
 #: model:ir.model.fields,field_description:base.field_ir_qweb_field_many2one__id
 #: model:ir.model.fields,field_description:base.field_ir_qweb_field_monetary__id
+#: model:ir.model.fields,field_description:base.field_ir_qweb_field_one2many__id
 #: model:ir.model.fields,field_description:base.field_ir_qweb_field_qweb__id
 #: model:ir.model.fields,field_description:base.field_ir_qweb_field_relative__id
 #: model:ir.model.fields,field_description:base.field_ir_qweb_field_selection__id
@@ -29159,6 +29683,14 @@ msgid ""
 msgstr ""
 "หากเป็น True ไฟล์เซสชันที่สอดคล้องกับอุปกรณ์นี้\n"
 "                                    ไม่มีอยู่ในระบบไฟล์อีกต่อไป"
+
+#. module: base
+#: model_terms:res.company,invoice_terms_html:base.demo_company_be
+msgid ""
+"If a payment is still outstanding more than sixty (60) days after the due "
+"payment date, BE Company CoA reserves the right to call on the services of a "
+"debt recovery company. All legal expenses will be payable by the client."
+msgstr ""
 
 #. module: base
 #: model_terms:res.company,invoice_terms_html:base.main_company
@@ -29388,6 +29920,12 @@ msgid "Image Mixin"
 msgstr "รูปภาพ Mixin"
 
 #. module: base
+#. odoo-python
+#: code:addons/fields_binary.py:0
+msgid "Image is not encoded in base64."
+msgstr ""
+
+#. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_base_module_upgrade
 msgid "Impacted Apps"
 msgstr "แอพ"
@@ -29517,6 +30055,11 @@ msgid "Import Data From Winbooks"
 msgstr "นำเข้าข้อมูลจาก Winbooks"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_sale_lazada
+msgid "Import Lazada orders and sync deliveries"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_account_bank_statement_import_ofx
 msgid "Import OFX Bank Statement"
 msgstr "รายการเดินบัญชีธนาคาร"
@@ -29598,6 +30141,15 @@ msgid ""
 msgstr ""
 "ในมุมมองคัมบังที่คอลัมน์เป็นเรกคอร์ดของโมเดลนี้ ค่าของฟิลด์ (บูลีน) "
 "นี้จะกำหนดว่าควรพับคอลัมน์ใดตามค่าเริ่มต้น"
+
+#. module: base
+#: model_terms:res.company,invoice_terms_html:base.demo_company_be
+msgid ""
+"In order for it to be admissible, BE Company CoA must be notified of any "
+"claim by means of a letter sent by recorded delivery to its registered "
+"office within 8 days of the delivery of the goods or the provision of the "
+"services."
+msgstr ""
 
 #. module: base
 #: model_terms:res.company,invoice_terms_html:base.main_company
@@ -30018,6 +30570,11 @@ msgstr ""
 "                   แปลงอีเมลที่ได้รับในกล่องจดหมายของคุณเป็นทิกเก็ตและบันทึกเนื้อหาเป็นบันทึกภายใน"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_pos_dpopay
+msgid "Integrate your POS with DPO payment terminal."
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,summary:base.module_pos_pine_labs
 msgid "Integrate your POS with Pine Labs payment terminals"
 msgstr ""
@@ -30025,6 +30582,11 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,summary:base.module_pos_glory_cash
 msgid "Integrate your POS with a Glory automatic cash payment device"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,summary:base.module_pos_mollie
+msgid "Integrate your POS with a Mollie payment terminal"
 msgstr ""
 
 #. module: base
@@ -30100,7 +30662,7 @@ msgstr "การรวม Odoo PoS เข้ากับเครื่อง�
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_purchase_stock_inter_company_rules
 msgid "Inter Company Module for Sale/Purchase Orders (with Inventory link)"
-msgstr "โมดูลการขาย/สั่งซื้อระหว่างบริษัท (พร้อมลิงค์สินค้าคงคลัง)"
+msgstr "โมดูลการขาย/สั่งซื้อระหว่างบริษัท (พร้อมลิงค์คลังสินค้า)"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_inter_company_rules
@@ -30180,6 +30742,15 @@ msgstr "รายงานอินทราสแทต"
 #: model_terms:ir.ui.view,arch_db:base.report_irmodulereference
 msgid "Introspection report on objects"
 msgstr "รายงานการสำรวจบนออบเจ็กต์"
+
+#. module: base
+#. odoo-python
+#: code:addons/models.py:0
+msgid ""
+"Invalid \"order\" specified (%s). A valid \"order\" specification is a comma-"
+"separated list of valid field names (optionally followed by asc/desc for the "
+"direction)"
+msgstr ""
 
 #. module: base
 #. odoo-python
@@ -30371,6 +30942,14 @@ msgstr ""
 
 #. module: base
 #. odoo-python
+#: code:addons/base/models/ir_default.py:0
+msgid ""
+"Invalid value in Default Value field. Expected type '%(field_type)s' for '%"
+"(model_name)s.%(field_name)s'."
+msgstr ""
+
+#. module: base
+#. odoo-python
 #: code:addons/base/models/ir_ui_view.py:0
 msgid "Invalid view %(name)s definition in %(file)s"
 msgstr "คำจำกัดความมุมมอง %(name)s ใน %(file)s ไม่ถูกต้อง"
@@ -30396,18 +30975,18 @@ msgstr "xmlid %(xmlid)s ไม่ถูกต้องสำหรับปุ�
 #: model:ir.module.category,name:base.module_category_supply_chain_inventory
 #: model:ir.module.module,shortdesc:base.module_stock
 msgid "Inventory"
-msgstr "สินค้าคงคลัง"
+msgstr "คลังสินค้า"
 
 #. module: base
 #: model_terms:res.partner,website_description:base.res_partner_2
 #: model_terms:res.partner,website_description:base.res_partner_4
 msgid "Inventory and Warehouse management"
-msgstr "การจัดการสินค้าคงคลังและคลังสินค้า"
+msgstr "การจัดการคลังสินค้าและคลังสินค้า"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_stock_account
 msgid "Inventory, Logistic, Valuation, Accounting"
-msgstr "สินค้าคงคลัง, ลอจิสติกส์, การประเมินค่า, ระบบบัญชี"
+msgstr "คลังสินค้า, ลอจิสติกส์, การประเมินค่า, ระบบบัญชี"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_currency_rate__inverse_company_rate
@@ -30668,6 +31247,11 @@ msgstr ""
 "                    เป็นหลักตลอดจนอุตสาหกรรมต่างๆ"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_it_intrastat
+msgid "Italian Intrastat Declaration"
+msgstr ""
+
+#. module: base
 #: model:res.country,name:base.it
 msgid "Italy"
 msgstr "อิตาลี"
@@ -30825,6 +31409,11 @@ msgstr "ประเทศจอร์แดน - บัญชีเงินเ
 #: model:ir.module.module,shortdesc:base.module_l10n_jo_hr_payroll_account
 msgid "Jordan - Payroll with Accounting"
 msgstr "ประเทศจอร์แดน - บัญชีเงินเดือนพร้อมระบบบัญชี"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_jo_edi_pos
+msgid "Jordan Accounting EDI for POS"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_jo_edi
@@ -31496,6 +32085,11 @@ msgid "Layout in Reports"
 msgstr "รายงาน"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_sale_lazada
+msgid "Lazada Connector"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_crm_iap_enrich
 msgid "Lead Enrichment"
 msgstr "การเพิ่มลูกค้าเป้าหมาย"
@@ -31686,6 +32280,12 @@ msgstr "Lilangeni"
 #: model:ir.model.fields,field_description:base.field_ir_actions_act_window__limit
 msgid "Limit"
 msgstr "จำกัด"
+
+#. module: base
+#. odoo-python
+#: code:addons/base/models/res_users.py:0
+msgid "Limit of %s API keys is reached for programmatic creation"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_logging__line
@@ -31940,6 +32540,11 @@ msgid "Localization"
 msgstr "การปรับเข้ากับท้องถิ่น"
 
 #. module: base
+#: model:ir.module.category,name:base.module_category_website_sale_localizations
+msgid "Localizations"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_theme_loftspace
 msgid "Loftspace Fashion Theme"
 msgstr ""
@@ -32147,6 +32752,11 @@ msgstr "MTO การขาย <-> การจัดซื้อ"
 #: model:res.country,name:base.mo
 msgid "Macau"
 msgstr "มาเก๊า"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_machine_tool_rental
+msgid "Machine & Tools Rental"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.mg
@@ -32490,6 +33100,11 @@ msgid "Manage Time Off in Payslips Enterprise"
 msgstr "จัดการระบบการลาในสลิปเงินเดือนขององค์กร"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_databases
+msgid "Manage a fleet of Odoo databases"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,summary:base.module_website_forum
 msgid "Manage a forum with FAQ and Q&A"
 msgstr "จัดการฟอรัมด้วยคำถามที่พบบ่อยและถาม - ตอบ"
@@ -32570,6 +33185,11 @@ msgstr "จัดการบัญชีการเงินและการ
 #. module: base
 #: model:ir.module.module,summary:base.module_account_fiscal_categories_fleet
 msgid "Manage fiscal categories with fleets"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,summary:base.module_hr_holidays_homeworking
+msgid "Manage holidays with remote work"
 msgstr ""
 
 #. module: base
@@ -32904,6 +33524,16 @@ msgid "Mauritania"
 msgstr "มอริทาเนีย"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_mr
+msgid "Mauritania - Accounting"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_mr_reports
+msgid "Mauritania - Accounting Reports"
+msgstr ""
+
+#. module: base
 #: model:res.country,name:base.mu
 msgid "Mauritius"
 msgstr "มอริเชียส"
@@ -32946,6 +33576,7 @@ msgid "Meeting Rooms"
 msgstr "ห้องประชุม"
 
 #. module: base
+#: model:res.company,partnership_label:base.demo_company_be
 #: model:res.company,partnership_label:base.main_company
 msgid "Members"
 msgstr "สมาชิก"
@@ -32953,6 +33584,11 @@ msgstr "สมาชิก"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_members_club
 msgid "Members Club"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_mental_therapy
+msgid "Mental Therapy"
 msgstr ""
 
 #. module: base
@@ -33020,6 +33656,13 @@ msgstr "รวมรายชื่อต่อไปนี้"
 #: model_terms:ir.ui.view,arch_db:base.base_partner_merge_automatic_wizard_form
 msgid "Merge with Manual Check"
 msgstr "ด้วยตนเอง"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_account_peppol_advanced_fields
+msgid ""
+"Merged prematurly, not working correctly. Please don't use. Better solution "
+"coming soon."
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_logging__message
@@ -33126,6 +33769,11 @@ msgstr "Microsoft Outlook"
 #: model:ir.module.module,shortdesc:base.module_microsoft_account
 msgid "Microsoft Users"
 msgstr "ผู้ใช้ Microsoft"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_cloud_storage_migration
+msgid "Migrate local attachments to cloud storage"
+msgstr ""
 
 #. module: base
 #: model:res.currency,currency_subunit_label:base.TND
@@ -33325,6 +33973,12 @@ msgstr "ข้อมูลเบ็ดเตล็ด"
 
 #. module: base
 #. odoo-python
+#: code:addons/template_inheritance.py:0
+msgid "Missing 'expr' attribute in xpath specification"
+msgstr ""
+
+#. module: base
+#. odoo-python
 #: code:addons/base/models/ir_mail_server.py:0
 msgid ""
 "Missing SMTP Server\n"
@@ -33333,6 +33987,17 @@ msgid ""
 msgstr ""
 "เซิร์ฟเวอร์ SMTP ขาดหายไป\n"
 "กรุณาระบุเซิร์ฟเวอร์ SMTP อย่างน้อยหนึ่งตัวหรือระบุพารามิเตอร์ SMTP อย่างชัดเจน"
+
+#. module: base
+#. odoo-python
+#: code:addons/models.py:0
+msgid ""
+"Missing required value for the field %(field_display)s.\n"
+"Model: %(model_display)s\n"
+"- create/update: a mandatory field is not set\n"
+"- delete: another model requires the record being deleted, you can archive "
+"it instead\n"
+msgstr ""
 
 #. module: base
 #. odoo-python
@@ -34226,6 +34891,12 @@ msgstr "ขณะนี้ไม่มีกลุ่มที่อนุญา
 
 #. module: base
 #. odoo-python
+#: code:addons/fields_relational.py:0
+msgid "No inverse field \"%(inverse_field)s\" found for \"%(comodel)s\""
+msgstr ""
+
+#. module: base
+#. odoo-python
 #: code:addons/base/models/ir_fields.py:0
 msgid ""
 "No matching record found for %(field_type)s '%(value)s' in field '%%(field)s'"
@@ -34949,7 +35620,7 @@ msgid ""
 "posted automatically based on time spent on your projects.\n"
 "\n"
 "Time Off Management\n"
-"-----------------\n"
+"-------------------\n"
 "\n"
 "Keep track of the vacation days accrued by each employee. Employees enter "
 "their\n"
@@ -34998,97 +35669,6 @@ msgid ""
 "Compare revenues with forecasts and budgets in real time.\n"
 "\n"
 msgstr ""
-"Odoo Human Resources \n"
-"-------------------- \n"
-"\n"
-"ด้วย Odoo <a href=\"https://www.odoo.com/page/employees\">Human Resources</"
-"a> \n"
-"จัดการทรัพย์สินที่สำคัญที่สุดในบริษัทของคุณ: พนักงาน\n"
-"\n"
-"จัดการงานทรัพยากรบุคคลทั้งหมดของคุณได้อย่างง่ายดาย: การแบ่งปันความรู้การสรรหาบุคลากร,\n"
-"การประเมิน, ใบบันทึกเวลา, สัญญา, การเข้างาน, การจ่ายเงินเดือน และอื่นๆ \n"
-"\n"
-"แต่ละความต้องการนั้นมาจากแอปเฉพาะที่คุณเปิดใช้งานตามความต้องการ\n"
-"\n"
-" จัดการพนักงานของคุณ \n"
-"--------------------- \n"
-"\n"
-"ดูแลข้อมูลสำคัญทั้งหมดในสมุดที่อยู่ บริษัท ของคุณ ข้อมูลบางอย่างถูก จำกัด "
-"ไว้สำหรับผู้จัดการฝ่ายทรัพยากรบุคคลส่วนข้อมูลอื่น ๆ "
-"เป็นข้อมูลสาธารณะเพื่อให้เพื่อนร่วมงานมองได้ง่าย \n"
-"บันทึกสัญญาของพนักงานและรับการแจ้งเตือนเมื่อต้องต่ออายุ \n"
-"\n"
-"ปรับปรุงกระบวนการสรรหาของคุณ \n"
-"----------------------------------- \n"
-"\n"
-"ดัชนีประวัติย่อติดตามผู้สมัครค้นหาโปรไฟล์ด้วย <a href=\"https://www.odoo.com/page/"
-"employees\">Odoo HR</a>\n"
-"\n"
-"โพสต์ข้อเสนองานและติดตามแต่ละใบสมัครที่ได้รับ "
-"ติดตามผู้สมัครในกระบวนการรับสมัครของคุณด้วยมุมมองคัมบังอัจฉริยะ \n"
-"\n"
-"ประหยัดเวลาด้วยการสื่อสารอัตโนมัติด้วยเทมเพลตอีเมล "
-"เรซูเม่จะถูกจัดทำดัชนีโดยอัตโนมัติช่วยให้คุณค้นหาโปรไฟล์ที่ต้องการได้อย่างง่ายดาย \n"
-"\n"
-"เครือข่ายสังคมขององค์กร\n"
-" ------------------------- \n"
-"\n"
-"แบ่งคลังข้อมูล แบ่งปันความรู้และแนวทางปฏิบัติที่ดีระหว่างพนักงานทุกคน \n"
-"ติดตามบุคคลหรือเอกสารที่เฉพาะเจาะจงและเข้าร่วมกลุ่มที่สนใจเพื่อแบ่งปัน\n"
-"ความเชี่ยวชาญและเอกสาร\n"
-"\n"
-"โต้ตอบกับเพื่อนร่วมงานของคุณแบบเรียลไทม์ด้วยไลฟ์แชทบนเว็บไซต์\n"
-"\n"
-"ติดตามเวลาและการเข้างาน \n"
-"-------------------------- \n"
-"\n"
-"ติดตามเวลาที่ใช้โดยโปรเจ็กต์ลูกค้าหรืองาน การบันทึกแผ่นเวลา\n"
-"หรือตรวจสอบการเข้างานของพนักงานแต่ละคนทำได้ง่าย รับการบัญชีเชิงวิเคราะห์ของคุณ\n"
-"ที่โพสต์โดยอัตโนมัติตามเวลาที่ใช้ในโครงการของคุณ \n"
-"\n"
-"การจัดการระบบการลา\n"
-" ----------------- \n"
-"\n"
-"ติดตามวันลางานที่เกิดขึ้นโดยพนักงานแต่ละคน พนักงานป้อนคำขอของพวกเขา \n"
-"(เวลาหยุดงานเวลาลาป่วย ฯลฯ ) เพื่อให้ผู้จัดการอนุมัติและตรวจสอบความถูกต้อง \n"
-"ทั้งหมดนี้ทำได้ในไม่กี่คลิก มีการปรับปรุงกำหนดการประชุมของพนักงานแต่ละคนให้สอดคล้องกัน \n"
-"\n"
-"ติดตามค่าใช้จ่ายของพนักงาน \n"
-"-------------------------------\n"
-"\n"
-"บอกลาบันทึกบนกระดาษและติดตามค่าใช้จ่ายของพนักงานโดยตรงใน Odoo \n"
-"อย่าเสียเวลาหรือเงินโดยการควบคุมการหมุนเวียนทั้งหมด: การตรวจสอบค่าใช้จ่ายการคืนเงิน\n"
-"ของพนักงานการลงรายการบัญชีและการออกใบแจ้งหนี้ให้กับลูกค้า \n"
-"\n"
-"ติดตามการประเมินเป็นระยะ \n"
-"--------------------------\n"
-"\n"
-" ตั้งค่าแผนการประเมินและ / หรือแบบสำรวจสำหรับพนักงานของคุณและดูวิวัฒนาการของพวกเขา \n"
-"กำหนดขั้นตอนในการสัมภาษณ์และ Odoo จะแจ้งผู้จัดการหรือพนักงานในทีมโดยอัตโนมัติเพื่อ\n"
-"เตรียมการประเมิน ติดตามความคืบหน้าของพนักงานของคุณเป็นระยะ \n"
-"\n"
-"เพิ่มการมีส่วนร่วมด้วย Gamification \n"
-"---------------------------------- \n"
-"\n"
-"### กำหนดวัตถุประสงค์ที่ชัดเจนและให้ข้อเสนอแนะแบบเรียลไทม์\n"
-"\n"
-" สร้างแรงบันดาลใจในการประสบความสำเร็จกับความท้าทายต่อเป้าหมายและรางวัล "
-"กำหนดวัตถุประสงค์ที่ชัดเจน\n"
-"และให้ข้อเสนอแนะแบบเรียลไทม์และผลลัพธ์ที่เป็นรูปธรรม แสดงผู้มีผลงานชั้นนำ\n"
-"ให้ทั้งช่องและให้สาธารณชนรับรู้ถึงงานที่ทำได้ดี \n"
-"\n"
-"### กระดานผู้นำ\n"
-"\n"
-"ส่งเสริมผู้นำและการแข่งขันระหว่างทีมขายด้วยอัตราส่วนประสิทธิภาพ \n"
-"\n"
-"### วัตถุประสงค์ส่วนบุคคล\n"
-"\n"
-"กำหนดเป้าหมายที่ชัดเจนให้กับผู้ใช้เพื่อให้สอดคล้องกับวัตถุประสงค์ของบริษัท \n"
-"\n"
-"### เป้าหมายของทีม\n"
-"\n"
-"เปรียบเทียบรายได้กับการคาดการณ์และงบประมาณแบบเรียลไทม์\n"
-"\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_mrp
@@ -35173,13 +35753,13 @@ msgstr ""
 "------------------------------------\n"
 "\n"
 "จัดการรายการวัสดุ วางแผนใบสั่งผลิต ติดตามใบสั่งงานด้วย\n"
-" แอป<a href=\"https://www.odoo.com/app/manufacturing\">โอเพ่นซอร์ส MRP</a>ของ "
+" แอป<a href=\"https://www.odoo.com/app/manufacturing\">โอเพนซอร์ส MRP</a>ของ "
 "Odoo\n"
 "\n"
 "ให้การดำเนินการประกอบหรือการผลิตทั้งหมดของคุณได้รับการจัดการโดย Odoo กำหนดการ\n"
 "ใบสั่งผลิตและใบสั่งงานอัตโนมัติ ทบทวนข้อเสนอ\n"
 "การวางแผนด้วยมุมมองคัมบังและแกนต์อันชาญฉลาด ใช้ฟีเจอร์การวิเคราะห์ขั้นสูง\n"
-"ในการตรวจจับปัญหาที่แก้ไขได้ยากในความจุของทรัพยากรและตำแหน่งสินค้าคงคลัง\n"
+"ในการตรวจจับปัญหาที่แก้ไขได้ยากในความจุของทรัพยากรและตำแหน่งคลังสินค้า\n"
 "\n"
 "กำหนดเวลาใบสั่งผลิตอย่างมีประสิทธิภาพ\n"
 "---------------------------------------------\n"
@@ -35218,7 +35798,7 @@ msgstr ""
 "กำหนดการในมุมมองแกนต์\n"
 "\n"
 "\n"
-"การวิเคราะห์สินค้าคงคลังและการผลิต\n"
+"การวิเคราะห์คลังสินค้าและการผลิต\n"
 "------------------------------------\n"
 "\n"
 "ติดตามวิวัฒนาการของมูลค่าสต็อกตามระดับการผลิต\n"
@@ -35228,8 +35808,8 @@ msgstr ""
 "--------------------------------\n"
 "\n"
 "ทำให้การวางแผนทรัพยากรการผลิตของคุณถูกต้องแม่นยำด้วยการบูรณาการอย่างเต็มรูปแบบ\n"
-"ด้วยแอปการขายและการจัดซื้อ "
-"การผสานการใช้งานทางระบบบัญชีช่วยให้สามารถดำเนินการแบบเรียลไทม์\n"
+"ด้วยแอปการขายและการจัดซื้อ การผสานการใช้งานทางระบบบัญชีช่วยให้สามารถดำเนินการแบบเรียลไท"
+"ม์\n"
 "การประเมินมูลค่าทางบัญชีและการรายงานเชิงลึกเกี่ยวกับต้นทุนและรายได้ของ\n"
 "การดำเนินการผลิตของคุณ\n"
 "\n"
@@ -35611,77 +36191,76 @@ msgstr ""
 "Odoo\n"
 "มีอินเตอร์เฟซที่สะอาดตาและไม่ต้องติดตั้ง สามารถทำงานออนไลน์และออฟไลน์ได้บนฮาร์ดแวร์ที่ทันสมัย\n"
 "\n"
-"การผสมผสานกับสินค้าคงคลังและบัญชีของบริษัทให้คุณได้สถิติและการรวมกันแบบเรียลไทม์ในร้านค้าทั้งหมดโดยไม่ต้องยุ่งยากในการรวมแอปพลิเคชันหลายๆแอปพลิเคชัน\n"
+"การผสมผสานกับคลังสินค้าและบัญชีของบริษัทให้คุณได้สถิติและการรวมกันแบบเรียลไทม์ในร้านค้าทั้งหมดโดย"
+"ไม่ต้องยุ่งยากในการรวมแอปพลิเคชันหลายๆแอปพลิเคชัน\n"
 "\n"
 "ทำงานกับฮาร์ดแวร์ที่คุณมีอยู่แล้ว\n"
 "---------------------------------------\n"
 "\n"
 "### ในเบราว์เซอร์ของคุณ\n"
 "\n"
-"POS ของ Odoo "
-"เป็นแอปพลิเคชันเว็บที่สามารถทำงานได้บนอุปกรณ์ใดก็ได้ที่สามารถแสดงเว็บไซต์ได้โดยการตั้งค่าง่ายๆ\n"
+"POS ของ Odoo เป็นแอปพลิเคชันเว็บที่สามารถทำงานได้บนอุปกรณ์ใดก็ได้ที่สามารถแสดงเว็บไซต์ได้โดยก"
+"ารตั้งค่าง่ายๆ\n"
 "\n"
 "### เป็นจอสัมผัสหรือแป้นพิมพ์?\n"
 "\n"
-"การขายหน้าร้านทำงานได้อย่างสมบูรณ์บนอุปกรณ์ที่สามารถใช้สัมผัสได้ "
-"ไม่ว่าจะเป็นแท็บเล็ตที่รองรับการสัมผัสหลายจุดเช่น iPad หรือเครื่องสัมผัสแบบไม่มีแป้นพิมพ์\n"
+"การขายหน้าร้านทำงานได้อย่างสมบูรณ์บนอุปกรณ์ที่สามารถใช้สัมผัสได้ ไม่ว่าจะเป็นแท็บเล็ตที่รองรับการสัม"
+"ผัสหลายจุดเช่น iPad หรือเครื่องสัมผัสแบบไม่มีแป้นพิมพ์\n"
 "\n"
 "### เครื่องชั่งและเครื่องพิมพ์\n"
 "\n"
-"สแกนบาร์โค้ดและเครื่องพิมพ์สนับสนุนโดยอัตโนมัติโดยไม่ต้องตั้งค่า สามารถใช้เครื่องชั่ง ลิ้นชักเงินสด "
-"และอุปกรณ์เสริมอื่นๆ กับ API พร็อกซี\n"
+"สแกนบาร์โค้ดและเครื่องพิมพ์สนับสนุนโดยอัตโนมัติโดยไม่ต้องตั้งค่า สามารถใช้เครื่องชั่ง ลิ้นชักเงินสด แล"
+"ะอุปกรณ์เสริมอื่นๆ กับ API พร็อกซี\n"
 "\n"
 "ออนไลน์และออฟไลน์\n"
 "------------------\n"
 "\n"
 "### POS ของ Odoo ยังคงเป็นที่เชื่อถือได้แม้ว่าการเชื่อมต่อของคุณจะไม่ได้\n"
 "\n"
-"สามารถเปิดร้านค้าใหม่ได้เพียงแค่มีการเชื่อมต่ออินเทอร์เน็ต: **ไม่ต้องติดตั้ง "
-"ไม่ต้องมีฮาร์ดแวร์เฉพาะ** สามารถทำงานได้กับ **iPad, Tablet PC, แล็ปท็อป** หรือเครื่อง "
-"POS อุตสาหกรรม\n"
+"สามารถเปิดร้านค้าใหม่ได้เพียงแค่มีการเชื่อมต่ออินเทอร์เน็ต: **ไม่ต้องติดตั้ง ไม่ต้องมีฮาร์ดแวร์เฉพา"
+"ะ** สามารถทำงานได้กับ **iPad, Tablet PC, แล็ปท็อป** หรือเครื่อง POS อุตสาหกรรม\n"
 "\n"
-"แม้ว่าจะต้องการการเชื่อมต่ออินเทอร์เน็ตเพื่อเริ่มต้นการขายหน้าร้าน "
-"แต่จะยังคงทำงานได้แม้ว่าการตัดสายเชื่อมต่อจะเกิดขึ้น\n"
+"แม้ว่าจะต้องการการเชื่อมต่ออินเทอร์เน็ตเพื่อเริ่มต้นการขายหน้าร้าน แต่จะยังคงทำงานได้แม้ว่าการตัดสา"
+"ยเชื่อมต่อจะเกิดขึ้น\n"
 "\n"
 "อินเตอร์เฟซผู้ใช้ที่สะอาดตาและง่ายต่อการใช้งาน\n"
 "----------------------------\n"
 "\n"
 "### ง่ายและสวยงาม\n"
 "\n"
-"บอกลาซอฟต์แวร์ POS ที่น่าเบื่อและล้าสมัยได้แล้ว เพลิดเพลินไปกับอินเตอร์เฟซเว็บของ Odoo "
-"ที่ออกแบบมาสำหรับลูกค้ารุ่นใหม่\n"
+"บอกลาซอฟต์แวร์ POS ที่น่าเบื่อและล้าสมัยได้แล้ว เพลิดเพลินไปกับอินเตอร์เฟซเว็บของ Odoo ที่ออกแบบ"
+"มาสำหรับลูกค้ารุ่นใหม่\n"
 "\n"
 "### ออกแบบเพื่อการผลิต\n"
 "\n"
-"ไม่ว่าจะเป็นร้านอาหารหรือร้านค้า คุณสามารถเปิดใช้งานคำสั่งหลายๆ "
-"อันพร้อมกันเพื่อไม่ให้ลูกค้าต้องรอนาน\n"
+"ไม่ว่าจะเป็นร้านอาหารหรือร้านค้า คุณสามารถเปิดใช้งานคำสั่งหลายๆ อันพร้อมกันเพื่อไม่ให้ลูกค้าต้องรอน"
+"าน\n"
 "\n"
 "### ค้นหาอย่างรวดเร็ว\n"
 "\n"
-"สแกนสินค้า เรียกดูผ่านหมวดหมู่ชั้นเชิงลึก "
-"หรือรับข้อมูลอย่างรวดเร็วเกี่ยวกับสินค้าด้วยตัวกรองที่เร็วและแรงที่สุดในสินค้าทั้งหมดของคุณ\n"
+"สแกนสินค้า เรียกดูผ่านหมวดหมู่ชั้นเชิงลึก หรือรับข้อมูลอย่างรวดเร็วเกี่ยวกับสินค้าด้วยตัวกรองที่เร็วและแ"
+"รงที่สุดในสินค้าทั้งหมดของคุณ\n"
 "\n"
 "ผสานการจัดการคลังสินค้า\n"
 "-------------------------------\n"
 "\n"
-"รวมทีมขายทั้งหมดของคุณในเวลาจริง: ร้านค้า อีคอมเมิร์ซ ทีมขาย "
-"ได้ควบคุมการจัดการคลังสินค้าและการคาดการณ์ที่แม่นยำในการจัดการการจัดซื้อ\n"
+"รวมทีมขายทั้งหมดของคุณในเวลาจริง: ร้านค้า อีคอมเมิร์ซ ทีมขาย ได้ควบคุมการจัดการคลังสินค้าและกา"
+"รคาดการณ์ที่แม่นยำในการจัดการการจัดซื้อ\n"
 "\n"
-"ระบบการจัดการคลังสินค้าแบบครบวงจรที่คุณสามารถเข้าถึงได้ง่าย: "
-"รับข้อมูลเกี่ยวกับความพร้อมใช้งานของสินค้า สั่งการจัดซื้อและอื่นๆ\n"
+"ระบบการจัดการคลังสินค้าแบบครบวงจรที่คุณสามารถเข้าถึงได้ง่าย: รับข้อมูลเกี่ยวกับความพร้อมใช้งานขอ"
+"งสินค้า สั่งการจัดซื้อและอื่นๆ\n"
 "\n"
 "ให้บริการลูกค้าในร้านค้า\n"
 "----------------------------------\n"
 "\n"
-"ให้ประสบการณ์ที่ดีกับลูกค้าของคุณโดยการรวมบริการลูกค้าในร้านค้า จัดการการซ่อม "
-"ติดตามการรับประกัน ติดตามการเรียกร้องของลูกค้า วางแผนการส่งสินค้าและอื่นๆ\n"
+"ให้ประสบการณ์ที่ดีกับลูกค้าของคุณโดยการรวมบริการลูกค้าในร้านค้า จัดการการซ่อม ติดตามการรับประกั"
+"น ติดตามการเรียกร้องของลูกค้า วางแผนการส่งสินค้าและอื่นๆ\n"
 "\n"
 "การผสานการใช้งานระหว่างระบบบัญชีและใบแจ้งหนี้\n"
 "----------------------------------\n"
 "\n"
-"สร้างใบแจ้งหนี้ลูกค้าได้โดยคลิกไม่กี่ครั้ง "
-"ควบคุมการขายและเงินสดในเวลาจริงและใช้รายงานที่มีประสิทธิภาพของ Odoo "
-"เพื่อตัดสินใจที่ดีกว่าเพื่อเพิ่มประสิทธิภาพของร้านค้าของคุณ\n"
+"สร้างใบแจ้งหนี้ลูกค้าได้โดยคลิกไม่กี่ครั้ง ควบคุมการขายและเงินสดในเวลาจริงและใช้รายงานที่มีประสิทธิ"
+"ภาพของ Odoo เพื่อตัดสินใจที่ดีกว่าเพื่อเพิ่มประสิทธิภาพของร้านค้าของคุณ\n"
 "\n"
 "ไม่ต้องยุ่งยากในการรวมซอฟต์แวร์: รับการดำเนินการขายและคลังสินค้าทั้งหมดที่โพสต์โดยอัตโนมัติใน G/"
 "L ของคุณ\n"
@@ -35689,18 +36268,17 @@ msgstr ""
 "ข้อมูลที่รวมกันในร้านค้าทั้งหมด\n"
 "------------------------------\n"
 "\n"
-"รับผลิตภัณฑ์ใหม่ กลยุทธ์การกำหนดราคา และโปรโมชั่นที่ใช้งานโดยอัตโนมัติในร้านค้าที่เลือกได้ "
-"ทำงานกับฐานลูกค้าที่รวมกัน "
-"ไม่จำเป็นต้องมีอินเตอร์เฟซที่ซับซ้อนเพื่อควบคุมกลยุทธ์ทั่วโลกในร้านค้าทั้งหมดของคุณ\n"
+"รับผลิตภัณฑ์ใหม่ กลยุทธ์การกำหนดราคา และโปรโมชั่นที่ใช้งานโดยอัตโนมัติในร้านค้าที่เลือกได้ ทำงานกับ"
+"ฐานลูกค้าที่รวมกัน ไม่จำเป็นต้องมีอินเตอร์เฟซที่ซับซ้อนเพื่อควบคุมกลยุทธ์ทั่วโลกในร้านค้าทั้งหมดของคุณ\n"
 "\n"
-"ด้วย Odoo เป็นการทำงานเบื้องหลัง "
-"คุณจะได้ระบบที่เหมาะสมอย่างสมบูรณ์แบบสำหรับร้านค้าขนาดเล็กหรือบริษัทระดับโลก\n"
+"ด้วย Odoo เป็นการทำงานเบื้องหลัง คุณจะได้ระบบที่เหมาะสมอย่างสมบูรณ์แบบสำหรับร้านค้าขนาดเล็กหรื"
+"อบริษัทระดับโลก\n"
 "\n"
 "รู้จักลูกค้าของคุณ - ทั้งในร้านค้าและออนไลน์\n"
 "--------------------------------------\n"
 "\n"
-"แบรนด์ที่ประสบความสำเร็จรวมทั้งความสัมพันธ์กับลูกค้าของพวกเขาทั้งหมดในช่องทางการขายทั้งหมดเพื่อพัฒนาโปรไฟล์ลูกค้าที่แม่นยำและสื่อสารกับลูกค้าเมื่อพวกเขาตัดสินใจซื้อสินค้า "
-"ทั้งในร้านค้าหรือออนไลน์\n"
+"แบรนด์ที่ประสบความสำเร็จรวมทั้งความสัมพันธ์กับลูกค้าของพวกเขาทั้งหมดในช่องทางการขายทั้งหมดเพื่อพั"
+"ฒนาโปรไฟล์ลูกค้าที่แม่นยำและสื่อสารกับลูกค้าเมื่อพวกเขาตัดสินใจซื้อสินค้า ทั้งในร้านค้าหรือออนไลน์\n"
 "\n"
 "ด้วย Odoo คุณจะได้รับมุมมองลูกค้าแบบ 360 องศา รวมถึงการขายทางช่องทางต่างๆ ประวัติการติดต่อ "
 "โปรไฟล์ และอื่นๆ อีกมากมาย\n"
@@ -35793,61 +36371,59 @@ msgstr ""
 "-----------------\n"
 "\n"
 "ดำเนินการขอเบิกจ่ายอัตโนมัติ ควบคุมการออกใบแจ้งหนี้ด้วย Odoo\n"
-"<a href=\"https://www.odoo.com/app/purchase\">ซัพพลายเชนแบบโอเพ่นซอร์ส</a>\n"
+"<a href=\"https://www.odoo.com/app/purchase\">ซัพพลายเชนแบบโอเพนซอร์ส</a>\n"
 "\n"
-"ข้อเสนอการจัดซื้ออัตโนมัติ คำขอเปิดตัวใบเสนอราคา ติดตามใบสั่งซื้อ จัดการข้อมูลของผู้ขาย "
-"ควบคุมการรับผลิตภัณฑ์ และตรวจสอบใบแจ้งหนี้ของผู้ขาย\n"
+"ข้อเสนอการจัดซื้ออัตโนมัติ คำขอเปิดตัวใบเสนอราคา ติดตามใบสั่งซื้อ จัดการข้อมูลของผู้ขาย ควบคุมการ"
+"รับผลิตภัณฑ์ และตรวจสอบใบแจ้งหนี้ของผู้ขาย\n"
 "\n"
 "ข้อเสนอการจัดซื้อแบบอัตโนมัติ\n"
 "----------------------------------\n"
 "\n"
-"ลดระดับสินค้าคงคลังด้วยกฎการจัดซื้อ "
-"รับข้อเสนอการซื้อที่ถูกต้องในเวลาที่เหมาะสมเพื่อลดระดับสินค้าคงคลังของคุณ "
-"ปรับปรุงประสิทธิภาพการจัดซื้อและสินค้าคงคลังของคุณด้วยกฎการจัดซื้อขึ้นอยู่กับระดับสต็อก "
-"กฎด้านลอจิสติกส์ ใบสั่งขาย ใบสั่งผลิตที่คาดการณ์ไว้ และอื่นๆ\n"
+"ลดระดับคลังสินค้าด้วยกฎการจัดซื้อ รับข้อเสนอการซื้อที่ถูกต้องในเวลาที่เหมาะสมเพื่อลดระดับคลังสินค้าขอ"
+"งคุณ ปรับปรุงประสิทธิภาพการจัดซื้อและคลังสินค้าของคุณด้วยกฎการจัดซื้อขึ้นอยู่กับระดับสต็อก กฎด้านลอจิส"
+"ติกส์ ใบสั่งขาย ใบสั่งผลิตที่คาดการณ์ไว้ และอื่นๆ\n"
 "\n"
-"ส่งคำขอใบเสนอราคาหรือใบสั่งซื้อไปยังผู้ขายของคุณได้ในคลิกเดียว "
-"เข้าถึงการรับผลิตภัณฑ์และใบแจ้งหนี้จากใบสั่งซื้อของคุณ\n"
+"ส่งคำขอใบเสนอราคาหรือใบสั่งซื้อไปยังผู้ขายของคุณได้ในคลิกเดียว เข้าถึงการรับผลิตภัณฑ์และใบแจ้งหนี้จ"
+"ากใบสั่งซื้อของคุณ\n"
 "\n"
 "การจัดซื้อประกวดราคา\n"
 "----------------\n"
 "\n"
-"เปิดตัวการประมูล บูรณาการคำตอบของผู้ขายในกระบวนการ และเปรียบเทียบข้อเสนอ "
-"เลือกข้อเสนอที่ดีที่สุดและส่งคำสั่งซื้อได้อย่างง่ายดาย "
-"ใช้การรายงานเพื่อวิเคราะห์คุณภาพของผู้ขายของคุณในภายหลัง\n"
+"เปิดตัวการประมูล บูรณาการคำตอบของผู้ขายในกระบวนการ และเปรียบเทียบข้อเสนอ เลือกข้อเสนอที่ดีที่"
+"สุดและส่งคำสั่งซื้อได้อย่างง่ายดาย ใช้การรายงานเพื่อวิเคราะห์คุณภาพของผู้ขายของคุณในภายหลัง\n"
 "\n"
 "\n"
 "ผสานการใช้งานกับอีเมล\n"
 "------------------\n"
 "\n"
-"รวมการสื่อสารของผู้ขายทั้งหมดเกี่ยวกับใบสั่งซื้อ (หรือ RfQ) "
-"เพื่อให้สามารถตรวจสอบย้อนกลับได้ดีในการเจรจาต่อรองหรือปัญหาด้านบริการหลังการขาย "
-"ใช้โมดูลการจัดการการเรียกร้องเพื่อติดตามปัญหาที่เกี่ยวข้องกับผู้ขาย\n"
+"รวมการสื่อสารของผู้ขายทั้งหมดเกี่ยวกับใบสั่งซื้อ (หรือ RfQ) เพื่อให้สามารถตรวจสอบย้อนกลับได้ดีในกา"
+"รเจรจาต่อรองหรือปัญหาด้านบริการหลังการขาย ใช้โมดูลการจัดการการเรียกร้องเพื่อติดตามปัญหาที่เกี่ยว"
+"ข้องกับผู้ขาย\n"
 "\n"
 "ราคามาตรฐาน ราคาเฉลี่ย FIFO\n"
 "------------------------------------\n"
 "\n"
-"ใช้วิธีการคิดต้นทุนที่สะท้อนถึงธุรกิจของคุณ: ราคามาตรฐาน ราคาเฉลี่ย fifo หรือ lifo "
-"รับรายการบัญชีของคุณและการประเมินมูลค่าสินค้าคงคลังที่ถูกต้องแบบเรียลไทม์ Odoo "
-"จัดการทุกอย่างให้คุณอย่างโปร่งใส\n"
+"ใช้วิธีการคิดต้นทุนที่สะท้อนถึงธุรกิจของคุณ: ราคามาตรฐาน ราคาเฉลี่ย fifo หรือ lifo รับรายการบัญ"
+"ชีของคุณและการประเมินมูลค่าคลังสินค้าที่ถูกต้องแบบเรียลไทม์ Odoo จัดการทุกอย่างให้คุณอย่างโปร่งใ"
+"ส\n"
 "\n"
 "นำเข้ารายการราคาผู้ขาย\n"
 "-------------------------------\n"
 "\n"
-"ตัดสินใจซื้ออย่างชาญฉลาดโดยใช้ราคาที่ดีที่สุด นำเข้ารายการราคาของผู้ขายได้อย่างง่ายดาย "
-"เพื่อตัดสินใจซื้ออย่างชาญฉลาดยิ่งขึ้นโดยพิจารณาจากโปรโมชั่นและราคาจะขึ้นอยู่กับปริมาณและเงื่อนไขสัญญาพิเศษ "
-"คุณสามารถตั้งราคาขายของคุณขึ้นอยู่กับราคาของผู้ขายของคุณได้\n"
+"ตัดสินใจซื้ออย่างชาญฉลาดโดยใช้ราคาที่ดีที่สุด นำเข้ารายการราคาของผู้ขายได้อย่างง่ายดาย เพื่อตัดสินใ"
+"จซื้ออย่างชาญฉลาดยิ่งขึ้นโดยพิจารณาจากโปรโมชั่นและราคาจะขึ้นอยู่กับปริมาณและเงื่อนไขสัญญาพิเศษ คุณ"
+"สามารถตั้งราคาขายของคุณขึ้นอยู่กับราคาของผู้ขายของคุณได้\n"
 "\n"
 "ควบคุมผลิตภัณฑ์และใบแจ้งหนี้\n"
 "---------------------------------\n"
 "\n"
-"จะไม่มีผลิตภัณฑ์หรือคำสั่งซื้อใดถูกทิ้งไว้ข้างหลังอีกต่อไป "
-"การควบคุมสินค้าคงคลังทำให้คุณสามารถจัดการคำสั่งซื้อที่ส่งคืน การคืนเงิน การรับผลิตภัณฑ์ "
-"และการควบคุมคุณภาพ เลือกวิธีการควบคุมที่เหมาะสมตามความต้องการของคุณ\n"
+"จะไม่มีผลิตภัณฑ์หรือคำสั่งซื้อใดถูกทิ้งไว้ข้างหลังอีกต่อไป การควบคุมคลังสินค้าทำให้คุณสามารถจัดการคำสั่ง"
+"ซื้อที่ส่งคืน การคืนเงิน การรับผลิตภัณฑ์ และการควบคุมคุณภาพ เลือกวิธีการควบคุมที่เหมาะสมตามความต้อ"
+"งการของคุณ\n"
 "\n"
-"ควบคุมใบเรียกเก็บเงินของผู้ขายโดยไม่ต้องใช้ความพยายาม "
-"เลือกวิธีการที่เหมาะสมตามความต้องการของคุณ: สร้างใบแจ้งหนี้ร่างล่วงหน้าตามใบสั่งซื้อ, "
-"การรับผลิตภัณฑ์, สร้างใบแจ้งหนี้ด้วยตนเอง และรายการนำเข้าจากใบสั่งซื้อ และอื่นๆ\n"
+"ควบคุมใบเรียกเก็บเงินของผู้ขายโดยไม่ต้องใช้ความพยายาม เลือกวิธีการที่เหมาะสมตามความต้องการขอ"
+"งคุณ: สร้างใบแจ้งหนี้ร่างล่วงหน้าตามใบสั่งซื้อ, การรับผลิตภัณฑ์, สร้างใบแจ้งหนี้ด้วยตนเอง และรายกา"
+"รนำเข้าจากใบสั่งซื้อ และอื่นๆ\n"
 "\n"
 
 #. module: base
@@ -36286,7 +36862,7 @@ msgstr ""
 "\n"
 "### เพิ่มประสิทธิภาพการขายด้วยร้านค้าออนไลน์ที่ยอดเยี่ยม\n"
 "\n"
-"Odoo คือ <a href=\"https://www.odoo.com/app/ecommerce\">อีคอมเมิร์ซแบบโอเพ่นซอร์ส</"
+"Odoo คือ <a href=\"https://www.odoo.com/app/ecommerce\">อีคอมเมิร์ซแบบโอเพนซอร์ส</"
 "a>\n"
 "ไม่เหมือนที่คุณเคยเห็นมาก่อน ใช้งานแคตตาล็อกผลิตภัณฑ์ที่ยอดเยี่ยม\n"
 "และหน้ารายละเอียดสินค้าที่ยอดเยี่ยม\n"
@@ -36314,8 +36890,8 @@ msgstr ""
 "อัลกอริทึมการเพิ่มยอดขายของ Odoo ช่วยให้คุณสามารถแสดงให้ผู้เยี่ยมชมเห็นสินค้าที่คล้ายกันแต่\n"
 "สินค้าจะมีราคามากกว่า เพื่อเป็นการจูงใจ\n"
 "\n"
-"ฟีเจอร์การแก้ไขแบบอินไลน์ช่วยให้คุณเปลี่ยนราคา "
-"เปิดตัวโปรโมชั่นหรือปรับแต่งคำอธิบายของผลิตภัณฑ์ด้วยการคลิกเพียงครั้งเดียว\n"
+"ฟีเจอร์การแก้ไขแบบอินไลน์ช่วยให้คุณเปลี่ยนราคา เปิดตัวโปรโมชั่นหรือปรับแต่งคำอธิบายของผลิตภัณฑ์ด้วย"
+"การคลิกเพียงครั้งเดียว\n"
 "\n"
 "การผสานการใช้งานกับ Google Analytics ที่สะอาดตา\n"
 "------------------------------------\n"
@@ -36324,8 +36900,8 @@ msgstr ""
 "ได้รับการกำหนดค่าตามค่าเริ่มต้นเพื่อติดตามกิจกรรมทุกประเภทที่เกี่ยวข้องกับการช็อปปิ้ง\n"
 "รถเข็น คำกระตุ้นการตัดสินใจ และอีกมากมาย\n"
 "\n"
-"เนื่องจากเครื่องมือทางการตลาดของ Odoo (การส่งจดหมายจำนวนมาก แคมเปญ อื่นๆ) "
-"ก็เชื่อมโยงด้วย\n"
+"เนื่องจากเครื่องมือทางการตลาดของ Odoo (การส่งจดหมายจำนวนมาก แคมเปญ อื่นๆ) ก็เชื่อมโยงด้ว"
+"ย\n"
 "Google Analytics คุณจะได้รับมุมมองที่สมบูรณ์เกี่ยวกับธุรกิจของคุณ\n"
 "\n"
 "กำหนดเป้าหมายตลาดใหม่\n"
@@ -36343,8 +36919,8 @@ msgstr ""
 "----------------------\n"
 "\n"
 "ควบคุมวิธีแสดงผลิตภัณฑ์ของคุณในหน้าแค็ตตาล็อกได้อย่างเต็มที่:\n"
-"ติดริบบิ้นเพื่อส่งเสริมการขาย ขนาดของผลิตภัณฑ์ที่เกี่ยวข้อง ส่วนลด ตัวเลือกสินค้า มุมมองตาราง/"
-"รายการ\n"
+"ติดริบบิ้นเพื่อส่งเสริมการขาย ขนาดของผลิตภัณฑ์ที่เกี่ยวข้อง ส่วนลด ตัวเลือกสินค้า มุมมองตาราง/รายกา"
+"ร\n"
 "และอื่นๆ\n"
 "\n"
 "แก้ไขผลิตภัณฑ์ในรายการเพื่อทำให้เว็บไซต์ของคุณพัฒนาไปตามความต้องการของลูกค้า\n"
@@ -36373,13 +36949,12 @@ msgstr ""
 "จัดการเครือข่ายของผู้ค้าปลีก เพื่อกำหนดเป้าหมายตลาดใหม่ มีการดำเนินงานในท้องถิ่น หรือขยาย\n"
 "เครือข่ายของคุณ ให้พวกเขาสามารถเข้าถึงพอร์ทัลผู้ค้าปลีกของคุณได้อย่างมีประสิทธิภาพ\n"
 "\n"
-"โปรโมทผู้ค้าปลีกของคุณทางออนไลน์ ส่งต่อโอกาสในการขายไปยังผู้ค้าปลีก "
-"(พร้อมฟีเจอร์การระบุตำแหน่งทางภูมิศาสตร์ในตัว) กำหนดรายการราคาเฉพาะ "
-"เปิดตัวโปรแกรมสะสมคะแนน\n"
+"โปรโมทผู้ค้าปลีกของคุณทางออนไลน์ ส่งต่อโอกาสในการขายไปยังผู้ค้าปลีก (พร้อมฟีเจอร์การระบุตำแหน่ง"
+"ทางภูมิศาสตร์ในตัว) กำหนดรายการราคาเฉพาะ เปิดตัวโปรแกรมสะสมคะแนน\n"
 "(เสนอส่วนลดเฉพาะให้กับลูกค้าหรือผู้ค้าปลีกที่ดีที่สุดของคุณ)\n"
 "\n"
 "รับประโยชน์จาก Odoo ในร้านค้าออนไลน์ของคุณ: เครื่องมือการจัดการภาษีที่ทรงพลัง\n"
-"โครงสร้างการกำหนดราคาที่ยืดหยุ่น โซลูชันการจัดการสินค้าคงคลัง อินเทอร์เฟซตัวแทนจำหน่าย\n"
+"โครงสร้างการกำหนดราคาที่ยืดหยุ่น โซลูชันการจัดการคลังสินค้า อินเทอร์เฟซตัวแทนจำหน่าย\n"
 "ที่สนับสนุนผลิตภัณฑ์ที่มีพฤติกรรมแตกต่างกัน สินค้าจริง\n"
 "กิจกรรม บริการ และตัวเลือกสินค้า\n"
 "\n"
@@ -36436,8 +37011,8 @@ msgstr ""
 "\n"
 "### กิจกรรมออนไลน์\n"
 "\n"
-"กำหนดเวลา จัดระเบียบ ส่งเสริมหรือขายกิจกรรมออนไลน์ การประชุม การสัมมนาผ่านเว็บ "
-"การฝึกอบรม\n"
+"กำหนดเวลา จัดระเบียบ ส่งเสริมหรือขายกิจกรรมออนไลน์ การประชุม การสัมมนาผ่านเว็บ การฝึกอบร"
+"ม\n"
 "\n"
 
 #. module: base
@@ -36632,6 +37207,12 @@ msgstr "เฉพาะผู้ดูแลระบบเท่านั้น
 #: code:addons/base/models/ir_attachment.py:0
 msgid "Only administrators can execute this action."
 msgstr "มีเพียงผู้ดูแลระบบเท่านั้นที่สามารถดำเนินการนี้ได้"
+
+#. module: base
+#. odoo-python
+#: code:addons/fields_binary.py:0
+msgid "Only admins can upload SVG files."
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_ui_view__mode
@@ -37072,41 +37653,41 @@ msgstr ""
 "\n"
 "### กำหนดการ โปรโมท ขาย จัดระเบียบ\n"
 "\n"
-"จัดระเบียบ โปรโมท และขายกิจกรรมออนไลน์ ไม่ว่าคุณจะจัดการประชุม การฝึกอบรม "
-"หรือการสัมมนาผ่านเว็บ Odoo ให้ฟีเจอร์ทั้งหมดที่คุณต้องการในการจัดการกิจกรรมของคุณ\n"
+"จัดระเบียบ โปรโมท และขายกิจกรรมออนไลน์ ไม่ว่าคุณจะจัดการประชุม การฝึกอบรม หรือการสัมมนาผ่า"
+"นเว็บ Odoo ให้ฟีเจอร์ทั้งหมดที่คุณต้องการในการจัดการกิจกรรมของคุณ\n"
 "\n"
 "สร้างหน้ากิจกรรมที่ยอดเยี่ยม\n"
 "-------------------------------\n"
 "\n"
 "### กำจัดโปรแกรมแก้ไข WYSIWYG แบบเดิม\n"
 "\n"
-"สร้างหน้ากิจกรรมที่สวยงามด้วยการลากและวาง *'บล็อกสำเร็จรูป'* ที่ออกแบบมาอย่างดี "
-"เผยแพร่ภาพกิจกรรม ผู้บรรยาย กำหนดการ ฯลฯ\n"
+"สร้างหน้ากิจกรรมที่สวยงามด้วยการลากและวาง *'บล็อกสำเร็จรูป'* ที่ออกแบบมาอย่างดี เผยแพร่ภาพกิ"
+"จกรรม ผู้บรรยาย กำหนดการ ฯลฯ\n"
 "\n"
-"วิธีการ *'แก้ไขอินไลน์'* อันเป็นเอกลักษณ์ของ Odoo "
-"ทำให้การสร้างเว็บไซต์เป็นเรื่องง่ายอย่างน่าประหลาดใจ “บางทีต้องแนะนำผู้บรรยาย "
-"เปลี่ยนราคาบัตรเข้างาน อัปเดตแบนเนอร์ โปรโมทสปอนเซอร์ไหม?” เพียงคลิกและเปลี่ยนก็ทำได้ทันที\n"
+"วิธีการ *'แก้ไขอินไลน์'* อันเป็นเอกลักษณ์ของ Odoo ทำให้การสร้างเว็บไซต์เป็นเรื่องง่ายอย่างน่าประ"
+"หลาดใจ “บางทีต้องแนะนำผู้บรรยาย เปลี่ยนราคาบัตรเข้างาน อัปเดตแบนเนอร์ โปรโมทสปอนเซอร์ไห"
+"ม?” เพียงคลิกและเปลี่ยนก็ทำได้ทันที\n"
 "\n"
 "ขายบัตรออนไลน์\n"
 "-------------------\n"
 "\n"
 "### ทำให้ขั้นตอนการลงทะเบียนและการชำระเงินเป็นแบบอัตโนมัติ\n"
 "\n"
-"ขายการลงทะเบียนเข้าร่วมกิจกรรมของคุณด้วยฟีเจอร์การซื้อบัตรหลายใบ "
-"กิจกรรมสามารถจัดขึ้นได้ฟรีหรือมีค่าธรรมเนียม "
-"ผู้เข้าร่วมสามารถชำระเงินออนไลน์ด้วยบัตรเครดิตหรือใบแจ้งหนี้ ขึ้นอยู่กับการกำหนดค่าของคุณ\n"
+"ขายการลงทะเบียนเข้าร่วมกิจกรรมของคุณด้วยฟีเจอร์การซื้อบัตรหลายใบ กิจกรรมสามารถจัดขึ้นได้ฟรีหรือ"
+"มีค่าธรรมเนียม ผู้เข้าร่วมสามารถชำระเงินออนไลน์ด้วยบัตรเครดิตหรือใบแจ้งหนี้ ขึ้นอยู่กับการกำหนดค่าข"
+"องคุณ\n"
 "\n"
-"เพิ่มยอดขายของคุณด้วยราคาสำหรับผู้ที่จองล่วงหน้า เงื่อนไขพิเศษสำหรับสมาชิก "
-"หรือบริการพิเศษด้วยบัตรหลายใบ\n"
+"เพิ่มยอดขายของคุณด้วยราคาสำหรับผู้ที่จองล่วงหน้า เงื่อนไขพิเศษสำหรับสมาชิก หรือบริการพิเศษด้วยบัตร"
+"หลายใบ\n"
 "\n"
 "การผสานการใช้งานกับ Google Analytics ที่สะอาดตา\n"
 "------------------------------------\n"
 "\n"
 "### ควบคุมช่องทางการขายของคุณด้วย Google Analytics\n"
 "\n"
-"มองเห็นช่องทางการขายของคุณอย่างชัดเจน เครื่องมือติดตาม Google Analytics ของ Odoo "
-"ได้รับการกำหนดค่าตามค่าเริ่มต้นเพื่อติดตามกิจกรรมทุกประเภทที่เกี่ยวข้องกับตะกร้าสินค้า "
-"คำกระตุ้นการตัดสินใจ และอีกมากมาย\n"
+"มองเห็นช่องทางการขายของคุณอย่างชัดเจน เครื่องมือติดตาม Google Analytics ของ Odoo ได้รับก"
+"ารกำหนดค่าตามค่าเริ่มต้นเพื่อติดตามกิจกรรมทุกประเภทที่เกี่ยวข้องกับตะกร้าสินค้า คำกระตุ้นการตัดสินใ"
+"จ และอีกมากมาย\n"
 "\n"
 "เนื่องจากเครื่องมือทางการตลาดของ Odoo (การส่งจดหมายจำนวนมาก แคมเปญ) เชื่อมโยงกับ "
 "Google Analytics คุณจึงเห็นภาพรวมของธุรกิจของคุณได้\n"
@@ -37116,19 +37697,18 @@ msgstr ""
 "\n"
 "### การส่งจดหมายจำนวนมากและโซเชียลมีเดีย\n"
 "\n"
-"ใช้การแบ่งส่วน การบูรณาการเครือข่ายโซเชียล "
-"และฟีเจอร์การส่งจดหมายจำนวนมากเพื่อโปรโมทกิจกรรมของคุณไปยังผู้ชมที่เหมาะสม "
-"ตั้งค่าอีเมลอัตโนมัติถึงผู้เข้าร่วมเพื่อส่งรายละเอียดในนาทีสุดท้ายให้พวกเขา\n"
+"ใช้การแบ่งส่วน การบูรณาการเครือข่ายโซเชียล และฟีเจอร์การส่งจดหมายจำนวนมากเพื่อโปรโมทกิจกรร"
+"มของคุณไปยังผู้ชมที่เหมาะสม ตั้งค่าอีเมลอัตโนมัติถึงผู้เข้าร่วมเพื่อส่งรายละเอียดในนาทีสุดท้ายให้พวกเข"
+"า\n"
 "\n"
 "ธีมที่ใช้งานง่ายและเหมาะสำหรับนักออกแบบ\n"
 "------------------------\n"
 "\n"
 "### นักออกแบบชื่นชอบที่จะทำงานกับ Odoo\n"
 "\n"
-"ธีมที่ยอดเยี่ยมและออกแบบได้ง่าย คุณไม่จำเป็นต้องพัฒนาเพื่อสร้างเพจ ธีม "
-"หรือแบบเอกสารสำเร็จรูปใหม่ เราใช้โครงสร้าง HTML ที่ชัดเจน, [bootstrap](http://"
-"getbootstrap.com/) CSS "
-"และความเป็นโมดูลของเราทำให้สามารถเผยแพร่ธีมของคุณได้อย่างง่ายดาย\n"
+"ธีมที่ยอดเยี่ยมและออกแบบได้ง่าย คุณไม่จำเป็นต้องพัฒนาเพื่อสร้างเพจ ธีม หรือแบบเอกสารสำเร็จรูปให"
+"ม่ เราใช้โครงสร้าง HTML ที่ชัดเจน, [bootstrap](http://getbootstrap.com/) CSS และควา"
+"มเป็นโมดูลของเราทำให้สามารถเผยแพร่ธีมของคุณได้อย่างง่ายดาย\n"
 "\n"
 "การใช้งานบล็อกสำเร็จรูปช่วยให้เว็บไซต์สะอาดอยู่เสมอหลังจากที่ผู้ใช้เริ่มสร้างเนื้อหาใหม่\n"
 "\n"
@@ -37138,20 +37718,19 @@ msgstr ""
 "### เครื่องมือ SEO บนปลายนิ้วของคุณ\n"
 "\n"
 "เครื่องมือ SEO พร้อมใช้งานโดยไม่ต้องกำหนดค่าใดๆ Odoo แนะนำคำสำคัญตามคำค้นหามากที่สุดของ "
-"Google และ Google Analytics ติดตามกิจกรรมของรถเข็นช้อปปิ้งของคุณ "
-"และแผนผังเว็บไซต์จะถูกสร้างขึ้นโดยอัตโนมัติ\n"
+"Google และ Google Analytics ติดตามกิจกรรมของรถเข็นช้อปปิ้งของคุณ และแผนผังเว็บไซต์จะถูกส"
+"ร้างขึ้นโดยอัตโนมัติ\n"
 "\n"
-"เรายังสร้างเนื้อหาที่มีโครงสร้างโดยอัตโนมัติเพื่อโปรโมทกิจกรรมและผลิตภัณฑ์ของคุณใน Google "
-"อย่างมีประสิทธิภาพ\n"
+"เรายังสร้างเนื้อหาที่มีโครงสร้างโดยอัตโนมัติเพื่อโปรโมทกิจกรรมและผลิตภัณฑ์ของคุณใน Google อย่างมี"
+"ประสิทธิภาพ\n"
 "\n"
 "ใช้ประโยชน์จากโซเชียลมีเดีย\n"
 "---------------------\n"
 "\n"
 "### เพิ่มประสิทธิภาพ: จากโฆษณาไปจนถึง Conversion\n"
 "\n"
-"สร้างแลนดิ้งเพจใหม่ได้อย่างง่ายดายด้วยฟีเจอร์การแก้ไขอินไลน์ของ Odoo "
-"ส่งผู้เยี่ยมชมแคมเปญการตลาดต่างๆ ของคุณไปยังหน้าแลนดิ้งเพจของกิจกรรมเพื่อเพิ่มประสิทธิภาพ "
-"Conversion\n"
+"สร้างแลนดิ้งเพจใหม่ได้อย่างง่ายดายด้วยฟีเจอร์การแก้ไขอินไลน์ของ Odoo ส่งผู้เยี่ยมชมแคมเปญการตลา"
+"ดต่างๆ ของคุณไปยังหน้าแลนดิ้งเพจของกิจกรรมเพื่อเพิ่มประสิทธิภาพ Conversion\n"
 "\n"
 "และอีกมากมาย...\n"
 "----------------\n"
@@ -37186,7 +37765,7 @@ msgstr ""
 "ผสานการใช้งานอย่างสมบูรณ์ร่วมกับแอปอื่นๆ\n"
 "---------------------------------\n"
 "\n"
-"### ใช้งานแอปโอเพ่นซอร์สนับร้อยได้ฟรี\n"
+"### ใช้งานแอปโอเพนซอร์สนับร้อยได้ฟรี\n"
 "\n"
 "\n"
 "### อีคอมเมิร์ซ\n"
@@ -37297,6 +37876,17 @@ msgstr ""
 "               บริษัทของคุณ แต่พวกเขาจะใส่ใจถึงซอฟต์แวร์ IT ที่ติดตั้งไว้แล้วเสมอ\n"
 "               นั่นเป็นเหตุผลที่ Idealis Consulting ส่งมอบความเป็นเลิศ\n"
 "              ในการจัดการทรัพยากรบุคคลและการจัดการซัพพลายเชน"
+
+#. module: base
+#: model_terms:res.company,invoice_terms_html:base.demo_company_be
+msgid ""
+"Our invoices are payable within 21 working days, unless another payment "
+"timeframe is indicated on either the invoice or the order. In the event of "
+"non-payment by the due date, BE Company CoA reserves the right to request a "
+"fixed interest payment amounting to 10% of the sum remaining due. BE Company "
+"CoA will be authorized to suspend any provision of services without prior "
+"warning in the event of late payment."
+msgstr ""
 
 #. module: base
 #: model_terms:res.company,invoice_terms_html:base.main_company
@@ -37456,6 +38046,11 @@ msgid "POS Barcode scan in Mobile"
 msgstr "POS สแกนบาร์โค้ดในมือถือ"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_pos_enterprise_sms_whatsapp
+msgid "POS Enterprise SMS Whatsapp"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_glory_cash
 msgid "POS Glory Cash Machines"
 msgstr ""
@@ -37474,6 +38069,11 @@ msgstr "POS IoT Six"
 #: model:ir.module.module,shortdesc:base.module_pos_mercado_pago
 msgid "POS Mercado Pago"
 msgstr "POS Mercado Pago"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_pos_mollie
+msgid "POS Mollie"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_pine_labs
@@ -38166,6 +38766,11 @@ msgid "Pattern to format"
 msgstr "รูปแบบ"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_l10n_us_direct_deposit
+msgid "Pay Vendors via Wise"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_appointment_account_payment
 msgid "Pay to Book"
 msgstr "ชำระเงินเพื่อจอง"
@@ -38406,6 +39011,11 @@ msgid "Peru - Accounting Reports"
 msgstr "ประเทศเปรู - รายงานการบัญชี"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_pe_reports_lib
+msgid "Peru - Inventory and Balance Reports"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_pe_reports_stock
 msgid "Peru - Stock Reports"
 msgstr "ประเทศเปรู - รายงานสต็อก"
@@ -38567,6 +39177,11 @@ msgid "Photography"
 msgstr "การถ่ายภาพ"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_physical_therapy
+msgid "Physical Therapy"
+msgstr ""
+
+#. module: base
 #: model:res.currency,currency_subunit_label:base.SSP
 msgid "Piasters"
 msgstr "Piasters"
@@ -38682,6 +39297,11 @@ msgid "PoS - Event Sale"
 msgstr ""
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_pos_dpopay
+msgid "PoS DPO Pay"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_iot_adam_scale
 msgid "PoS IoT Adam Equipment Scales"
 msgstr ""
@@ -38775,6 +39395,11 @@ msgid "Point of Sale Subscription"
 msgstr "การสมัครสมาชิกของระบบขายหน้าร้าน"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_pos_edi_ubl
+msgid "Point of Sale UBL"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_enterprise
 msgid "Point of Sale enterprise"
 msgstr "การขายหน้าร้าน องค์กร"
@@ -38814,6 +39439,21 @@ msgstr "ประเทศโปแลนด์ - บัญชีเงินเ
 #: model:ir.module.module,shortdesc:base.module_l10n_pl_hr_payroll_account
 msgid "Poland - Payroll with Accounting"
 msgstr "ประเทศโปแลนด์ - บัญชีเงินเดือนพร้อมระบบบัญชี"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_pl_reports_account_saft
+msgid "Poland - SAFT Income Tax Report (JPK KR PD)"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_pl_edi
+msgid "Polish E-Invoicing FA(3)"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_pl_intrastat
+msgid "Polish Intrastat Declaration"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_portal_rating
@@ -38856,6 +39496,11 @@ msgstr "โปรตุเกส"
 #: model:ir.module.module,shortdesc:base.module_l10n_pt_reports
 msgid "Portugal - Accounting Reports"
 msgstr "ประเทศโปรตุเกส - รายงานการบัญชี"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_pt_intrastat
+msgid "Portuguese Intrastat Declaration"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_model_constraint__definition
@@ -39059,6 +39704,11 @@ msgid "Product Comparison"
 msgstr "ตามสินค้า"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_product_conversion
+msgid "Product Conversion & Grading Management"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_product_email_template
 msgid "Product Email Template"
 msgstr "เทมเพลตอีเมลผลิตภัณฑ์"
@@ -39143,6 +39793,12 @@ msgid "Profiling results"
 msgstr "ผลลัพธ์การทำโปรไฟล์"
 
 #. module: base
+#. odoo-python
+#: code:addons/base/models/res_users.py:0
+msgid "Programmatic API keys are not enabled"
+msgstr ""
+
+#. module: base
 #: model:ir.model,name:base.model_ir_cron_progress
 msgid "Progress of Scheduled Actions"
 msgstr "ความคืบหน้าของการดำเนินการตามกำหนดการ"
@@ -39151,7 +39807,7 @@ msgstr "ความคืบหน้าของการดำเนินก
 #: model:ir.module.category,name:base.module_category_services_project
 #: model:ir.module.module,shortdesc:base.module_project
 msgid "Project"
-msgstr "โปรเจ็กต์"
+msgstr "โปรเจกต์"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_project_account
@@ -39303,28 +39959,28 @@ msgid ""
 "accurate reports on your team's performance.\n"
 "\n"
 msgstr ""
-"การจัดการโปรเจ็กต์\n"
+"การจัดการโปรเจกต์\n"
 "------------------\n"
 "\n"
 "### ยืดหยุ่นได้อย่างไร้ขีดจำกัด ใช้งานง่ายอย่างไม่น่าเชื่อ\n"
 "\n"
 "\n"
-"การจัดการโปรเจ็กต์โอเพนซอร์สแบบเรียลไทม์และการทำงานร่วมกันของ Odoo\n"
-"ช่วยให้ทีมของคุณทำงานได้สำเร็จ ติดตามทุกสิ่ง ตั้งแต่ภาพรวมไปจนถึงรายละเอียดปลีกย่อย "
-"ตั้งแต่สัญญากับลูกค้าไปจนถึงการเรียกเก็บเงิน\n"
+"การจัดการโปรเจกต์โอเพนซอร์สแบบเรียลไทม์และการทำงานร่วมกันของ Odoo\n"
+"ช่วยให้ทีมของคุณทำงานได้สำเร็จ ติดตามทุกสิ่ง ตั้งแต่ภาพรวมไปจนถึงรายละเอียดปลีกย่อย ตั้งแต่สัญญากับ"
+"ลูกค้าไปจนถึงการเรียกเก็บเงิน\n"
 "\n"
 "ออกแบบมาเพื่อให้เหมาะกับขั้นตอนการทำงานของคุณเอง\n"
 "--------------------------------\n"
 "\n"
-"จัดระเบียบโปรเจ็กต์ตามกระบวนการของคุณเอง ทำงานและประเด็นต่างๆ โดยใช้มุมมองคัมบัง "
-"กำหนดเวลางานโดยใช้แผนภูมิแกนต์ และควบคุมกำหนดเวลาใน\n"
-"มุมมองปฏิทิน ทุกโปรเจ็กต์อาจมีขั้นตอนของตัวเอง ช่วยให้ทีมเพิ่มประสิทธิภาพงานของตนได้\n"
+"จัดระเบียบโปรเจกต์ตามกระบวนการของคุณเอง ทำงานและประเด็นต่างๆ โดยใช้มุมมองคัมบัง กำหนดเว"
+"ลางานโดยใช้แผนภูมิแกนต์ และควบคุมกำหนดเวลาใน\n"
+"มุมมองปฏิทิน ทุกโปรเจกต์อาจมีขั้นตอนของตัวเอง ช่วยให้ทีมเพิ่มประสิทธิภาพงานของตนได้\n"
 "\n"
 "ง่ายต่อการใช้งาน\n"
 "-----------\n"
 "\n"
-"จัดระเบียบให้เร็วเท่าที่คุณคิด อินเทอร์เฟซที่ใช้งานง่ายไม่ต้องใช้เวลาในการเรียนรู้ "
-"และทุกการกระทำจะเกิดขึ้นทันที ดังนั้นจึงไม่มีอะไรมาขวางกั้นระหว่างคุณกับขั้นตอนการผลิตของคุณ\n"
+"จัดระเบียบให้เร็วเท่าที่คุณคิด อินเทอร์เฟซที่ใช้งานง่ายไม่ต้องใช้เวลาในการเรียนรู้ และทุกการกระทำจะ"
+"เกิดขึ้นทันที ดังนั้นจึงไม่มีอะไรมาขวางกั้นระหว่างคุณกับขั้นตอนการผลิตของคุณ\n"
 "\n"
 "การทำงานร่วมกัน\n"
 "-------------\n"
@@ -39341,30 +39997,30 @@ msgstr ""
 "\n"
 "### พลังของ etherpad ภายในงานของคุณ\n"
 "\n"
-"แก้ไขข้อกำหนดเดียวกันหรือรายงานการประชุมร่วมกันภายในแอปพลิเคชัน ฟีเจอร์ etherpad "
-"ที่ผสานรวมทำให้หลายคนสามารถทำงานเดียวกันได้ในเวลาเดียวกัน\n"
+"แก้ไขข้อกำหนดเดียวกันหรือรายงานการประชุมร่วมกันภายในแอปพลิเคชัน ฟีเจอร์ etherpad ที่ผสานรวม"
+"ทำให้หลายคนสามารถทำงานเดียวกันได้ในเวลาเดียวกัน\n"
 "\n"
-"สิ่งนี้มีประสิทธิภาพมากสำหรับการประชุมแบบต่อสู้ รายงานการประชุม หรือข้อกำหนดที่ซับซ้อน "
-"ผู้ใช้ทุกคนมีสีของตัวเอง และคุณสามารถเล่นซ้ำการสร้างเนื้อหาทั้งหมดได้\n"
+"สิ่งนี้มีประสิทธิภาพมากสำหรับการประชุมแบบต่อสู้ รายงานการประชุม หรือข้อกำหนดที่ซับซ้อน ผู้ใช้ทุกคนมีสี"
+"ของตัวเอง และคุณสามารถเล่นซ้ำการสร้างเนื้อหาทั้งหมดได้\n"
 "\n"
 "ทำงานให้เสร็จสิ้นอย่างสมบูรณ์\n"
 "-------------\n"
 "\n"
-"รับการแจ้งเตือนเกี่ยวกับกิจกรรมที่ติดตามเพื่อติดตามข่าวสารล่าสุดเกี่ยวกับสิ่งที่คุณสนใจ "
-"ใช้ตัวบ่งชี้ภาพสีเขียว/แดงทันทีเพื่อสแกนผ่านสิ่งที่ทำไปแล้วและสิ่งใด\n"
+"รับการแจ้งเตือนเกี่ยวกับกิจกรรมที่ติดตามเพื่อติดตามข่าวสารล่าสุดเกี่ยวกับสิ่งที่คุณสนใจ ใช้ตัวบ่งชี้ภาพสีเขี"
+"ยว/แดงทันทีเพื่อสแกนผ่านสิ่งที่ทำไปแล้วและสิ่งใด\n"
 "ต้องการความสนใจของคุณ\n"
 "\n"
 "แผ่นเวลา สัญญา และการออกใบแจ้งหนี้\n"
 "---------------------------------\n"
 "\n"
-"โปรเจ็กต์ต่างๆ จะถูกรวมเข้ากับสัญญาของลูกค้าโดยอัตโนมัติ "
-"ช่วยให้คุณสามารถออกใบแจ้งหนี้ตามเวลาและวัสดุ และบันทึกใบบันทึกเวลาได้อย่างง่ายดาย\n"
+"โปรเจกต์ต่างๆ จะถูกรวมเข้ากับสัญญาของลูกค้าโดยอัตโนมัติ ช่วยให้คุณสามารถออกใบแจ้งหนี้ตามเวลาแล"
+"ะวัสดุ และบันทึกใบบันทึกเวลาได้อย่างง่ายดาย\n"
 "\n"
 "ติดตามทุกปัญหา\n"
 "------------\n"
 "\n"
-"แยกแยะปัญหาที่เกิดขึ้นในโปรเจ็กต์เพื่อให้มีสมาธิในการแก้ไขปัญหาได้ดีขึ้น "
-"ผสานการโต้ตอบกับลูกค้าในทุกประเด็นและรับรายงานที่ถูกต้องเกี่ยวกับประสิทธิภาพของทีมของคุณ\n"
+"แยกแยะปัญหาที่เกิดขึ้นในโปรเจกต์เพื่อให้มีสมาธิในการแก้ไขปัญหาได้ดีขึ้น ผสานการโต้ตอบกับลูกค้าในทุกป"
+"ระเด็นและรับรายงานที่ถูกต้องเกี่ยวกับประสิทธิภาพของทีมของคุณ\n"
 "\n"
 
 #. module: base
@@ -39548,6 +40204,11 @@ msgstr ""
 "โดยเฉพาะอย่างยิ่งผ่านทาง addon ที่กำหนดเอง!"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_industry_real_estate
+msgid "Property Management"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_condominium
 msgid "Property Owner Association"
 msgstr "สมาคมเจ้าของอสังหาริมทรัพย์"
@@ -39556,6 +40217,11 @@ msgstr "สมาคมเจ้าของอสังหาริมทรั
 #: model:res.partner.category,name:base.res_partner_category_2
 msgid "Prospects"
 msgstr "แนวโน้ม"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_l10n_lk
+msgid "Provides accounting localizations for Sri Lanka."
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_mail_mobile
@@ -39650,6 +40316,11 @@ msgstr "Puls"
 #: model_terms:ir.ui.view,arch_db:base.view_partner_form
 msgid "Purchase"
 msgstr "การจัดซื้อ"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_purchase_accountant
+msgid "Purchase Accounting"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_purchase_requisition
@@ -39951,6 +40622,11 @@ msgid "Qweb field many2many"
 msgstr "QWeb"
 
 #. module: base
+#: model:ir.model,name:base.model_ir_qweb_field_one2many
+msgid "Qweb field one2many"
+msgstr ""
+
+#. module: base
 #: model:res.partner.industry,full_name:base.res_partner_industry_R
 msgid "R - ARTS, ENTERTAINMENT AND RECREATION"
 msgstr "R - ศิลปะ ความบันเทิง และสันทนาการ"
@@ -40115,6 +40791,12 @@ msgstr ""
 "โปรดลองอีกครั้งในอีกสักครู่"
 
 #. module: base
+#. odoo-python
+#: code:addons/fields.py:0 code:addons/fields_relational.py:0
+msgid "Record does not exist or has been deleted."
+msgstr "Record does not exist or has been deleted."
+
+#. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_rule_form
 msgid "Record rules"
 msgstr "กฎการเข้าถึงรายการ"
@@ -40167,9 +40849,20 @@ msgid "Recruitment Reporting"
 msgstr "การรายงานการสรรหาบุคลากร"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_hr_recruitment_ai
+msgid "Recruitment With AI"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_appointment_hr_recruitment
 msgid "Recruitment tracking on appointments"
 msgstr "ติดตามการสรรหาบุคลากรตามการนัดหมาย"
+
+#. module: base
+#. odoo-python
+#: code:addons/models.py:0
+msgid "Recursion Detected."
+msgstr "ตรวจพบการเรียกซ้ำ"
 
 #. module: base
 #. odoo-python
@@ -40522,6 +41215,12 @@ msgid "Reset to file version (hard reset)."
 msgstr "รีเซ็ตเป็นเวอร์ชันไฟล์ (ฮาร์ดรีเซ็ต)"
 
 #. module: base
+#. odoo-python
+#: code:addons/models.py:0
+msgid "Resolve other errors first"
+msgstr "Resolve other errors first"
+
+#. module: base
 #: model:ir.model.fields,field_description:base.field_ir_exports__resource
 #: model:ir.module.module,shortdesc:base.module_resource
 msgid "Resource"
@@ -40688,6 +41387,11 @@ msgid "Romania - Accounting Reports"
 msgstr "ประเทศโรมาเนีย - รายงานการบัญชี"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_ro_cpv_code
+msgid "Romania - CPV Code"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ro_edi_stock
 msgid "Romania - E-Transport"
 msgstr ""
@@ -40701,6 +41405,11 @@ msgstr ""
 #: model:ir.module.module,shortdesc:base.module_l10n_ro_edi
 msgid "Romania - E-invoicing"
 msgstr "ประเทศโรมาเนีย - ใบแจ้งหนี้อิเล็กทรอนิกส์"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_ro_intrastat
+msgid "Romania - Intrastat Declaration"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ro_hr_payroll
@@ -40995,6 +41704,7 @@ msgid "SSL/TLS, encryption only"
 msgstr ""
 
 #. module: base
+#: model_terms:res.company,invoice_terms_html:base.demo_company_be
 #: model_terms:res.company,invoice_terms_html:base.main_company
 msgid "STANDARD TERMS AND CONDITIONS OF SALE"
 msgstr "ข้อกำหนดและเงื่อนไขมาตรฐานของการขาย"
@@ -42112,11 +42822,6 @@ msgstr ""
 " %s"
 
 #. module: base
-#: model:ir.module.category,name:base.module_category_service
-msgid "Service"
-msgstr "บริการ"
-
-#. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_timesheet_margin
 msgid "Service Margins in Sales Orders"
 msgstr "อัตรากำไรขั้นต้นการบริการในใบสั่งขาย"
@@ -42484,6 +43189,15 @@ msgstr "ข้าม"
 
 #. module: base
 #. odoo-python
+#: code:addons/models.py:0
+msgid ""
+"Skipping a company check for model %(model_name)s. Its fields %"
+"(field_names)s are set as company-dependent, but the model doesn't have a "
+"`company_id` or `company_ids` field!"
+msgstr ""
+
+#. module: base
+#. odoo-python
 #: code:addons/base/models/ir_qweb_fields.py:0
 msgid "Slash"
 msgstr "Slash"
@@ -42497,6 +43211,11 @@ msgstr "ประเทศสโลวาเกีย - ระบบบัญช
 #: model:res.country,name:base.sk
 msgid "Slovakia"
 msgstr "สโลวาเกีย"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_sk_reports
+msgid "Slovakia - Accounting Reports"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_sk_hr_payroll
@@ -42758,6 +43477,11 @@ msgid "Spain - Accounting Reports (2024 Update)"
 msgstr "ประเทศสเปน - รายงานการบัญชี (อัปเดตปี 2024)"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_es_reports_2025
+msgid "Spain - Accounting Reports (2025 Update)"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_es_sale_amazon
 msgid "Spain - Amazon Connector"
 msgstr "ประเทศสเปน - Amazon Connector"
@@ -42768,9 +43492,9 @@ msgid "Spain - Facturae EDI"
 msgstr "ประเทศสเปน - Facturae EDI"
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_es_pos
-msgid "Spain - Point of Sale"
-msgstr "ประเทศสเปน - การขายหน้าร้าน"
+#: model:ir.module.module,shortdesc:base.module_l10n_es_intrastat
+msgid "Spain - Intrastat Declaration"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_es_edi_tbai_pos
@@ -43090,6 +43814,16 @@ msgstr "Sql"
 #: model:res.country,name:base.lk
 msgid "Sri Lanka"
 msgstr "ศรีลังกา"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_lk
+msgid "Sri Lanka - Accounting"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_lk_reports
+msgid "Sri Lanka - Accounting Reports"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_sequence__implementation__standard
@@ -43462,6 +44196,11 @@ msgid "Supply Chain"
 msgstr "ซัพพลายเชน"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_l10n_pl_edi
+msgid "Support for FA(3) electronic invoices in Poland via KSeF"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,summary:base.module_website_event_track_live
 msgid "Support live tracks: streaming, participation, youtube"
 msgstr "รองรับไลฟ์แทร็ก: สตรีมมิ่ง, การมีส่วนร่วม, youtube"
@@ -43547,6 +44286,11 @@ msgstr "เครื่องบันทึกเงินสดที่ลง
 #: model:ir.module.module,shortdesc:base.module_l10n_ch_pos
 msgid "Swiss - Point of Sale"
 msgstr "ประเทศสวิตเซอร์แลนด์ - ระบบขายหน้าร้าน"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_ch_hr_payroll_elm_transmission_5_3
+msgid "Swissdec Certified Payroll ELM 5.3"
+msgstr ""
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.language_install_view_form_lang_switch
@@ -43724,6 +44468,11 @@ msgstr "ประเทศไต้หวัน - รายงานการบ
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_tw_edi_ecpay
 msgid "Taiwan - E-invoicing"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_tw_edi_ecpay_website_sale
+msgid "Taiwan - E-invoicing Ecommerce"
 msgstr ""
 
 #. module: base
@@ -43908,7 +44657,8 @@ msgstr "คู่มือทางเทคนิค"
 #. module: base
 #: model:ir.module.module,description:base.module_approvals_purchase_stock
 msgid "Technical module to link Approvals, Purchase and Inventory together. "
-msgstr "โมดูลทางเทคนิคเพื่อเชื่อมโยงการอนุมัติ การจัดซื้อ และสินค้าคงคลังเข้าด้วยกัน "
+msgstr ""
+"โมดูลทางเทคนิคเพื่อเชื่อมโยงการอนุมัติ การจัดซื้อ และคลังสินค้าเข้าด้วยกัน "
 
 #. module: base
 #: model:ir.module.module,summary:base.module_product_matrix
@@ -43955,7 +44705,9 @@ msgid "Tenge"
 msgstr "Tenge"
 
 #. module: base
+#: model_terms:res.company,sign_terms:base.demo_company_be
 #: model_terms:res.company,sign_terms:base.main_company
+#: model_terms:res.company,sign_terms_html:base.demo_company_be
 #: model_terms:res.company,sign_terms_html:base.main_company
 msgid "Terms &amp; Conditions"
 msgstr "เงื่อนไขและข้อกำหนด"
@@ -44345,6 +45097,7 @@ msgid "The attachment collides with an existing file."
 msgstr "สิ่งที่แนบมาขัดแย้งกับไฟล์ที่มีอยู่"
 
 #. module: base
+#: model_terms:res.company,invoice_terms_html:base.demo_company_be
 #: model_terms:res.company,invoice_terms_html:base.main_company
 msgid ""
 "The client explicitly waives its own standard terms and conditions, even if "
@@ -44548,9 +45301,25 @@ msgstr ""
 "code>"
 
 #. module: base
+#. odoo-python
+#: code:addons/fields_textual.py:0
+msgid ""
+"The field value you're saving (%(model)s %(field)s) includes content that is "
+"restricted for security reasons. It is possible that someone with higher "
+"privileges previously modified it, and you are therefore not able to modify "
+"it yourself while preserving the content."
+msgstr ""
+
+#. module: base
 #: model:ir.model.fields,help:base.field_ir_cron__first_failure_date
 msgid "The first time the cron failed. It is automatically reset on success."
 msgstr "ครั้งแรกที่ cron ล้มเหลว ระบบจะรีเซ็ตโดยอัตโนมัติเมื่อสำเร็จ"
+
+#. module: base
+#. odoo-python
+#: code:addons/models.py:0
+msgid "The following languages are not activated: %(missing_names)s"
+msgstr ""
 
 #. module: base
 #. odoo-python
@@ -44856,6 +45625,18 @@ msgstr ""
 "%s"
 
 #. module: base
+#. odoo-python
+#: code:addons/base/models/res_users.py:0
+msgid "The provided API key is invalid or does not belong to the current user."
+msgstr ""
+
+#. module: base
+#. odoo-python
+#: code:addons/base/models/res_users.py:0
+msgid "The provided API key is invalid."
+msgstr ""
+
+#. module: base
 #: model:ir.model.fields,help:base.field_res_currency_rate__rate
 msgid "The rate of the currency to the currency of rate 1"
 msgstr "อัตราของสกุลเงินต่อสกุลเงินของอัตรา 1"
@@ -44869,6 +45650,18 @@ msgstr "อัตราของสกุลเงินต่อสกุลเ
 #: model:ir.model.fields,help:base.field_res_currency__rate
 msgid "The rate of the currency to the currency of rate 1."
 msgstr "อัตราของสกุลเงินต่อสกุลเงินของอัตรา 1"
+
+#. module: base
+#. odoo-python
+#: code:addons/models.py:0
+msgid ""
+"The record %(xml_id)s has the module prefix %(module_name)s. This is the "
+"part before the '.' in the external id. Because the prefix refers to an "
+"existing module, the record would be deleted when the module is upgraded. "
+"Use either no prefix and no dot or a prefix that isn't an existing module. "
+"For example, __import__, resulting in the external id __import__.%"
+"(record_id)s."
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_company__company_registry
@@ -44991,6 +45784,15 @@ msgstr ""
 #: code:addons/base/models/ir_qweb_fields.py:0
 msgid "The value (%s) passed should be positive"
 msgstr "ค่า (%s) ที่ส่งผ่านควรเป็นค่าบวก"
+
+#. module: base
+#. odoo-python
+#: code:addons/models.py:0
+msgid ""
+"The value for %(field_display)s already exists.\n"
+"\n"
+"Detail: %(detail)s\n"
+msgstr ""
 
 #. module: base
 #. odoo-python
@@ -45280,6 +46082,15 @@ msgid "This module adds management features to the sale renting app."
 msgstr "โมดูลนี้เพิ่มฟีเจอร์การจัดการให้กับแอปการขายการเช่า"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_account_add_gln
+msgid ""
+"This module adds the Global Location Number to the partner. Used on delivery "
+"addresses, it is used to identify stock locations and is mandatory on the "
+"UBL/CII eInvoices (but not only). The module is intended be merged with "
+"account, later on, in master"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_mail_bot_hr
 msgid ""
 "This module adds the OdooBot state and notifications in the user form "
@@ -45320,6 +46131,13 @@ msgstr ""
 msgid ""
 "This module allows to publish your available job positions on your website "
 "and keep track of application submissions easily."
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,description:base.module_whatsapp_sign
+msgid ""
+"This module allows users to send signature requests via WhatsApp using Odoo "
+"Sign"
 msgstr ""
 
 #. module: base
@@ -45577,12 +46395,26 @@ msgstr ""
 "ซึ่งมีจุดประสงค์เพียงเพื่อทำการทดสอบเท่านั้น"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_pos_enterprise_sms_whatsapp
+msgid ""
+"This module enables communication via WhatsApp and SMS in the preparation "
+"display"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,summary:base.module_pos_barcodelookup
 msgid ""
 "This module enables product creation by scanning barcodes with a camera, "
 "utilizing the Barcode Lookup API Key."
 msgstr ""
 "โมดูลนี้จะช่วยให้สร้างผลิตภัณฑ์ได้โดยการสแกนบาร์โค้ดด้วยกล้องโดยใช้คีย์ API การค้นหาบาร์โค้ด"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_whatsapp_sign
+msgid ""
+"This module enables users to send signature requests via WhatsApp in Odoo "
+"Sign"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_event_track_gantt
@@ -45876,6 +46708,12 @@ msgid "To Do"
 msgstr "ที่จะทำ"
 
 #. module: base
+#. odoo-python
+#: code:addons/models.py:0
+msgid "To avoid a mess, no company crossover is allowed!"
+msgstr ""
+
+#. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_module_module__state__to_install
 #: model:ir.model.fields.selection,name:base.selection__ir_module_module_dependency__state__to_install
 #: model:ir.model.fields.selection,name:base.selection__ir_module_module_exclusion__state__to_install
@@ -46127,6 +46965,13 @@ msgid "Translations"
 msgstr "การแปล"
 
 #. module: base
+#. odoo-python
+#: code:addons/models.py:0
+msgid ""
+"Translations for model translated fields only accept falsy values and str"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_stock_fleet
 msgid "Transport Management: organize packs in your fleet, or carriers."
 msgstr "การจัดการการขนส่ง: จัดระเบียบแพ็คเกจในขนส่งหรือผู้ให้บริการของคุณ"
@@ -46321,6 +47166,11 @@ msgid "Türkiye - Nilvera E-Invoice"
 msgstr ""
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_tr_nilvera_einvoice_extended
+msgid "Türkiye - Nilvera E-Invoice Extended"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_tr_hr_payroll
 msgid "Türkiye - Payroll"
 msgstr "ประเทศตุรกี - บัญชีเงินเดือน"
@@ -46339,6 +47189,11 @@ msgstr ""
 #: model:res.partner.industry,full_name:base.res_partner_industry_U
 msgid "U - ACTIVITIES OF EXTRATERRITORIAL ORGANISATIONS AND BODIES"
 msgstr "U - กิจกรรมขององค์กรและองค์กรนอกอาณาเขต"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_pos_edi_ubl
+msgid "UBL in the Point of Sale "
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__tz__uct
@@ -46403,6 +47258,12 @@ msgstr "URL"
 #: model:ir.model.fields,field_description:base.field_res_lang__url_code
 msgid "URL Code"
 msgstr "รหัส URL"
+
+#. module: base
+#. odoo-python
+#: code:addons/base/models/ir_attachment.py:0
+msgid "URL attachment (%s) shouldn't be migrated to local."
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_actions_server__webhook_url
@@ -46553,6 +47414,12 @@ msgstr ""
 "ขออภัย %(user)s ไม่มีสิทธิ์เข้าถึง '%(operation)s' สำหรับ:"
 
 #. module: base
+#. odoo-python
+#: code:addons/models.py:0
+msgid "Uh-oh! You’ve got some company inconsistencies here:"
+msgstr ""
+
+#. module: base
 #: model:res.country,name:base.ua
 msgid "Ukraine"
 msgstr "ยูเครน"
@@ -46561,6 +47428,14 @@ msgstr "ยูเครน"
 #: model:ir.module.module,shortdesc:base.module_l10n_ua
 msgid "Ukraine - Accounting"
 msgstr "ประเทศยูเครน - ระบบบัญชี"
+
+#. module: base
+#. odoo-python
+#: code:addons/models.py:0
+msgid ""
+"Unable to delete %(record)s because it is used as the default value of %"
+"(field)s"
+msgstr ""
 
 #. module: base
 #. odoo-python
@@ -46697,6 +47572,11 @@ msgid "United Arab Emirates - Accounting Reports"
 msgstr "สหรัฐอาหรับเอมิเรตส์ - รายงานการบัญชี"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_ae_faf
+msgid "United Arab Emirates - FTA VAT Audit"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ae_hr_payroll
 msgid "United Arab Emirates - Payroll"
 msgstr ""
@@ -46730,6 +47610,11 @@ msgstr "สหรัฐอเมริกา"
 #: model:ir.module.module,shortdesc:base.module_l10n_us_account
 msgid "United States - Accounting"
 msgstr "สหรัฐอเมริกา - ระบบบัญชี"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_us_direct_deposit
+msgid "United States - Direct Deposit"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_us
@@ -46778,12 +47663,30 @@ msgstr ""
 
 #. module: base
 #. odoo-python
-#: code:addons/base/models/res_device.py:0
+#: code:addons/base/models/res_device.py:0 code:addons/models.py:0
 #: model:ir.model,name:base.model__unknown
 #: model:ir.model.fields.selection,name:base.selection__ir_module_module_dependency__state__unknown
 #: model:ir.model.fields.selection,name:base.selection__ir_module_module_exclusion__state__unknown
 msgid "Unknown"
 msgstr "ไม่ทราบ"
+
+#. module: base
+#. odoo-python
+#: code:addons/models.py:0
+msgid "Unknown database error: '%s'"
+msgstr ""
+
+#. module: base
+#. odoo-python
+#: code:addons/models.py:0
+msgid "Unknown database identifier '%s'"
+msgstr "Unknown database identifier '%s'"
+
+#. module: base
+#. odoo-python
+#: code:addons/models.py:0
+msgid "Unknown error during import: %(error_type)s: %(error_message)s"
+msgstr ""
 
 #. module: base
 #. odoo-python
@@ -46864,6 +47767,12 @@ msgid "Unsplash Image Library"
 msgstr "รูปภาพ"
 
 #. module: base
+#. odoo-python
+#: code:addons/domains.py:0
+msgid "Unsupported operator on %(field_label)s %(model_label)s in %(domain)s"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,summary:base.module_appointment_account_payment
 msgid "Up-front payment on bookings"
 msgstr "ชำระเงินล่วงหน้าเมื่อทำการจอง"
@@ -46923,6 +47832,14 @@ msgid "Update Related Model"
 msgstr "อัปเดตโมเดลที่เกี่ยวข้อง"
 
 #. module: base
+#. odoo-python
+#: code:addons/fields_properties.py:0
+msgid ""
+"Updating records with different property fields definitions is not "
+"supported. Update by separate definition instead."
+msgstr ""
+
+#. module: base
 #: model_terms:ir.ui.view,arch_db:base.module_form
 #: model_terms:ir.ui.view,arch_db:base.module_tree
 #: model_terms:ir.ui.view,arch_db:base.module_view_kanban
@@ -46963,6 +47880,11 @@ msgstr "ประเทศอุรุกวัย - ระบบบัญชี
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_uy_reports
 msgid "Uruguay - Accounting Reports"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_uy_edi_stock
+msgid "Uruguay - E-Remitos"
 msgstr ""
 
 #. module: base
@@ -47612,6 +48534,11 @@ msgid "Views which inherit from this one"
 msgstr "มุมมองที่สืบทอดมาจากมุมมองนี้"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_vineyard
+msgid "Vineyard"
+msgstr ""
+
+#. module: base
 #: model:res.country,name:base.vg
 msgid "Virgin Islands (British)"
 msgstr "หมู่เกาะเวอร์จิน (อังกฤษ)"
@@ -47688,7 +48615,7 @@ msgstr "เตือนผู้ใช้ในกรณีที่มีกา
 #. module: base
 #. odoo-python
 #: code:addons/base/models/ir_mail_server.py:0
-#: code:addons/base/models/ir_model.py:0
+#: code:addons/base/models/ir_model.py:0 code:addons/models.py:0
 #: model:ir.model.fields,field_description:base.field_ir_actions_server__warning
 #: model:ir.model.fields,field_description:base.field_ir_cron__warning
 msgid "Warning"
@@ -47934,6 +48861,11 @@ msgid "Website Payment"
 msgstr "การชำระเงินเว็บไซต์"
 
 #. module: base
+#: model:ir.module.category,name:base.module_category_website_sale
+msgid "Website Sale"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_test_website_sale_full
 msgid "Website Sale Full Tests"
 msgstr "การทดสอบการขายเว็บไซต์แบบเต็ม"
@@ -48065,6 +48997,11 @@ msgstr "WhatsApp - ระบบขายหน้าร้าน"
 #: model:ir.module.module,shortdesc:base.module_whatsapp_sale
 msgid "WhatsApp-Sale"
 msgstr "WhatsApp - การขาย"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_whatsapp_sign
+msgid "WhatsApp-Sign"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_whatsapp_event
@@ -48614,6 +49551,14 @@ msgstr "คุณไม่สามารถปิดใช้งานผู้
 
 #. module: base
 #. odoo-python
+#: code:addons/models.py:0
+msgid ""
+"You cannot delete %(to_delete_record)s, as it is used by %"
+"(on_restrict_record)s"
+msgstr ""
+
+#. module: base
+#. odoo-python
 #: code:addons/base/models/ir_embedded_actions.py:0
 msgid "You cannot delete a default embedded action"
 msgstr "คุณไม่สามารถลบการดำเนินการฝังที่เป็นค่าเริ่มต้นได้"
@@ -48715,9 +49660,35 @@ msgstr "คุณไม่สามารถเปลี่ยนชื่อพ
 
 #. module: base
 #. odoo-python
+#: code:addons/models.py:0
+msgid ""
+"You cannot use “%(property_name)s” because the linked “%(model_name)s” model "
+"doesn't exist or is invalid"
+msgstr ""
+
+#. module: base
+#. odoo-python
+#: code:addons/models.py:0
+msgid ""
+"You do not have enough rights to access the field \"%(field)s\" on %"
+"(document_kind)s (%(document_model)s). Please contact your system "
+"administrator.\n"
+"\n"
+"Operation: %(operation)s"
+msgstr ""
+
+#. module: base
+#. odoo-python
 #: code:addons/base/models/ir_actions.py:0
 msgid "You don't have enough access rights to run this action."
 msgstr "คุณไม่มีสิทธิ์เข้าถึงเพียงพอที่จะดำเนินการนี้"
+
+#. module: base
+#. odoo-python
+#: code:addons/models.py:0
+msgid ""
+"You don't have the rights to export data. Please contact an Administrator."
+msgstr ""
 
 #. module: base
 #. odoo-python
@@ -48737,6 +49708,7 @@ msgid "You should try other search criteria."
 msgstr "คุณควรลองใช้เกณฑ์การค้นหาอื่น ๆ"
 
 #. module: base
+#: model_terms:res.company,invoice_terms_html:base.demo_company_be
 #: model_terms:res.company,invoice_terms_html:base.main_company
 msgid "You should update this document to reflect your T&amp;C."
 msgstr "คุณควรอัปเดตเอกสารนี้เพื่อให้สอดคล้องกับข้อกำหนดและเงื่อนไขของคุณ"
@@ -48772,12 +49744,15 @@ msgstr ""
 "คุณจะสามารถกำหนดสิทธิ์การเข้าถึงเพิ่มเติมได้โดยแก้ไขผู้ใช้ที่สร้างขึ้นใหม่ภายใต้เมนูการตั้งค่า / ผู้ใช้"
 
 #. module: base
+#: model_terms:res.company,sign_terms:base.demo_company_be
 #: model_terms:res.company,sign_terms:base.main_company
+#: model_terms:res.company,sign_terms_html:base.demo_company_be
 #: model_terms:res.company,sign_terms_html:base.main_company
 msgid "Your conditions..."
 msgstr "เงื่อนไขของคุณ..."
 
 #. module: base
+#: model_terms:res.company,lunch_notify_message:base.demo_company_be
 #: model_terms:res.company,lunch_notify_message:base.main_company
 msgid ""
 "Your lunch has been delivered.\n"
@@ -48867,6 +49842,16 @@ msgid "Zulu"
 msgstr "ภาษาซูลู"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_account_peppol_advanced_fields
+msgid "[DEPRECATED] Account Peppol Advanced Fields"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_es_pos
+msgid "[Deprecated] Spain - Point of Sale"
+msgstr ""
+
+#. module: base
 #: model:ir.module.category,name:base.module_category_account
 #: model:ir.module.category,name:base.module_category_services_payroll_account
 msgid "account"
@@ -48890,6 +49875,18 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_ai_server_actions
 msgid "ai_server_actions"
+msgstr ""
+
+#. module: base
+#. odoo-python
+#: code:addons/models.py:0
+msgid "allowed for groups %s"
+msgstr "อนุญาตสำหรับกลุ่ม %s"
+
+#. module: base
+#. odoo-python
+#: code:addons/models.py:0
+msgid "always forbidden"
 msgstr ""
 
 #. module: base
@@ -48943,6 +49940,12 @@ msgstr "เลือก"
 #: code:addons/base/models/ir_rule.py:0
 msgid "create"
 msgstr "สร้าง"
+
+#. module: base
+#. odoo-python
+#: code:addons/models.py:0
+msgid "custom field access rules"
+msgstr ""
 
 #. module: base
 #: model:res.currency,currency_subunit_label:base.STN
@@ -49621,6 +50624,484 @@ msgstr "หมู่เกาะโอแลนด์"
 #: code:addons/base/models/ir_ui_view.py:0
 msgid "“%(attribute)s” value must be an integer (%(value)s)"
 msgstr "ค่า “%(attribute)s” จะต้องเป็นจำนวนเต็ม (%(value)s)"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "Localization Module for Denmark\n"
+#~ "===============================\n"
+#~ "\n"
+#~ "This is the module to manage the **accounting chart for Denmark**. Cover "
+#~ "both one-man business as well as I/S, IVS, ApS and A/S\n"
+#~ "\n"
+#~ "**Modulet opsætter:**\n"
+#~ "\n"
+#~ "- **Dansk kontoplan**\n"
+#~ "\n"
+#~ "- Dansk moms\n"
+#~ "        - 25% moms\n"
+#~ "        - Resturationsmoms 6,25%\n"
+#~ "        - Omvendt betalingspligt\n"
+#~ "\n"
+#~ "- Konteringsgrupper\n"
+#~ "        - EU (Virksomhed)\n"
+#~ "        - EU (Privat)\n"
+#~ "        - 3.lande\n"
+#~ "\n"
+#~ "- Finans raporter\n"
+#~ "        - Resulttopgørelse\n"
+#~ "        - Balance\n"
+#~ "        - Momsafregning\n"
+#~ "            - Afregning\n"
+#~ "            - Rubrik A, B og C\n"
+#~ "\n"
+#~ "- **Anglo-Saxon regnskabsmetode**\n"
+#~ "\n"
+#~ ".\n"
+#~ "\n"
+#~ "Produkt setup:\n"
+#~ "==============\n"
+#~ "\n"
+#~ "**Vare**\n"
+#~ "\n"
+#~ "**Salgsmoms:**      Salgmoms 25%\n"
+#~ "\n"
+#~ "**Salgskonto:**     1010 Salg af vare, m/moms\n"
+#~ "\n"
+#~ "**Købsmoms:**       Købsmoms 25%\n"
+#~ "\n"
+#~ "**Købskonto:**      2010 Direkte omkostninger vare, m/moms\n"
+#~ "\n"
+#~ ".\n"
+#~ "\n"
+#~ "**Ydelse**\n"
+#~ "\n"
+#~ "**Salgsmoms:**      Salgmoms 25%, ydelser\n"
+#~ "\n"
+#~ "**Salgskonto:**     1011 Salg af ydelser, m/moms\n"
+#~ "\n"
+#~ "**Købsmoms:**       Købsmoms 25%, ydelser\n"
+#~ "\n"
+#~ "**Købskonto:**      2011 Direkte omkostninger ydelser, m/moms\n"
+#~ "\n"
+#~ ".\n"
+#~ "\n"
+#~ "**Vare med omvendt betalingspligt**\n"
+#~ "\n"
+#~ "**Salgsmoms:**      Salg omvendt betalingspligt\n"
+#~ "\n"
+#~ "**Salgskonto:**     1012 Salg af vare, u/moms\n"
+#~ "\n"
+#~ "**Købsmoms:**       Køb omvendt betalingspligt\n"
+#~ "\n"
+#~ "**Købskonto:**      2012 Direkte omkostninger vare, u/moms\n"
+#~ "\n"
+#~ "\n"
+#~ ".\n"
+#~ "\n"
+#~ "**Restauration**\n"
+#~ "\n"
+#~ "**Købsmoms:**       Restaurationsmoms 6,25%, købsmoms\n"
+#~ "\n"
+#~ "**Købskonto:**      4010 Restaurationsbesøg\n"
+#~ "\n"
+#~ ".\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "โมดูลการประยุกต์ใช้สำหรับประเทศเดนมาร์ก\n"
+#~ "===============================\n"
+#~ "\n"
+#~ "นี่คือโมดูลสำหรับจัดการ **ผังการบัญชีสำหรับประเทศเดนมาร์ก** "
+#~ "ครอบคลุมทั้งธุรกิจแบบใช้คนคนเดียว รวมถึง I/S, IVS, ApS และ A/S\n"
+#~ "\n"
+#~ "**Modulet opsætter:**\n"
+#~ "\n"
+#~ "- **Dansk kontoplan**\n"
+#~ "\n"
+#~ "- Dansk moms\n"
+#~ "        - 25% moms\n"
+#~ "        - Resturationsmoms 6,25%\n"
+#~ "        - Omvendt betalingspligt\n"
+#~ "\n"
+#~ "- Konteringsgrupper\n"
+#~ "        - EU (Virksomhed)\n"
+#~ "        - EU (Privat)\n"
+#~ "        - 3.lande\n"
+#~ "\n"
+#~ "- Finans raporter\n"
+#~ "        - Resulttopgørelse\n"
+#~ "        - Balance\n"
+#~ "        - Momsafregning\n"
+#~ "            - Afregning\n"
+#~ "            - Rubrik A, B og C\n"
+#~ "\n"
+#~ "- **Anglo-Saxon regnskabsmetode**\n"
+#~ "\n"
+#~ ".\n"
+#~ "\n"
+#~ "Produkt setup:\n"
+#~ "==============\n"
+#~ "\n"
+#~ "**Vare**\n"
+#~ "\n"
+#~ "**Salgsmoms:**      Salgmoms 25%\n"
+#~ "\n"
+#~ "**Salgskonto:**     1010 Salg af vare, m/moms\n"
+#~ "\n"
+#~ "**Købsmoms:**       Købsmoms 25%\n"
+#~ "\n"
+#~ "**Købskonto:**      2010 Direkte omkostninger vare, m/moms\n"
+#~ "\n"
+#~ ".\n"
+#~ "\n"
+#~ "**Ydelse**\n"
+#~ "\n"
+#~ "**Salgsmoms:**      Salgmoms 25%, ydelser\n"
+#~ "\n"
+#~ "**Salgskonto:**     1011 Salg af ydelser, m/moms\n"
+#~ "\n"
+#~ "**Købsmoms:**       Købsmoms 25%, ydelser\n"
+#~ "\n"
+#~ "**Købskonto:**      2011 Direkte omkostninger ydelser, m/moms\n"
+#~ "\n"
+#~ ".\n"
+#~ "\n"
+#~ "**Vare med omvendt betalingspligt**\n"
+#~ "\n"
+#~ "**Salgsmoms:**      Salg omvendt betalingspligt\n"
+#~ "\n"
+#~ "**Salgskonto:**     1012 Salg af vare, u/moms\n"
+#~ "\n"
+#~ "**Købsmoms:**       Køb omvendt betalingspligt\n"
+#~ "\n"
+#~ "**Købskonto:**      2012 Direkte omkostninger vare, u/moms\n"
+#~ "\n"
+#~ "\n"
+#~ ".\n"
+#~ "\n"
+#~ "**Restauration**\n"
+#~ "\n"
+#~ "**Købsmoms:**       Restaurationsmoms 6,25%, købsmoms\n"
+#~ "\n"
+#~ "**Købskonto:**      4010 Restaurationsbesøg\n"
+#~ "\n"
+#~ ".\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Add support to fill three optional fields used when using Chorus Pro, "
+#~ "especially when invoicing public services.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "เพิ่มการรองรับเพื่อกรอกช่องตัวเลือกสามช่องที่ใช้ เมื่อใช้ Chorus Pro "
+#~ "โดยเฉพาะการออกใบแจ้งหนี้บริการสาธารณะ\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Manage time off requests and allocations\n"
+#~ "=====================================\n"
+#~ "\n"
+#~ "This application controls the time off schedule of your company. It "
+#~ "allows employees to request time off. Then, managers can review requests "
+#~ "for time off and approve or reject them. This way you can control the "
+#~ "overall time off planning for the company or department.\n"
+#~ "\n"
+#~ "You can configure several kinds of time off (sickness, paid days, ...) "
+#~ "and allocate time off to an employee or department quickly using time off "
+#~ "allocation. An employee can also make a request for more days off by "
+#~ "making a new time off allocation. It will increase the total of available "
+#~ "days for that time off type (if the request is accepted).\n"
+#~ "\n"
+#~ "You can keep track of time off in different ways by following reports:\n"
+#~ "\n"
+#~ "* Time Off Summary\n"
+#~ "* Time Off by Department\n"
+#~ "* Time Off Analysis\n"
+#~ "\n"
+#~ "A synchronization with an internal agenda (Meetings of the CRM module) is "
+#~ "also possible in order to automatically create a meeting when a time off "
+#~ "request is accepted by setting up a type of meeting in time off Type.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "จัดการคำขอการลาและการจัดสรร\n"
+#~ "=====================================\n"
+#~ "\n"
+#~ "แอปพลิเคชันนี้ควบคุมตารางการลาของบริษัทของคุณ ซึ่งจะช่วยให้พนักงานสามารถส่งคำขอลางานได้ "
+#~ "จากนั้น ผู้จัดการสามารถตรวจสอบคำขอและอนุมัติหรือปฏิเสธได้ "
+#~ "และด้วยวิธีนี้คุณสามารถควบคุมการวางแผนการลาโดยรวมไว้กับบริษัทหรือแผนกก็ได้\n"
+#~ "\n"
+#~ "คุณสามารถกำหนดค่าการลาหลายประเภท (เช่น ลาป่วย, วันที่จ่ายค่าจ้าง, ...) "
+#~ "และจัดสรรเวลาการลาให้กับพนักงานหรือแผนกได้อย่างรวดเร็วโดยใช้การจัดสรรเวลาการลา "
+#~ "พนักงานยังสามารถขอวันลาเพิ่มเติมได้โดยการทำการจัดสรรเวลาการลาใหม่ "
+#~ "ซึ่งนั่นจะเพิ่มจำนวนวันที่ใช้ได้ทั้งหมดสำหรับประเภทการลานั้น (หากคำขอได้รับการอนุมัติ)\n"
+#~ "\n"
+#~ "คุณสามารถติดตามการลาได้ในรูปแบบต่างๆ โดยการติดตามรายงานต่อไปนี้:\n"
+#~ "\n"
+#~ "* สรุปการลา\n"
+#~ "* การลาตามแผนก\n"
+#~ "* การวิเคราะห์การลา\n"
+#~ "\n"
+#~ "การซิงโครไนซ์กับตารางการประชุมภายใน (การประชุมของโมดูล CRM) "
+#~ "ยังเป็นไปได้เพื่อสร้างการประชุมโดยอัตโนมัติเมื่อคำขอการลาได้รับการอนุมัติโดยการตั้งค่าประเภทการประชุมในการลา\n"
+
+#~ msgid "Addison Olson is a mighty sales representative at Deco Addict."
+#~ msgstr "Addison Olson เป็นตัวแทนขายหลักของ Deco Addict"
+
+#~ msgid ""
+#~ "Deco Addict designs, develops, integrates and supports HR and Supply\n"
+#~ "                Chain processes in order to make our customers more "
+#~ "productive,\n"
+#~ "                responsive and profitable."
+#~ msgstr ""
+#~ "Deco Addict ออกแบบ พัฒนา บูรณาการและรองรับกระบวนการทรัพยากรบุคคล\n"
+#~ "                และซัพพลายเชน เพื่อให้ลูกค้าของเรามีประสิทธิผล\n"
+#~ "                ตอบสนองได้ไวและทำกำไรได้มากขึ้น"
+
+#~ msgid ""
+#~ "Deco Addict designs, develops, integrates and supports HR and Supply "
+#~ "Chain processes in order to make our customers more productive, "
+#~ "responsive and profitable."
+#~ msgstr ""
+#~ "Deco Addict ออกแบบ พัฒนา บูรณาการและรองรับกระบวนการทรัพยากรบุคคลและซัพพลายเชน "
+#~ "เพื่อให้ลูกค้าของเรามีประสิทธิผล ตอบสนองได้ไวและทำกำไรได้มากขึ้น"
+
+#~ msgid ""
+#~ "Deco Addict integrates ERP for Global Companies and supports PME\n"
+#~ "                with Open Sources software to manage their businesses. "
+#~ "Our\n"
+#~ "                consultants are experts in the following areas:"
+#~ msgstr ""
+#~ "Deco Addict ผสานรวมกับระบบ ERP สำหรับบริษัทระดับโลกและรองรับ PME\n"
+#~ "               ด้วยซอฟต์แวร์แบบโอเพ่นซอร์ส เพื่อจัดการธุรกิจของพวกเขา\n"
+#~ "               ที่ปรึกษาของเราเป็นผู้เชี่ยวชาญในด้านต่อไปนี้:"
+
+#~ msgid "Douglas Fletcher is a mighty functional consultant at Deco Addict"
+#~ msgstr "Douglas Fletcher เป็นที่ปรึกษาด้านการทำงานหลักของ Deco Addict"
+
+#~ msgid "Estate Management"
+#~ msgstr "การจัดการอสังหาริมทรัพย์"
+
+#~ msgid "Floyd Steward is a mighty analyst at Deco Addict."
+#~ msgstr "Floyd Steward เป็นนักวิเคราะห์หลักของ Deco Addict"
+
+#~ msgid "France - Factur-X integration with Chorus Pro"
+#~ msgstr "ประเทศฝรั่งเศส - การรวม Factur-X กับ Chorus Pro"
+
+#~ msgid ""
+#~ "Odoo Human Resources\n"
+#~ "--------------------\n"
+#~ "\n"
+#~ "With Odoo <a href=\"https://www.odoo.com/app/employees\">Human Resources</"
+#~ "a>,\n"
+#~ "manage the most important asset in your company: People\n"
+#~ "\n"
+#~ "Get all your HR operations managed easily: knowledge sharing, "
+#~ "recruitments,\n"
+#~ "appraisals, timesheets, contracts, attendances, payroll, etc.\n"
+#~ "\n"
+#~ "Each need is provided by a specific app that you activate on demand.\n"
+#~ "\n"
+#~ "Manage Your Employees\n"
+#~ "---------------------\n"
+#~ "\n"
+#~ "Oversee all important information in your company address book. Some\n"
+#~ "information are restricted to HR managers, others are public to easily "
+#~ "look\n"
+#~ "colleagues.\n"
+#~ "\n"
+#~ "Record employee contracts and get alerts when they have to be renewed.\n"
+#~ "\n"
+#~ "Streamline Your Recruitment Process\n"
+#~ "-----------------------------------\n"
+#~ "\n"
+#~ "Index resumes, track applicants, search profiles with <a href=\"https://"
+#~ "www.odoo.com/app/employees\">Odoo HR</a>.\n"
+#~ "\n"
+#~ "Post job offers and keep track of each application received. Follow "
+#~ "applicants\n"
+#~ "in your recruitment process with the smart kanban view.\n"
+#~ "\n"
+#~ "Save time by automating some communications with email templates. Resumes "
+#~ "are\n"
+#~ "indexed automatically, allowing you to easily find for specific "
+#~ "profiles.\n"
+#~ "\n"
+#~ "Enterprise Social Network\n"
+#~ "-------------------------\n"
+#~ "\n"
+#~ "Break down information silos. Share knowledge and best practices amongst "
+#~ "all\n"
+#~ "employees. Follow specific people or documents and join groups of "
+#~ "interests to\n"
+#~ "share expertise and documents.\n"
+#~ "\n"
+#~ "Interact with your coworkers in real time with website live chat.\n"
+#~ "\n"
+#~ "Track time and attendances\n"
+#~ "--------------------------\n"
+#~ "\n"
+#~ "Keep track of the time spent by project, client or task. It's easy to "
+#~ "record\n"
+#~ "timesheets or check attendances for each employee. Get your analytic "
+#~ "accounting\n"
+#~ "posted automatically based on time spent on your projects.\n"
+#~ "\n"
+#~ "Time Off Management\n"
+#~ "-----------------\n"
+#~ "\n"
+#~ "Keep track of the vacation days accrued by each employee. Employees enter "
+#~ "their\n"
+#~ "requests (paid time off, sick time off, etc), for managers to approve "
+#~ "and\n"
+#~ "validate. It's all done in just a few clicks. The agenda of each employee "
+#~ "is\n"
+#~ "updated accordingly.\n"
+#~ "\n"
+#~ "Keep Track of Employee Expenses\n"
+#~ "-------------------------------\n"
+#~ "\n"
+#~ "Get rid of the paper work and follow employee's expenses directly in "
+#~ "Odoo.\n"
+#~ "Don't loose time or money by controlling the full flow: expense "
+#~ "validation,\n"
+#~ "reimbursement of employees, posting in the accounting and re-invoicing "
+#~ "to\n"
+#~ "customers.\n"
+#~ "\n"
+#~ "Follow Periodic Appraisals\n"
+#~ "--------------------------\n"
+#~ "\n"
+#~ "Set-up appraisals plans and/or surveys for your employees and watch "
+#~ "their\n"
+#~ "evolution. Define steps for interviews and Odoo will notify managers or\n"
+#~ "subordinates automatically to prepare appraisals. Keep track of the "
+#~ "progress of\n"
+#~ "your staff periodically.\n"
+#~ "\n"
+#~ "Boost Engagement With Gamification\n"
+#~ "----------------------------------\n"
+#~ "\n"
+#~ "### Define clear objective and provide real time feedback\n"
+#~ "\n"
+#~ "Inspire achievement with challenges, goals and rewards. Define clear "
+#~ "objectives\n"
+#~ "and provide real time feedback and tangible results. Showcase the top\n"
+#~ "performers to the entire channel and publicly recognize a job well done.\n"
+#~ "\n"
+#~ "### Leaderboards\n"
+#~ "\n"
+#~ "Promote leaders and competition amongst Sales Team with performance "
+#~ "ratios.\n"
+#~ "\n"
+#~ "### Personal Objectives\n"
+#~ "\n"
+#~ "Assign clear goals to users to align them with the company objectives.\n"
+#~ "\n"
+#~ "### Team Targets\n"
+#~ "\n"
+#~ "Compare revenues with forecasts and budgets in real time.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Odoo Human Resources \n"
+#~ "-------------------- \n"
+#~ "\n"
+#~ "ด้วย Odoo <a href=\"https://www.odoo.com/page/employees\">Human Resources</"
+#~ "a> \n"
+#~ "จัดการทรัพย์สินที่สำคัญที่สุดในบริษัทของคุณ: พนักงาน\n"
+#~ "\n"
+#~ "จัดการงานทรัพยากรบุคคลทั้งหมดของคุณได้อย่างง่ายดาย: การแบ่งปันความรู้การสรรหาบุคลากร,\n"
+#~ "การประเมิน, ใบบันทึกเวลา, สัญญา, การเข้างาน, การจ่ายเงินเดือน และอื่นๆ \n"
+#~ "\n"
+#~ "แต่ละความต้องการนั้นมาจากแอปเฉพาะที่คุณเปิดใช้งานตามความต้องการ\n"
+#~ "\n"
+#~ " จัดการพนักงานของคุณ \n"
+#~ "--------------------- \n"
+#~ "\n"
+#~ "ดูแลข้อมูลสำคัญทั้งหมดในสมุดที่อยู่ บริษัท ของคุณ ข้อมูลบางอย่างถูก จำกัด "
+#~ "ไว้สำหรับผู้จัดการฝ่ายทรัพยากรบุคคลส่วนข้อมูลอื่น ๆ "
+#~ "เป็นข้อมูลสาธารณะเพื่อให้เพื่อนร่วมงานมองได้ง่าย \n"
+#~ "บันทึกสัญญาของพนักงานและรับการแจ้งเตือนเมื่อต้องต่ออายุ \n"
+#~ "\n"
+#~ "ปรับปรุงกระบวนการสรรหาของคุณ \n"
+#~ "----------------------------------- \n"
+#~ "\n"
+#~ "ดัชนีประวัติย่อติดตามผู้สมัครค้นหาโปรไฟล์ด้วย <a href=\"https://www.odoo.com/page/"
+#~ "employees\">Odoo HR</a>\n"
+#~ "\n"
+#~ "โพสต์ข้อเสนองานและติดตามแต่ละใบสมัครที่ได้รับ "
+#~ "ติดตามผู้สมัครในกระบวนการรับสมัครของคุณด้วยมุมมองคัมบังอัจฉริยะ \n"
+#~ "\n"
+#~ "ประหยัดเวลาด้วยการสื่อสารอัตโนมัติด้วยเทมเพลตอีเมล "
+#~ "เรซูเม่จะถูกจัดทำดัชนีโดยอัตโนมัติช่วยให้คุณค้นหาโปรไฟล์ที่ต้องการได้อย่างง่ายดาย \n"
+#~ "\n"
+#~ "เครือข่ายสังคมขององค์กร\n"
+#~ " ------------------------- \n"
+#~ "\n"
+#~ "แบ่งคลังข้อมูล แบ่งปันความรู้และแนวทางปฏิบัติที่ดีระหว่างพนักงานทุกคน \n"
+#~ "ติดตามบุคคลหรือเอกสารที่เฉพาะเจาะจงและเข้าร่วมกลุ่มที่สนใจเพื่อแบ่งปัน\n"
+#~ "ความเชี่ยวชาญและเอกสาร\n"
+#~ "\n"
+#~ "โต้ตอบกับเพื่อนร่วมงานของคุณแบบเรียลไทม์ด้วยไลฟ์แชทบนเว็บไซต์\n"
+#~ "\n"
+#~ "ติดตามเวลาและการเข้างาน \n"
+#~ "-------------------------- \n"
+#~ "\n"
+#~ "ติดตามเวลาที่ใช้โดยโปรเจ็กต์ลูกค้าหรืองาน การบันทึกแผ่นเวลา\n"
+#~ "หรือตรวจสอบการเข้างานของพนักงานแต่ละคนทำได้ง่าย รับการบัญชีเชิงวิเคราะห์ของคุณ\n"
+#~ "ที่โพสต์โดยอัตโนมัติตามเวลาที่ใช้ในโครงการของคุณ \n"
+#~ "\n"
+#~ "การจัดการระบบการลา\n"
+#~ " ----------------- \n"
+#~ "\n"
+#~ "ติดตามวันลางานที่เกิดขึ้นโดยพนักงานแต่ละคน พนักงานป้อนคำขอของพวกเขา \n"
+#~ "(เวลาหยุดงานเวลาลาป่วย ฯลฯ ) เพื่อให้ผู้จัดการอนุมัติและตรวจสอบความถูกต้อง \n"
+#~ "ทั้งหมดนี้ทำได้ในไม่กี่คลิก มีการปรับปรุงกำหนดการประชุมของพนักงานแต่ละคนให้สอดคล้องกัน \n"
+#~ "\n"
+#~ "ติดตามค่าใช้จ่ายของพนักงาน \n"
+#~ "-------------------------------\n"
+#~ "\n"
+#~ "บอกลาบันทึกบนกระดาษและติดตามค่าใช้จ่ายของพนักงานโดยตรงใน Odoo \n"
+#~ "อย่าเสียเวลาหรือเงินโดยการควบคุมการหมุนเวียนทั้งหมด: การตรวจสอบค่าใช้จ่ายการคืนเงิน\n"
+#~ "ของพนักงานการลงรายการบัญชีและการออกใบแจ้งหนี้ให้กับลูกค้า \n"
+#~ "\n"
+#~ "ติดตามการประเมินเป็นระยะ \n"
+#~ "--------------------------\n"
+#~ "\n"
+#~ " ตั้งค่าแผนการประเมินและ / หรือแบบสำรวจสำหรับพนักงานของคุณและดูวิวัฒนาการของพวกเขา \n"
+#~ "กำหนดขั้นตอนในการสัมภาษณ์และ Odoo จะแจ้งผู้จัดการหรือพนักงานในทีมโดยอัตโนมัติเพื่อ\n"
+#~ "เตรียมการประเมิน ติดตามความคืบหน้าของพนักงานของคุณเป็นระยะ \n"
+#~ "\n"
+#~ "เพิ่มการมีส่วนร่วมด้วย Gamification \n"
+#~ "---------------------------------- \n"
+#~ "\n"
+#~ "### กำหนดวัตถุประสงค์ที่ชัดเจนและให้ข้อเสนอแนะแบบเรียลไทม์\n"
+#~ "\n"
+#~ " สร้างแรงบันดาลใจในการประสบความสำเร็จกับความท้าทายต่อเป้าหมายและรางวัล "
+#~ "กำหนดวัตถุประสงค์ที่ชัดเจน\n"
+#~ "และให้ข้อเสนอแนะแบบเรียลไทม์และผลลัพธ์ที่เป็นรูปธรรม แสดงผู้มีผลงานชั้นนำ\n"
+#~ "ให้ทั้งช่องและให้สาธารณชนรับรู้ถึงงานที่ทำได้ดี \n"
+#~ "\n"
+#~ "### กระดานผู้นำ\n"
+#~ "\n"
+#~ "ส่งเสริมผู้นำและการแข่งขันระหว่างทีมขายด้วยอัตราส่วนประสิทธิภาพ \n"
+#~ "\n"
+#~ "### วัตถุประสงค์ส่วนบุคคล\n"
+#~ "\n"
+#~ "กำหนดเป้าหมายที่ชัดเจนให้กับผู้ใช้เพื่อให้สอดคล้องกับวัตถุประสงค์ของบริษัท \n"
+#~ "\n"
+#~ "### เป้าหมายของทีม\n"
+#~ "\n"
+#~ "เปรียบเทียบรายได้กับการคาดการณ์และงบประมาณแบบเรียลไทม์\n"
+#~ "\n"
+
+#~ msgid "Service"
+#~ msgstr "บริการ"
+
+#~ msgid "Spain - Point of Sale"
+#~ msgstr "ประเทศสเปน - การขายหน้าร้าน"
 
 #~ msgid ""
 #~ "\n"
@@ -50669,15 +52150,6 @@ msgstr "ค่า “%(attribute)s” จะต้องเป็นจำนว
 #~ "for Hong Kong "
 #~ msgstr " นี่คือโมดูลพื้นฐานในการจัดการผังบัญชีและการแปลสำหรับฮ่องกง "
 
-#~ msgid ""
-#~ "%(previous_message)s\n"
-#~ "\n"
-#~ "Implicitly accessed through '%(document_kind)s' (%(document_model)s)."
-#~ msgstr ""
-#~ "%(previous_message)s\n"
-#~ "\n"
-#~ "เข้าถึงโดยปริยายผ่าน '%(document_kind)s' (%(document_model)s)."
-
 #~ msgid "%B - Full month name.\""
 #~ msgstr "%B - ชื่อเดือนแบบเต็ม\""
 
@@ -51371,17 +52843,11 @@ msgstr "ค่า “%(attribute)s” จะต้องเป็นจำนว
 #~ msgid "Read Access Right"
 #~ msgstr "สิทธิ์การอ่าน"
 
-#~ msgid "Record does not exist or has been deleted."
-#~ msgstr "Record does not exist or has been deleted."
-
 #~ msgid "Records:"
 #~ msgstr "รายการ:"
 
 #~ msgid "Recruitment resumés and letters from documents"
 #~ msgstr "ประวัติย่อการรับสมัครและจดหมายจากเอกสาร"
-
-#~ msgid "Recursion Detected."
-#~ msgstr "ตรวจพบการเรียกซ้ำ"
 
 #~ msgid "Related Server Action"
 #~ msgstr "Related Server Action"
@@ -51394,9 +52860,6 @@ msgstr "ค่า “%(attribute)s” จะต้องเป็นจำนว
 
 #~ msgid "Repeat Missed"
 #~ msgstr "Repeat Missed"
-
-#~ msgid "Resolve other errors first"
-#~ msgstr "Resolve other errors first"
 
 #~ msgid "SEPA Credit Transfer"
 #~ msgstr "เครดิต"
@@ -51512,9 +52975,6 @@ msgstr "ค่า “%(attribute)s” จะต้องเป็นจำนว
 #~ "Unable to upgrade module \"%s\" because an external dependency is not "
 #~ "met: %s"
 
-#~ msgid "Unknown database identifier '%s'"
-#~ msgstr "Unknown database identifier '%s'"
-
 #~ msgid "Unknown error during import:"
 #~ msgstr "Unknown error during import:"
 
@@ -51620,9 +53080,6 @@ msgstr "ค่า “%(attribute)s” จะต้องเป็นจำนว
 #~ msgstr ""
 #~ "เซิร์ฟเวอร์ Odoo ของคุณไม่รองรับ SMTP-over-SSL คุณสามารถใช้ STARTTLS แทนได้ "
 #~ "หากจำเป็นต้องใช้ SSL การอัปเกรดเป็น Python 2.6 ทางฝั่งเซิร์ฟเวอร์ควรทำเคล็ดลับ"
-
-#~ msgid "allowed for groups %s"
-#~ msgstr "อนุญาตสำหรับกลุ่ม %s"
 
 #~ msgid "at"
 #~ msgstr "ที่"

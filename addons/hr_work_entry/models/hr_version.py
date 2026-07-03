@@ -233,7 +233,7 @@ class HrVersion(models.Model):
             real_attendances = attendances - leaves - worked_leaves
             if not calendar:
                 real_leaves = leaves
-                real_worked_leaves = worked_leaves
+                real_worked_leaves = worked_leaves - real_leaves
             elif calendar.flexible_hours:
                 # Flexible hours case
                 # For multi day leaves, we want them to occupy the virtual working schedule 12 AM to average working days
@@ -246,9 +246,11 @@ class HrVersion(models.Model):
                 static_attendances = calendar._attendance_intervals_batch(
                     start_dt, end_dt, resources=resource, tz=tz)[resource.id]
                 real_leaves = (static_attendances & multi_day_leaves) | one_day_leaves
-                real_worked_leaves = (static_attendances & multi_day_worked_leaves) | one_day_worked_leaves
+                real_worked_leaves = (
+                    (static_attendances & multi_day_worked_leaves) | one_day_worked_leaves
+                ) - real_leaves
 
-            elif version.has_static_work_entries() or not leaves or not worked_leaves:
+            elif version.has_static_work_entries() or not leaves:
                 # Empty leaves means empty real_leaves
                 real_worked_leaves = attendances - real_attendances - leaves
                 real_leaves = attendances - real_attendances - real_worked_leaves
@@ -257,7 +259,9 @@ class HrVersion(models.Model):
                 static_attendances = calendar._attendance_intervals_batch(
                     start_dt, end_dt, resources=resource, tz=tz)[resource.id]
                 real_leaves = static_attendances & leaves
-                real_worked_leaves = static_attendances & worked_leaves
+                real_worked_leaves = (static_attendances & worked_leaves) - real_leaves
+
+            real_attendances = self._get_real_attendances(attendances, leaves, worked_leaves)
 
             if not version.has_static_work_entries():
                 # An attendance based version might have an invalid planning, by definition it may not happen with
@@ -333,6 +337,10 @@ class HrVersion(models.Model):
                         ('version_id', version.id),
                     ] + version._get_more_vals_leave_interval(interval, interval_leaves))]
         return version_vals
+
+    # will override in attendance bridge to add overtime vals
+    def _get_real_attendances(self, attendances, leaves, worked_leaves):
+        return attendances - leaves - worked_leaves
 
     def _get_work_entries_values(self, date_start, date_stop):
         """
@@ -430,20 +438,21 @@ class HrVersion(models.Model):
         domain_to_nullify = Domain(False)
         work_entry_null_vals = {field: False for field in self.env["hr.work.entry.regeneration.wizard"]._work_entry_fields_to_nullify()}
 
-        for tz, versions in self.grouped("tz").items():
-            tz = pytz.timezone(tz) if tz else pytz.utc
+        for version_tz, versions in self.grouped(lambda v: v._get_tz()).items():
+            tz = pytz.timezone(version_tz) if version_tz else pytz.utc
             for version in versions:
+                if not version.contract_date_start:
+                    continue
+
                 version_start = tz.localize(fields.Datetime.to_datetime(version.date_start)).astimezone(pytz.utc).replace(tzinfo=None)
                 version_stop = tz.localize(datetime.combine(fields.Datetime.to_datetime(version.date_end or date_stop),
                                                  datetime.max.time())).astimezone(pytz.utc).replace(tzinfo=None)
-                if version_stop < date_start:
-                    continue
                 if version_stop < date_stop:
                     if version.date_generated_from != version.date_generated_to:
                         domain_to_nullify |= Domain([
                             ('version_id', '=', version.id),
-                            ('date', '>', version_stop),
-                            ('date', '<=', date_stop),
+                            ('date', '>', version_stop.astimezone(tz)),
+                            ('date', '<=', date_stop.astimezone(tz)),
                             ('state', '!=', 'validated'),
                         ])
                 if date_start > version_stop or date_stop < version_start:
@@ -453,8 +462,8 @@ class HrVersion(models.Model):
                 if force:
                     domain_to_nullify |= Domain([
                         ('version_id', '=', version.id),
-                        ('date', '>=', date_start_work_entries.date()),
-                        ('date', '<=', date_stop_work_entries.date()),
+                        ('date', '>=', date_start_work_entries.astimezone(tz).date()),
+                        ('date', '<=', date_stop_work_entries.astimezone(tz).date()),
                         ('state', '!=', 'validated'),
                     ])
                     intervals_to_generate[date_start_work_entries, date_stop_work_entries] |= version

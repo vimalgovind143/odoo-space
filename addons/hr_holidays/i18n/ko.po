@@ -8,14 +8,14 @@
 # Martin Trigaux, 2023
 # Sarah Park, 2023
 # "Dylan Kiss (dyki)" <dyki@odoo.com>, 2025.
-# "Kwanghee Park (kwpa)" <kwpa@odoo.com>, 2025.
+# "Kwanghee Park (kwpa)" <kwpa@odoo.com>, 2025, 2026.
 # Weblate <noreply-mt-weblate@weblate.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-21 18:35+0000\n"
-"PO-Revision-Date: 2025-12-02 14:48+0000\n"
+"POT-Creation-Date: 2026-06-19 17:35+0000\n"
+"PO-Revision-Date: 2026-04-13 20:45+0000\n"
 "Last-Translator: \"Kwanghee Park (kwpa)\" <kwpa@odoo.com>\n"
 "Language-Team: Korean <https://translate.odoo.com/projects/odoo-19/"
 "hr_holidays/ko/>\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.14.3\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #. module: hr_holidays
 #. odoo-python
@@ -247,12 +247,24 @@ msgstr "이 기간에 대한 요약"
 #. module: hr_holidays
 #. odoo-javascript
 #: code:addons/hr_holidays/static/src/components/accrual_level/accrual_levels.xml:0
+msgid "(s)"
+msgstr ""
+
+#. module: hr_holidays
+#. odoo-javascript
+#: code:addons/hr_holidays/static/src/components/accrual_level/accrual_levels.xml:0
 msgid ""
 "(s)\n"
 "                                    and a balance cap is set to"
 msgstr ""
 "(s)\n"
 "                                    또한 잔여 한도 설정은 다음과 같습니다:"
+
+#. module: hr_holidays
+#. odoo-javascript
+#: code:addons/hr_holidays/static/src/components/accrual_level/accrual_levels.xml:0
+msgid "(s)."
+msgstr ""
 
 #. module: hr_holidays
 #. odoo-javascript
@@ -1322,12 +1334,10 @@ msgid ""
 "period they already took leaves. Changing this working schedule changes the "
 "duration of these leaves in such a way the employee no longer has the "
 "required allocation for them. Please review these leaves and/or allocations "
-"before changing the contract."
+"before changing the contract.\n"
+"\n"
+"This error has been triggered by:\n"
 msgstr ""
-"이 직원의 계약을 변경하면 이미 휴가를 사용한 기간의 근무 일정이 변경됩니다. "
-"이 근무 일정을 변경하면 해당 직원이 더 이상 필요한 휴가를 할당받지 못하는 방"
-"식으로 휴가 기간이 변경됩니다. 계약을 변경하기 전 이러한 휴가 및/또는 할당 내"
-"용을 검토하시기 바랍니다."
 
 #. module: hr_holidays
 #. odoo-python
@@ -1391,6 +1401,11 @@ msgstr "휴가 신청을 하려면 이 버튼을 클릭하세요."
 #: model_terms:ir.ui.view,arch_db:hr_holidays.report_holidayssummary
 msgid "Color"
 msgstr "색상"
+
+#. module: hr_holidays
+#: model:ir.model,name:hr_holidays.model_res_company
+msgid "Companies"
+msgstr ""
 
 #. module: hr_holidays
 #: model:ir.model.fields,field_description:hr_holidays.field_hr_leave__company_id
@@ -1779,6 +1794,7 @@ msgstr "취소"
 #: model:ir.model.fields,field_description:hr_holidays.field_mail_activity_type__display_name
 #: model:ir.model.fields,field_description:hr_holidays.field_mail_message_subtype__display_name
 #: model:ir.model.fields,field_description:hr_holidays.field_report_hr_holidays_report_holidayssummary__display_name
+#: model:ir.model.fields,field_description:hr_holidays.field_res_company__display_name
 #: model:ir.model.fields,field_description:hr_holidays.field_res_partner__display_name
 #: model:ir.model.fields,field_description:hr_holidays.field_res_users__display_name
 #: model:ir.model.fields,field_description:hr_holidays.field_resource_calendar__display_name
@@ -2330,6 +2346,7 @@ msgstr "인사 아이콘 표시"
 #: model:ir.model.fields,field_description:hr_holidays.field_mail_activity_type__id
 #: model:ir.model.fields,field_description:hr_holidays.field_mail_message_subtype__id
 #: model:ir.model.fields,field_description:hr_holidays.field_report_hr_holidays_report_holidayssummary__id
+#: model:ir.model.fields,field_description:hr_holidays.field_res_company__id
 #: model:ir.model.fields,field_description:hr_holidays.field_res_partner__id
 #: model:ir.model.fields,field_description:hr_holidays.field_res_users__id
 #: model:ir.model.fields,field_description:hr_holidays.field_resource_calendar__id
@@ -3954,6 +3971,14 @@ msgid ""
 msgstr "여기에서 선택한 색상은 휴가 유형이 있는 모든 화면에서 사용됩니다."
 
 #. module: hr_holidays
+#. odoo-python
+#: code:addons/hr_holidays/models/res_company.py:0
+msgid ""
+"The company country cannot be changed while time off leaves or allocations "
+"with the country exist."
+msgstr ""
+
+#. module: hr_holidays
 #: model_terms:ir.ui.view,arch_db:hr_holidays.hr_accrual_level_view_form
 msgid "The days carried over will be effective for"
 msgstr "이월 휴가는 다음 기간동안 유효합니다:"
@@ -5458,6 +5483,18 @@ msgstr "유효 기간"
 #: model_terms:ir.ui.view,arch_db:hr_holidays.hr_leave_report_calendar_view_search
 msgid "validate"
 msgstr "승인"
+
+#~ msgid ""
+#~ "Changing the contract on this employee changes their working schedule in "
+#~ "a period they already took leaves. Changing this working schedule changes "
+#~ "the duration of these leaves in such a way the employee no longer has the "
+#~ "required allocation for them. Please review these leaves and/or "
+#~ "allocations before changing the contract."
+#~ msgstr ""
+#~ "이 직원의 계약을 변경하면 이미 휴가를 사용한 기간의 근무 일정이 변경됩니"
+#~ "다. 이 근무 일정을 변경하면 해당 직원이 더 이상 필요한 휴가를 할당받지 못"
+#~ "하는 방식으로 휴가 기간이 변경됩니다. 계약을 변경하기 전 이러한 휴가 및/또"
+#~ "는 할당 내용을 검토하시기 바랍니다."
 
 #~ msgid ""
 #~ "You cannot refuse this allocation request since the employee has already "

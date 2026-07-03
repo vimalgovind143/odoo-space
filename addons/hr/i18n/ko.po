@@ -8,22 +8,23 @@
 # Sarah Park, 2023
 # Martin Trigaux, 2023
 # "Dylan Kiss (dyki)" <dyki@odoo.com>, 2025.
-# "Kwanghee Park (kwpa)" <kwpa@odoo.com>, 2025.
+# "Kwanghee Park (kwpa)" <kwpa@odoo.com>, 2025, 2026.
 # Weblate <noreply-mt-weblate@weblate.org>, 2025.
+# MAHAMADASIF ANSARI <maan@odoo.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-05 18:36+0000\n"
-"PO-Revision-Date: 2025-12-02 14:37+0000\n"
-"Last-Translator: \"Kwanghee Park (kwpa)\" <kwpa@odoo.com>\n"
+"POT-Creation-Date: 2026-06-19 17:35+0000\n"
+"PO-Revision-Date: 2026-05-02 09:50+0000\n"
+"Last-Translator: MAHAMADASIF ANSARI <maan@odoo.com>\n"
 "Language-Team: Korean <https://translate.odoo.com/projects/odoo-19/hr/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.14.3\n"
+"X-Generator: Weblate 5.17\n"
 
 #. module: hr
 #. odoo-python
@@ -408,6 +409,11 @@ msgstr "<span class=\"text-muted small\">응답 시간</span>"
 #: model_terms:ir.ui.view,arch_db:hr.view_employee_form
 msgid "<span invisible=\"not contract_date_start\">to</span>"
 msgstr "<span invisible=\"not contract_date_start\">종료일</span>"
+
+#. module: hr
+#: model_terms:ir.ui.view,arch_db:hr.view_partner_bank_form_inherit_hr
+msgid "<span invisible=\"not employee_salary_amount_is_percentage\">%</span>"
+msgstr "<span invisible=\"not employee_salary_amount_is_percentage\">%</span>"
 
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.view_employee_form
@@ -1178,7 +1184,6 @@ msgid "Attachment Count"
 msgstr "첨부 파일 수"
 
 #. module: hr
-#: model_terms:ir.ui.view,arch_db:hr.res_users_view_form
 #: model_terms:ir.ui.view,arch_db:hr.res_users_view_form_preferences
 msgid "Attendance PIN"
 msgstr "근태 PIN"
@@ -1277,7 +1282,7 @@ msgstr "은행 계좌 할당"
 #. module: hr
 #: model:ir.model,name:hr.model_hr_bank_account_allocation_wizard_line
 msgid "Bank Account Allocation Line (Wizard)"
-msgstr ""
+msgstr "은행 계좌 지정 내역 (마법사)"
 
 #. module: hr
 #: model:ir.model,name:hr.model_hr_bank_account_allocation_wizard
@@ -1380,7 +1385,7 @@ msgstr "취소"
 #. module: hr
 #. odoo-python
 #: code:addons/hr/models/hr_version.py:0
-msgid "Cannot archive the only active record of an employee."
+msgid "Cannot archive all the active versions of an employee."
 msgstr ""
 
 #. module: hr
@@ -1394,7 +1399,7 @@ msgstr ""
 #. module: hr
 #. odoo-python
 #: code:addons/hr/models/hr_version.py:0
-msgid "Cannot unassign the only active record of an employee."
+msgid "Cannot unassign all the active versions of an employee."
 msgstr ""
 
 #. module: hr
@@ -2124,7 +2129,7 @@ msgstr "문서"
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.view_employee_form
 msgid "Documents"
-msgstr ""
+msgstr "문서"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__driving_license
@@ -2305,7 +2310,7 @@ msgstr "임직원 레코드"
 #: model:ir.model.fields,field_description:hr.field_account_setup_bank_manual_config__employee_salary_amount_is_percentage
 #: model:ir.model.fields,field_description:hr.field_res_partner_bank__employee_salary_amount_is_percentage
 msgid "Employee Salary Amount Is Percentage"
-msgstr ""
+msgstr "직원 급여 금액은 백분율로 되어 있습니다"
 
 #. module: hr
 #: model:ir.actions.act_window,name:hr.open_view_categ_form
@@ -3634,7 +3639,7 @@ msgstr ""
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.view_employee_form
 msgid "No user linked"
-msgstr ""
+msgstr "사용자 연결됨 없음"
 
 #. module: hr
 #: model_terms:hr.job,website_description:hr.job_consultant
@@ -3765,6 +3770,18 @@ msgstr ""
 "고 고리가 발견되었으며 해당 고리에 있는 사람 중 누구도 사용자와 연결되어 있"
 "지 않습니다.                        모든 사람이 담당 관리자에게 보고하는지 확"
 "인해 주세요."
+
+#. module: hr
+#. odoo-javascript
+#: code:addons/hr/static/src/components/avatar_card/avatar_card_popover_patch.xml:0
+msgid "Open Contact Profile"
+msgstr ""
+
+#. module: hr
+#. odoo-javascript
+#: code:addons/hr/static/src/components/avatar_card/avatar_card_popover_patch.xml:0
+msgid "Open Employee Profile (activates company)"
+msgstr ""
 
 #. module: hr
 #. odoo-javascript
@@ -4850,6 +4867,12 @@ msgstr "불러오려는 “%s” 필드는 직원 공개 프로필에서 사용�
 
 #. module: hr
 #. odoo-python
+#: code:addons/hr/models/hr_employee.py:0
+msgid "The following employees have the same work email address: %s"
+msgstr ""
+
+#. module: hr
+#. odoo-python
 #: code:addons/hr/models/res_users.py:0
 msgid "The following fields were modified by %s"
 msgstr "다음 필드가 %s에 의해 수정되었습니다."
@@ -4914,6 +4937,12 @@ msgstr "논문"
 #: code:addons/hr/models/hr_employee.py:0
 msgid "This employee already has an user."
 msgstr "이 직원은 이미 사용자로 등록되어 있습니다."
+
+#. module: hr
+#. odoo-python
+#: code:addons/hr/models/hr_employee.py:0
+msgid "This field %(field_name)s doesn't exist on this model (hr.version)."
+msgstr ""
 
 #. module: hr
 #: model:ir.model.fields,help:hr.field_hr_employee__tz
@@ -5107,7 +5136,7 @@ msgstr "직원 사용자"
 #. odoo-python
 #: code:addons/hr/models/hr_employee.py:0
 msgid "User already exists for Those Employees %s"
-msgstr "해당 %s 직원에는 사용자가 이미 존재합니다: %s"
+msgstr "해당 직원에는 사용자가 이미 존재합니다: %s"
 
 #. module: hr
 #. odoo-python
@@ -5159,9 +5188,25 @@ msgid "Version"
 msgstr "버전"
 
 #. module: hr
+#: model:ir.model.fields,field_description:hr.field_hr_employee__version_revision
+msgid "Version Revision"
+msgstr ""
+
+#. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__versions_count
 msgid "Versions Count"
 msgstr "버전 수"
+
+#. module: hr
+#: model_terms:ir.ui.view,arch_db:hr.hr_version_list_view
+msgid "View"
+msgstr ""
+
+#. module: hr
+#. odoo-javascript
+#: code:addons/hr/static/src/components/avatar_card/avatar_card_popover_patch.xml:0
+msgid "View Profile"
+msgstr ""
 
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.view_employee_form

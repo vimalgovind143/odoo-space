@@ -2,6 +2,7 @@ import { Plugin } from "@html_editor/plugin";
 import { closestBlock, isBlock } from "@html_editor/utils/blocks";
 import {
     removeClass,
+    removeEmptyTextNodes,
     removeStyle,
     toggleClass,
     unwrapContents,
@@ -14,6 +15,7 @@ import {
     isListElement,
     isListItemElement,
     isParagraphRelatedElement,
+    isPhrasingContent,
     isProtected,
     isProtecting,
     isShrunkBlock,
@@ -191,6 +193,8 @@ export class ListPlugin extends Plugin {
         node_to_insert_processors: this.processNodeToInsert.bind(this),
         clipboard_content_processors: this.processContentForClipboard.bind(this),
         before_insert_within_pre_processors: this.insertListWithinPre.bind(this),
+        before_insert_processors: this.handleInsert.bind(this),
+        triple_click_overrides: this.handleTripleClick.bind(this),
 
         fully_selected_node_predicates: (node, selection, range) => {
             if (node.nodeName === "LI") {
@@ -342,7 +346,7 @@ export class ListPlugin extends Plugin {
             return this.baseContainerToList(element, mode);
         }
         // @todo @phoenix: check for callbacks registered as resources instead?
-        if (element.matches("td, th, li.nav-item")) {
+        if (element.matches("td, th, li.nav-item, blockquote")) {
             return this.blockContentsToList(element, mode);
         }
         let list;
@@ -461,6 +465,9 @@ export class ListPlugin extends Plugin {
         newList.style.removeProperty("list-style");
         for (const li of newList.children) {
             li.style.removeProperty("list-style");
+            if (!isListElement(li.firstChild)) {
+                li.classList.remove("oe-nested");
+            }
         }
         removeClass(newList, "o_checklist");
         if (newMode === "CL") {
@@ -490,15 +497,14 @@ export class ListPlugin extends Plugin {
         if (!isOrphan) {
             return;
         }
-        if (element.children.length && [...element.children].every(isBlock)) {
-            // Unwrap <li> if each of its children is a block element.
-            unwrapContents(element);
-        } else {
-            // Otherwise, wrap its content in a new <p> element.
-            const paragraph = this.dependencies.baseContainer.createBaseContainer();
-            element.replaceWith(paragraph);
-            paragraph.replaceChildren(...element.childNodes);
-        }
+        const cursors = this.dependencies.selection.preserveSelection();
+        wrapInlinesInBlocks(element, {
+            baseContainerNodeName: this.dependencies.baseContainer.getDefaultNodeName(),
+            cursors,
+        });
+        cursors.update(callbacksForCursorUpdate.unwrap(element));
+        unwrapContents(element);
+        cursors.restore();
     }
 
     mergeSimilarLists(element) {
@@ -544,9 +550,15 @@ export class ListPlugin extends Plugin {
             element.classList.add("oe-nested");
         }
 
+        element.classList.toggle(
+            "o_checked_has_nested_list",
+            element.classList.contains("o_checked") && !!element.querySelector("ul, ol")
+        );
+
         if (
             [...element.children].some(
-                (child) => isBlock(child) && !this.dependencies.split.isUnsplittable(child)
+                (child) =>
+                    !isPhrasingContent(child) && !this.dependencies.split.isUnsplittable(child)
             )
         ) {
             const cursors = this.dependencies.selection.preserveSelection();
@@ -1062,6 +1074,16 @@ export class ListPlugin extends Plugin {
         }
     }
 
+    handleTripleClick(ev) {
+        const node = ev.target;
+        const isChecklistItem =
+            node.tagName === "LI" && this.getListMode(node.parentElement) === "CL";
+        if (isChecklistItem && this.isPointerInsideCheckbox(node, ev.offsetX, ev.offsetY)) {
+            // If pointer is inside checkbox, prevent tripleclick selection.
+            return true;
+        }
+    }
+
     /**
      * @param {MouseEvent} ev
      * @param {HTMLLIElement} li - LI element inside a checklist.
@@ -1094,6 +1116,9 @@ export class ListPlugin extends Plugin {
         }
         const cursors = this.dependencies.selection.preserveSelection();
         for (const listItem of listItems) {
+            // Remove empty text nodes without breaking the current selection.
+            removeEmptyTextNodes(listItem, cursors);
+
             if (this.dependencies.selection.areNodeContentsFullySelected(listItem)) {
                 for (const node of [
                     listItem,
@@ -1170,6 +1195,9 @@ export class ListPlugin extends Plugin {
                 continue;
             }
 
+            // Remove empty text nodes without breaking the current selection.
+            removeEmptyTextNodes(listItem, cursors);
+
             if (this.dependencies.selection.areNodeContentsFullySelected(listItem)) {
                 for (const node of [
                     listItem,
@@ -1226,7 +1254,7 @@ export class ListPlugin extends Plugin {
      * @param {HTMLElement} list - The `<ul>` element used to determine the parent list and marker width.
      */
     adjustListPadding(list) {
-        if (!isListElement(list)) {
+        if (!isListElement(list) || ![...list.children].some(getFontSizeOrClass)) {
             return;
         }
         list.style.removeProperty("padding-inline-start");
@@ -1239,7 +1267,7 @@ export class ListPlugin extends Plugin {
                 const markerWidth = parseFloat(this.window.getComputedStyle(li, "::marker").width);
                 return isNaN(markerWidth) ? 0 : markerWidth;
             })
-            .reduce(Math.max);
+            .reduce((accumulator, currentValue) => Math.max(accumulator, currentValue));
         // For `UL` with large font size the marker width is so big that more padding is needed.
         const largestMarkerPadding = Math.round(largestMarker) * (list.nodeName === "UL" ? 2 : 1);
 
@@ -1286,5 +1314,14 @@ export class ListPlugin extends Plugin {
                     description: command.title,
                 };
             });
+    }
+
+    handleInsert(container, block) {
+        if (!this.config.allowChecklist) {
+            for (const list of container.querySelectorAll(".o_checklist > li")) {
+                this.liToBlocks(list);
+            }
+        }
+        return container;
     }
 }

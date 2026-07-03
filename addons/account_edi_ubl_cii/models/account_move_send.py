@@ -17,6 +17,17 @@ class AccountMoveSend(models.AbstractModel):
     _inherit = 'account.move.send'
 
     # -------------------------------------------------------------------------
+    # CONSTRAINTS
+    # -------------------------------------------------------------------------
+
+    @api.model
+    def _get_move_constraints(self, move):
+        constraints = super()._get_move_constraints(move)
+        if move._is_exportable_as_self_invoice():
+            constraints.pop('not_sale_document', None)
+        return constraints
+
+    # -------------------------------------------------------------------------
     # ALERTS
     # -------------------------------------------------------------------------
 
@@ -93,6 +104,8 @@ class AccountMoveSend(models.AbstractModel):
 
     @api.model
     def _get_ubl_available_attachments(self, mail_attachments_widget, invoice_edi_format):
+        if not invoice_edi_format or not mail_attachments_widget:
+            return self.env['ir.attachment'], self.env['ir.attachment']
         attachment_ids = [values['id'] for values in mail_attachments_widget if values.get('manual')]
         attachments = self.env['ir.attachment'].browse(attachment_ids)
 
@@ -113,7 +126,11 @@ class AccountMoveSend(models.AbstractModel):
 
         if invoice._need_ubl_cii_xml(invoice_data['invoice_edi_format']):
             builder = invoice.partner_id.commercial_partner_id._get_edi_builder(invoice_data['invoice_edi_format'])
-            xml_content, errors = builder._export_invoice(invoice)
+            xml_content, errors = (
+                builder
+                .with_context(from_peppol='peppol' in invoice_data['sending_methods'])
+                ._export_invoice(invoice)
+            )
             filename = builder._export_invoice_filename(invoice)
 
             # Failed.
@@ -142,11 +159,11 @@ class AccountMoveSend(models.AbstractModel):
         super()._hook_invoice_document_after_pdf_report_render(invoice, invoice_data)
 
         # Add PDF to XML
-        if 'ubl_cii_xml_options' in invoice_data and invoice_data['ubl_cii_xml_options']['ubl_cii_format'] != 'facturx':
+        if self._needs_ubl_postprocessing(invoice_data):
             self._postprocess_invoice_ubl_xml(invoice, invoice_data)
 
         # Always silently generate a Factur-X and embed it inside the PDF for inter-portability
-        if invoice_data.get('ubl_cii_xml_options', {}).get('ubl_cii_format') == 'facturx':
+        if invoice_data.get('ubl_cii_xml_options', {}).get('ubl_cii_format') in ('facturx', 'zugferd'):
             xml_facturx = invoice_data['ubl_cii_xml_attachment_values']['raw']
         else:
             xml_facturx = self.env['account.edi.xml.cii']._export_invoice(invoice)[0]
@@ -171,11 +188,14 @@ class AccountMoveSend(models.AbstractModel):
         writer = OdooPdfFileWriter()
         writer.cloneReaderDocumentRoot(reader)
 
-        writer.addAttachment('factur-x.xml', xml_facturx, subtype='text/xml')
+        writer.addAttachment('factur-x.xml', xml_facturx, subtype='text/xml', afrelationship='/Alternative')
 
         # PDF-A.
-        if invoice_data.get('ubl_cii_xml_options', {}).get('ubl_cii_format') == 'facturx' \
-                and not writer.is_pdfa:
+        if ((invoice_data.get('ubl_cii_xml_options', {}).get('ubl_cii_format') in ('facturx', 'zugferd')
+                or (invoice.commercial_partner_id.country_code in ('FR', 'DE') and invoice.commercial_partner_id.peppol_eas != '0204'))
+                and invoice.country_code in ('FR', 'DE')
+                and not writer.is_pdfa
+            ):
             try:
                 writer.convert_to_pdfa()
             except Exception:
@@ -189,6 +209,8 @@ class AccountMoveSend(models.AbstractModel):
                     'date': fields.Date.context_today(self),
                 },
             )
+            if "<pdfaid:conformance>B</pdfaid:conformance>" in content:
+                content.replace("<pdfaid:conformance>B</pdfaid:conformance>", "<pdfaid:conformance>A</pdfaid:conformance>")
             writer.add_file_metadata(content.encode())
 
         # Replace the current content.
@@ -197,6 +219,10 @@ class AccountMoveSend(models.AbstractModel):
         pdf_values['raw'] = writer_buffer.getvalue()
         reader_buffer.close()
         writer_buffer.close()
+
+    @api.model
+    def _needs_ubl_postprocessing(self, invoice_data):
+        return 'ubl_cii_xml_options' in invoice_data and invoice_data['ubl_cii_xml_options']['ubl_cii_format'] not in ('facturx', 'zugferd')
 
     @api.model
     def _postprocess_invoice_ubl_xml(self, invoice, invoice_data):
@@ -256,7 +282,7 @@ class AccountMoveSend(models.AbstractModel):
             additional_document_reference_node = {
                 '_tag': 'cac:AdditionalDocumentReference',
                 'cbc:ID': {'_text': attachment_values['filename']},
-                'cbc:DocumentTypeCode': attachment_values.get('document_type_node', ''),
+                'cbc:DocumentTypeCode': attachment_values.get('document_type_node'),
                 'cac:Attachment': {
                     'cbc:EmbeddedDocumentBinaryObject': {
                         '_text': base64.b64encode(attachment_values['raw']).decode(),

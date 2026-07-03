@@ -19,18 +19,18 @@
 # 稀饭~~ <wangwhai@qq.com>, 2023
 # Ryan <ouyang.em@gmail.com>, 2023
 # "Tiffany Chang (tic)" <tic@odoo.com>, 2025.
-# Weblate <noreply-mt-weblate@weblate.org>, 2025.
+# Weblate <noreply-mt-weblate@weblate.org>, 2025, 2026.
 # "feihu.zhang" <feihu.zhang@live.com>, 2025.
 # 何彬 <vnsoft.he@gmail.com>, 2025.
-# 张飞虎 <feihu.zhang@live.com>, 2025.
-# "Chloe Wang (chwa)" <chwa@odoo.com>, 2025.
+# 张飞虎 <feihu.zhang@live.com>, 2025, 2026.
+# "Chloe Wang (chwa)" <chwa@odoo.com>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-28 18:35+0000\n"
-"PO-Revision-Date: 2025-12-05 04:17+0000\n"
-"Last-Translator: \"Chloe Wang (chwa)\" <chwa@odoo.com>\n"
+"POT-Creation-Date: 2026-06-05 19:27+0000\n"
+"PO-Revision-Date: 2026-06-12 03:32+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://translate.odoo.com/"
 "projects/odoo-19/account/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -38,7 +38,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.14.3\n"
+"X-Generator: Weblate 2026.6.1\n"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_journal__type
@@ -82,6 +82,15 @@ msgstr ""
 "         例 180 / (1 - 10%) = 200（不含税）\n"
 "         例 200 * (1 - 10%) = 180（含税）\n"
 "        "
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/account_move_send.py:0
+#, fuzzy
+msgid ""
+"\n"
+"Please contact your administrator."
+msgstr "请联系您的管理员"
 
 #. module: account
 #. odoo-python
@@ -172,6 +181,18 @@ msgstr "%(exception)s for %(user)s%(end_datetime_string)s%(reason)s."
 
 #. module: account
 #. odoo-python
+#: code:addons/account/models/account_move.py:0
+msgid "%(label)s at %(currency_amount)s"
+msgstr ""
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/account_move.py:0
+msgid "%(label)s at %(currency_amount)s (Draft)"
+msgstr ""
+
+#. module: account
+#. odoo-python
 #: code:addons/account/models/account_bank_statement_line.py:0
 msgid ""
 "%(move)s reached an invalid state regarding its related statement line.\n"
@@ -186,6 +207,20 @@ msgstr ""
 #: code:addons/account/models/account_move_line.py:0
 msgid "%(name)s installment #%(number)s"
 msgstr "%(name)s 安装 #%(number)s"
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/account_move.py:0
+msgid "%(name)s%(ref)s at %(currency_amount)s"
+msgstr ""
+
+#. module: account
+#. odoo-python
+#: code:addons/account/wizard/accrued_orders.py:0
+msgid ""
+"%(order)s - %(order_line)s; %(qty_invoiced)s invoiced, %(qty_delivered)s "
+"delivered at %(unit_price)s"
+msgstr ""
 
 #. module: account
 #. odoo-python
@@ -209,15 +244,15 @@ msgstr ""
 
 #. module: account
 #. odoo-python
-#: code:addons/account/models/account_move.py:0
-msgid "%(partner_name)s has reached its credit limit of: %(credit_limit)s"
-msgstr "%(partner_name)s已达到信贷限额： %(credit_limit)s"
+#: code:addons/account/wizard/accrued_orders.py:0
+msgid "%(order)s - %(order_line)s; price difference for %(product)s"
+msgstr ""
 
 #. module: account
 #. odoo-python
 #: code:addons/account/models/account_move.py:0
-msgid "%(ref)s (%(currency_amount)s)"
-msgstr "%(ref)s（%(currency_amount)s）"
+msgid "%(partner_name)s has reached its credit limit of: %(credit_limit)s"
+msgstr "%(partner_name)s已达到信贷限额： %(credit_limit)s"
 
 #. module: account
 #. odoo-python
@@ -299,18 +334,6 @@ msgstr "\"%(filename)s\"（从 \"%(root_filename)s\" 提取，类型为 %(type)s
 #: code:addons/account/models/account_document_import_mixin.py:0
 msgid "'%(filename)s' (type=%(type)s)"
 msgstr "\"%(filename)s\"（类型为 %(type)s）"
-
-#. module: account
-#. odoo-python
-#: code:addons/account/wizard/accrued_orders.py:0
-msgid "(*) Goods Delivered not Invoiced (perpetual valuation)"
-msgstr "(*) 已发货未开票（永续计价法）"
-
-#. module: account
-#. odoo-python
-#: code:addons/account/wizard/accrued_orders.py:0
-msgid "(*) Goods Invoiced not Delivered (perpetual valuation)"
-msgstr "(*) 已开票未发货（永续计价法）"
 
 #. module: account
 #: model:ir.actions.server,name:account.action_move_block_payment
@@ -429,24 +452,9 @@ msgid "0% Imports"
 msgstr "0% 导入"
 
 #. module: account
-#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
-msgid "1.00"
-msgstr "1.00"
-
-#. module: account
-#: model_terms:ir.ui.view,arch_db:account.document_tax_totals_template
-msgid "1.05"
-msgstr "1.05"
-
-#. module: account
 #: model:account.payment.term,name:account.account_payment_term_30_days_end_month_the_10
 msgid "10 Days after End of Next Month"
 msgstr "下月结束后 10 天"
-
-#. module: account
-#: model_terms:ir.ui.view,arch_db:account.report_statement
-msgid "100.0"
-msgstr "100.0"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.report_payment_receipt_document
@@ -454,104 +462,14 @@ msgid "100.00 USD"
 msgstr "100.00 美元"
 
 #. module: account
-#: model_terms:ir.ui.view,arch_db:account.report_statement
-msgid "1000.0"
-msgstr "1000.0"
-
-#. module: account
-#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
-msgid "11.05"
-msgstr "11.05"
-
-#. module: account
-#: model_terms:ir.ui.view,arch_db:account.report_statement
-msgid "12345"
-msgstr "12345"
-
-#. module: account
 #: model:account.payment.term,name:account.account_payment_term_15days
 msgid "15 Days"
 msgstr "15 天"
 
 #. module: account
-#: model:account.tax,name:account.1_purchase_tax_template
-#: model:account.tax,name:account.1_sale_tax_template
-msgid "15%"
-msgstr "15%"
-
-#. module: account
-#: model_terms:ir.ui.view,arch_db:account.report_statement
-msgid "1500.0"
-msgstr "1500.0"
-
-#. module: account
-#: model:account.tax,invoice_label:account.2_account_tax_us_purchase_2_9
-#: model:account.tax,invoice_label:account.2_account_tax_us_sale_2_9
-#: model:account.tax,name:account.2_account_tax_us_purchase_2_9
-#: model:account.tax,name:account.2_account_tax_us_sale_2_9
-#, fuzzy
-msgid "2.9%"
-msgstr "2.9%"
-
-#. module: account
 #: model:account.payment.term,name:account.account_payment_term_30days_early_discount
 msgid "2/7 Net 30"
 msgstr "7 天內付清享 2% 折扣，期限 30 天"
-
-#. module: account
-#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
-msgid "20.00"
-msgstr "20.00"
-
-#. module: account
-#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
-msgid "2021-09-19"
-msgstr "2021 年 9 月 19 日"
-
-#. module: account
-#: model_terms:ir.ui.view,arch_db:account.report_payment_receipt_document
-msgid "2023-01-01"
-msgstr "2023 年 1 月 1 日"
-
-#. module: account
-#: model_terms:ir.ui.view,arch_db:account.report_payment_receipt_document
-msgid "2023-01-05"
-msgstr "2023 年 1 月 5 日"
-
-#. module: account
-#: model_terms:ir.ui.view,arch_db:account.report_statement
-msgid "2023-08-11"
-msgstr "2023 年 8 月 11 日"
-
-#. module: account
-#: model_terms:ir.ui.view,arch_db:account.report_statement
-msgid "2023-08-15"
-msgstr "2023 年 8 月 15 日"
-
-#. module: account
-#: model_terms:ir.ui.view,arch_db:account.report_statement
-msgid "2023-08-31"
-msgstr "2023 年 8 月 31 日"
-
-#. module: account
-#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
-msgid "2023-09-12"
-msgstr "2023 年 9 月 12 日"
-
-#. module: account
-#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
-msgid "2023-09-25"
-msgstr "2023 年 9 月 25 日"
-
-#. module: account
-#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
-msgid "2023-10-31"
-msgstr "2023 年 10 月 31 日"
-
-#. module: account
-#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
-msgid "2024-01-01"
-msgstr "2024年 1 月 1 日"
 
 #. module: account
 #: model:account.payment.term,name:account.account_payment_term_21days
@@ -569,18 +487,6 @@ msgid "25.00 USD"
 msgstr "25.00 美元"
 
 #. module: account
-#: model_terms:ir.ui.view,arch_db:account.document_tax_totals_company_currency_template
-#: model_terms:ir.ui.view,arch_db:account.document_tax_totals_template
-#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
-msgid "27.00"
-msgstr "27.00"
-
-#. module: account
-#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
-msgid "3.00"
-msgstr "3.00"
-
-#. module: account
 #: model:account.payment.term,name:account.account_payment_term_30days
 msgid "30 Days"
 msgstr "30 天"
@@ -596,108 +502,9 @@ msgid "30% Now, Balance 60 Days"
 msgstr "立即支付 30%，60 天内支付余款"
 
 #. module: account
-#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
-msgid "30.00"
-msgstr "30.00"
-
-#. module: account
-#: model_terms:ir.ui.view,arch_db:account.document_tax_totals_company_currency_template
-#: model_terms:ir.ui.view,arch_db:account.document_tax_totals_template
-#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
-msgid "31.05"
-msgstr "31.05"
-
-#. module: account
-#: model_terms:ir.ui.view,arch_db:account.document_tax_totals_company_currency_template
-#: model_terms:ir.ui.view,arch_db:account.document_tax_totals_template
-msgid "4.05"
-msgstr "4.05"
-
-#. module: account
-#: model:account.tax,invoice_label:account.2_account_tax_us_purchase_4_2
-#: model:account.tax,invoice_label:account.2_account_tax_us_sale_4_2
-#: model:account.tax,name:account.2_account_tax_us_purchase_4_2
-#: model:account.tax,name:account.2_account_tax_us_sale_4_2
-#, fuzzy
-msgid "4.2%"
-msgstr "4.2%"
-
-#. module: account
-#: model:account.tax,invoice_label:account.2_account_tax_us_purchase_4_225
-#: model:account.tax,invoice_label:account.2_account_tax_us_sale_4_225
-#: model:account.tax,name:account.2_account_tax_us_purchase_4_225
-#: model:account.tax,name:account.2_account_tax_us_sale_4_225
-#, fuzzy
-msgid "4.225%"
-msgstr "4.225%"
-
-#. module: account
-#: model:account.tax,invoice_label:account.2_account_tax_us_purchase_4_5
-#: model:account.tax,invoice_label:account.2_account_tax_us_sale_4_5
-#: model:account.tax,name:account.2_account_tax_us_purchase_4_5
-#: model:account.tax,name:account.2_account_tax_us_sale_4_5
-#, fuzzy
-msgid "4.5%"
-msgstr "4.5%"
-
-#. module: account
-#: model:account.tax,invoice_label:account.2_account_tax_us_purchase_4_75
-#: model:account.tax,invoice_label:account.2_account_tax_us_sale_4_75
-#: model:account.tax,name:account.2_account_tax_us_purchase_4_75
-#: model:account.tax,name:account.2_account_tax_us_sale_4_75
-#, fuzzy
-msgid "4.75%"
-msgstr "4.75%"
-
-#. module: account
-#: model:account.tax,invoice_label:account.2_account_tax_us_purchase_4_875
-#: model:account.tax,invoice_label:account.2_account_tax_us_sale_4_875
-#: model:account.tax,name:account.2_account_tax_us_purchase_4_875
-#: model:account.tax,name:account.2_account_tax_us_sale_4_875
-#, fuzzy
-msgid "4.875%"
-msgstr "4.875%"
-
-#. module: account
 #: model:account.payment.term,name:account.account_payment_term_45days
 msgid "45 Days"
 msgstr "45 天"
-
-#. module: account
-#: model:account.tax,invoice_label:account.2_account_tax_us_purchase_5_3
-#: model:account.tax,invoice_label:account.2_account_tax_us_sale_5_3
-#: model:account.tax,name:account.2_account_tax_us_purchase_5_3
-#: model:account.tax,name:account.2_account_tax_us_sale_5_3
-#, fuzzy
-msgid "5.3%"
-msgstr "5.3%"
-
-#. module: account
-#: model:account.tax,invoice_label:account.2_account_tax_us_purchase_5_5
-#: model:account.tax,invoice_label:account.2_account_tax_us_sale_5_5
-#: model:account.tax,name:account.2_account_tax_us_purchase_5_5
-#: model:account.tax,name:account.2_account_tax_us_sale_5_5
-#, fuzzy
-msgid "5.5%"
-msgstr "5.5%"
-
-#. module: account
-#: model:account.tax,invoice_label:account.2_account_tax_us_purchase_5_6
-#: model:account.tax,invoice_label:account.2_account_tax_us_sale_5_6
-#: model:account.tax,name:account.2_account_tax_us_purchase_5_6
-#: model:account.tax,name:account.2_account_tax_us_sale_5_6
-#, fuzzy
-msgid "5.6%"
-msgstr "5.6%"
-
-#. module: account
-#: model:account.tax,invoice_label:account.2_account_tax_us_purchase_5_75
-#: model:account.tax,invoice_label:account.2_account_tax_us_sale_5_75
-#: model:account.tax,name:account.2_account_tax_us_purchase_5_75
-#: model:account.tax,name:account.2_account_tax_us_sale_5_75
-#, fuzzy
-msgid "5.75%"
-msgstr "5.75%"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.report_payment_receipt_document
@@ -708,88 +515,6 @@ msgstr "50 美元"
 #: model_terms:ir.ui.view,arch_db:account.report_payment_receipt_document
 msgid "50.00 EUR"
 msgstr "50.00 欧元"
-
-#. module: account
-#: model_terms:ir.ui.view,arch_db:account.report_statement
-msgid "534677881234"
-msgstr "534677881234"
-
-#. module: account
-#: model:account.tax,invoice_label:account.2_account_tax_us_purchase_6_1
-#: model:account.tax,invoice_label:account.2_account_tax_us_sale_6_1
-#: model:account.tax,name:account.2_account_tax_us_purchase_6_1
-#: model:account.tax,name:account.2_account_tax_us_sale_6_1
-#, fuzzy
-msgid "6.1%"
-msgstr "6.1%"
-
-#. module: account
-#: model:account.tax,invoice_label:account.2_account_tax_us_purchase_6_25
-#: model:account.tax,invoice_label:account.2_account_tax_us_sale_6_25
-#: model:account.tax,name:account.2_account_tax_us_purchase_6_25
-#: model:account.tax,name:account.2_account_tax_us_sale_6_25
-#, fuzzy
-msgid "6.25%"
-msgstr "6.25%"
-
-#. module: account
-#: model:account.tax,invoice_label:account.2_account_tax_us_purchase_6_35
-#: model:account.tax,invoice_label:account.2_account_tax_us_sale_6_35
-#: model:account.tax,name:account.2_account_tax_us_purchase_6_35
-#: model:account.tax,name:account.2_account_tax_us_sale_6_35
-#, fuzzy
-msgid "6.35%"
-msgstr "6.35%"
-
-#. module: account
-#: model:account.tax,invoice_label:account.2_account_tax_us_purchase_6_5
-#: model:account.tax,invoice_label:account.2_account_tax_us_sale_6_5
-#: model:account.tax,name:account.2_account_tax_us_purchase_6_5
-#: model:account.tax,name:account.2_account_tax_us_sale_6_5
-#, fuzzy
-msgid "6.5%"
-msgstr "6.5%"
-
-#. module: account
-#: model:account.tax,invoice_label:account.2_account_tax_us_purchase_6_625
-#: model:account.tax,invoice_label:account.2_account_tax_us_sale_6_625
-#: model:account.tax,name:account.2_account_tax_us_purchase_6_625
-#: model:account.tax,name:account.2_account_tax_us_sale_6_625
-#, fuzzy
-msgid "6.625%"
-msgstr "6.625%"
-
-#. module: account
-#: model:account.tax,invoice_label:account.2_account_tax_us_purchase_6_85
-#: model:account.tax,invoice_label:account.2_account_tax_us_sale_6_85
-#: model:account.tax,name:account.2_account_tax_us_purchase_6_85
-#: model:account.tax,name:account.2_account_tax_us_sale_6_85
-#, fuzzy
-msgid "6.85%"
-msgstr "6.85%"
-
-#. module: account
-#: model:account.tax,invoice_label:account.2_account_tax_us_purchase_6_875
-#: model:account.tax,invoice_label:account.2_account_tax_us_sale_6_875
-#: model:account.tax,name:account.2_account_tax_us_purchase_6_875
-#: model:account.tax,name:account.2_account_tax_us_sale_6_875
-#, fuzzy
-msgid "6.875%"
-msgstr "6.875%"
-
-#. module: account
-#: model:account.tax,invoice_label:account.2_account_tax_us_purchase_7_25
-#: model:account.tax,invoice_label:account.2_account_tax_us_sale_7_25
-#: model:account.tax,name:account.2_account_tax_us_purchase_7_25
-#: model:account.tax,name:account.2_account_tax_us_sale_7_25
-#, fuzzy
-msgid "7.25%"
-msgstr "7.25%"
-
-#. module: account
-#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
-msgid "9.00"
-msgstr "9.00"
 
 #. module: account
 #: model:account.payment.term,name:account.account_payment_term_90days_on_the_10th
@@ -805,16 +530,6 @@ msgid ""
 msgstr ""
 "<b>%(count)s#</b>安装<b>%(amount)s</b>到期日<b style='color: #704A66;'>%"
 "(date)s</b>"
-
-#. module: account
-#: model_terms:ir.ui.view,arch_db:account.view_partner_property_form
-msgid ""
-"<br/>\n"
-"                        <span>Please make sure that this is a wanted "
-"behavior.</span>"
-msgstr ""
-"<br/>\n"
-"                        <span>老哥，你确定要这么干吗？</span>"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.report_invoice_document
@@ -1389,6 +1104,22 @@ msgstr ""
 "                        您还可以选择在会计设置中对所有供应商禁用该功能。"
 
 #. module: account
+#: model_terms:ir.ui.view,arch_db:account.view_move_form
+#, fuzzy
+msgid ""
+"<i class=\"fa fa-trash text-danger\"/>\n"
+"                            <span class=\"text-danger\" "
+"invisible=\"duplicated_ref_ids.length == 1\">Delete all duplicates</span>\n"
+"                            <span class=\"text-danger\" "
+"invisible=\"duplicated_ref_ids.length &gt; 1\">Delete duplicate</span>"
+msgstr ""
+"<i class=\"fa fa-trash text-danger\"/>\n"
+"                            <span class=\"text-danger\" "
+"invisible=\"duplicated_ref_ids.length == 1\">删除所有重复项</span>\n"
+"                            <span class=\"text-danger\" "
+"invisible=\"duplicated_ref_ids.length &gt; 1\">删除重复项</span>"
+
+#. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_terms_conditions_setting_banner
 msgid "<i class=\"oi oi-arrow-right me-1\"/>Back to settings"
 msgstr "<i class=\"oi oi-arrow-right me-1\"/>返回设置"
@@ -1755,14 +1486,9 @@ msgstr "<span>$ <span class=\"oe_currency_value\">19,250.00</span></span>"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.report_invoice_document
-msgid ""
-"<span>1.00</span>\n"
-"                                                        <span "
-"groups=\"uom.group_uom\">Units</span>"
-msgstr ""
-"<span>1.00</span>\n"
-"                                                        <span "
-"groups=\"uom.group_uom\">单位</span>"
+#, fuzzy
+msgid "<span>1.00</span>"
+msgstr "<span>1.00</span>"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
@@ -2290,6 +2016,469 @@ msgstr ""
 "            "
 
 #. module: account
+#: model:mail.template,body_html:account.mail_template_invoice_subscriber
+#, fuzzy
+msgid ""
+"<t t-set=\"portal_url\" t-value=\"object.get_portal_url()\"/>\n"
+"<t t-set=\"unsubscribe_url\" t-value=\"ctx.get('unsubscribe_url', False)\"/"
+">\n"
+"\n"
+"<div style=\"margin:0; padding:0; color:#2c2431;\">\n"
+"    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" "
+"style=\"width:100%; background:#f7f4f8; padding:40px 0;\">\n"
+"        <tr>\n"
+"            <td align=\"center\">\n"
+"                <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" "
+"width=\"640\" style=\"width:100%; max-width:640px; background:#ffffff; "
+"border-radius:16px; overflow:hidden; box-shadow:0 20px 45px rgba(56, 37, 60, "
+"0.12);\">\n"
+"                    <tr>\n"
+"                        <td colspan=\"2\" style=\"background:linear-"
+"gradient(140deg,#714B67 0%,#8a6381 55%,#bfa8c2 100%); color:#ffffff; "
+"padding:38px;\">\n"
+"                            <table cellpadding=\"0\" cellspacing=\"0\" "
+"border=\"0\" style=\"width:100%;\">\n"
+"                                <tr>\n"
+"                                    <td style=\"font-size:13px; letter-"
+"spacing:0.3px; text-transform:uppercase; opacity:0.78;\">\n"
+"                                        <t t-"
+"if=\"object.is_sale_document(include_receipts=True)\">Outbound Invoice</t>\n"
+"                                        <t t-else=\"\">Incoming Bill</t>\n"
+"                                    </td>\n"
+"                                    <td align=\"right\">\n"
+"                                        <img alt=\"Odoo\" src=\"/web/static/"
+"img/logo_inverse_white_206px.png\" style=\"height:30px; width:92px; object-"
+"fit:contain;\"/>\n"
+"                                    </td>\n"
+"                                </tr>\n"
+"                                <tr>\n"
+"                                    <td colspan=\"2\" style=\"padding-"
+"top:22px; font-size:26px; line-height:1.45; font-weight:600; color:#ffffff;"
+"\">\n"
+"                                        New invoice in <t t-"
+"out=\"object.journal_id.display_name\"/>\n"
+"                                    </td>\n"
+"                                </tr>\n"
+"                                <tr>\n"
+"                                    <td colspan=\"2\" style=\"padding-"
+"top:18px; font-size:14px; opacity:0.85; line-height:1.6; color:#ffffff;\">\n"
+"                                        A new invoice was created in <t t-"
+"out=\"object.journal_id.display_name\"/> journal of <t t-"
+"out=\"object.company_id.name\"/>!\n"
+"                                    </td>\n"
+"                                </tr>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    <tr>\n"
+"                        <td colspan=\"2\" style=\"padding:34px 38px;\">\n"
+"                            <table cellpadding=\"0\" cellspacing=\"0\" "
+"border=\"0\" style=\"width:100%; border-collapse:separate; border-spacing:0 "
+"16px;\">\n"
+"                                <tr>\n"
+"                                    <td colspan=\"2\" style=\"padding:0;\">\n"
+"                                        <table cellpadding=\"0\" "
+"cellspacing=\"0\" border=\"0\" style=\"width:100%; background:#fbf7fc; "
+"border-radius:16px;\">\n"
+"                                            <tr>\n"
+"                                                <td style=\"padding:24px "
+"26px;\">\n"
+"                                                    <div style=\"font-"
+"size:12px; color:#8d7a92; text-transform:uppercase; letter-spacing:0.45px;"
+"\">Document</div>\n"
+"                                                    <div style=\"margin-"
+"top:8px; font-size:20px; font-weight:600; color:#2c2431; word-break:break-"
+"word;\">\n"
+"                                                        <t t-"
+"out=\"object._get_move_display_name()\"/>\n"
+"                                                    </div>\n"
+"                                                    <t t-if=\"object.ref\">\n"
+"                                                        <div style=\"margin-"
+"top:6px; color:#7f6c84;\">Ref: <t t-out=\"object.ref\"/></div>\n"
+"                                                    </t>\n"
+"                                                </td>\n"
+"                                                <t t-if=\"not "
+"object.currency_id.is_zero(object.amount_total)\">\n"
+"                                                    <td style=\"padding:24px "
+"26px; border-left:1px solid #efe6f3;\" align=\"right\">\n"
+"                                                        <div style=\"font-"
+"size:12px; color:#8d7a92; text-transform:uppercase; letter-spacing:0.45px;"
+"\">Total</div>\n"
+"                                                        <div style=\"margin-"
+"top:8px; font-size:22px; font-weight:600; color:#2c2431;\">\n"
+"                                                            <t t-"
+"out=\"format_amount(object.amount_total, object.currency_id)\"/>\n"
+"                                                        </div>\n"
+"                                                    </td>\n"
+"                                                </t>\n"
+"                                            </tr>\n"
+"                                        </table>\n"
+"                                    </td>\n"
+"                                </tr>\n"
+"                                <tr>\n"
+"                                    <td colspan=\"2\" style=\"padding:0;\">\n"
+"                                        <table cellpadding=\"0\" "
+"cellspacing=\"0\" border=\"0\" style=\"width:100%; margin-top:18px;\">\n"
+"                                            <tr>\n"
+"                                                <td style=\"padding:0;\">\n"
+"                                                    <div "
+"style=\"display:flex; flex-wrap:wrap; gap:12px; justify-content:flex-start;"
+"\">\n"
+"                                                        <t t-"
+"if=\"object.partner_id\">\n"
+"                                                            <div "
+"style=\"flex:0 1 180px; min-width:160px; background:#fff; border:1px solid "
+"#efe6f3; border-radius:12px; padding:12px 16px;\">\n"
+"                                                                <div "
+"style=\"font-size:12px; color:#8d7a92; text-transform:uppercase; letter-"
+"spacing:0.45px;\">Partner</div>\n"
+"                                                                <div "
+"style=\"margin-top:6px; font-size:15px; font-weight:500; color:#2c2431; word-"
+"break:break-word;\">\n"
+"                                                                    <t t-"
+"out=\"object.partner_id.display_name\"/>\n"
+"                                                                </div>\n"
+"                                                            </div>\n"
+"                                                        </t>\n"
+"                                                        <div style=\"flex:0 "
+"1 150px; min-width:140px; background:#fff; border:1px solid #efe6f3; border-"
+"radius:12px; padding:12px 16px;\">\n"
+"                                                            <div "
+"style=\"font-size:12px; color:#8d7a92; text-transform:uppercase; letter-"
+"spacing:0.45px;\">Invoice Date</div>\n"
+"                                                            <div "
+"style=\"margin-top:6px; font-size:15px; color:#2c2431;\">\n"
+"                                                                <t t-"
+"out=\"format_date(object.invoice_date or object.date)\"/>\n"
+"                                                            </div>\n"
+"                                                        </div>\n"
+"                                                        <t t-"
+"if=\"object.invoice_date_due\">\n"
+"                                                            <div "
+"style=\"flex:0 1 150px; min-width:140px; background:#fff; border:1px solid "
+"#efe6f3; border-radius:12px; padding:12px 16px;\">\n"
+"                                                                <div "
+"style=\"font-size:12px; color:#8d7a92; text-transform:uppercase; letter-"
+"spacing:0.45px;\">Due Date</div>\n"
+"                                                                <div "
+"style=\"margin-top:6px; font-size:15px; color:#2c2431;\">\n"
+"                                                                    <t t-"
+"out=\"format_date(object.invoice_date_due)\"/>\n"
+"                                                                </div>\n"
+"                                                            </div>\n"
+"                                                        </t>\n"
+"                                                        <t t-"
+"if=\"object.payment_state in ('paid', 'in_payment')\">\n"
+"                                                            <div "
+"style=\"flex:0 1 180px; min-width:160px; background:#fff; border:1px solid "
+"#efe6f3; border-radius:12px; padding:12px 16px;\">\n"
+"                                                                <div "
+"style=\"font-size:12px; color:#8d7a92; text-transform:uppercase; letter-"
+"spacing:0.45px;\">Payment Status</div>\n"
+"                                                                <div "
+"style=\"margin-top:6px; font-size:15px; color:#2c2431; text-"
+"transform:capitalize;\">\n"
+"                                                                    This "
+"invoice is already paid\n"
+"                                                                </div>\n"
+"                                                            </div>\n"
+"                                                        </t>\n"
+"                                                        <t t-"
+"if=\"object.currency_id != object.company_currency_id\">\n"
+"                                                            <div "
+"style=\"flex:0 1 150px; min-width:140px; background:#fff; border:1px solid "
+"#efe6f3; border-radius:12px; padding:12px 16px;\">\n"
+"                                                                <div "
+"style=\"font-size:12px; color:#8d7a92; text-transform:uppercase; letter-"
+"spacing:0.45px;\">Currency</div>\n"
+"                                                                <div "
+"style=\"margin-top:6px; font-size:15px; color:#2c2431;\">\n"
+"                                                                    <t t-"
+"out=\"object.currency_id.display_name\"/>\n"
+"                                                                </div>\n"
+"                                                            </div>\n"
+"                                                        </t>\n"
+"                                                    </div>\n"
+"                                                </td>\n"
+"                                            </tr>\n"
+"                                        </table>\n"
+"                                    </td>\n"
+"                                </tr>\n"
+"                            </table>\n"
+"\n"
+"                            <div style=\"margin:18px 0 0; padding:18px 22px; "
+"background:#f9f2f9; border-radius:12px; border:1px solid #eadff0; font-"
+"size:13px; color:#6f5c73; line-height:1.6;\">\n"
+"                                <strong style=\"color:#2c2431;\">Files "
+"included:</strong> the original document(s) are attached for your "
+"convenience.\n"
+"                            </div>\n"
+"\n"
+"                            <div style=\"margin-top:32px; text-align:center;"
+"\" t-if=\"object.move_type != 'in_invoice'\">\n"
+"                                <a t-if=\"portal_url\" t-attf-"
+"href=\"{{ portal_url }}\" style=\"display:inline-block; margin:0 10px 14px; "
+"padding:13px 30px; min-width:210px; background:linear-"
+"gradient(135deg,#714B67 0%,#9b77a3 100%); color:#FFFFFF; text-"
+"decoration:none; border-radius:12px; font-weight:600; font-size:14px;\" "
+"target=\"_blank\">\n"
+"                                    View on Portal\n"
+"                                </a>\n"
+"                            </div>\n"
+"\n"
+"                            <p style=\"margin:28px 0 0; font-size:12px; "
+"color:#8f8596; text-align:center;\">\n"
+"                                You receive this message because you are "
+"listed as a watcher on\n"
+"                                <strong t-"
+"out=\"object.journal_id.display_name or 'this journal'\"/>.\n"
+"                                <span style=\"display:block; margin:18px "
+"auto; height:1px; max-width:420px; background:#ece3ed;\"/>\n"
+"                                <t t-if=\"unsubscribe_url\">\n"
+"                                    Prefer to stop receiving these? <a t-"
+"attf-href=\"{{ unsubscribe_url }}\" style=\"color:#8f8596; text-"
+"decoration:underline;\" target=\"_blank\">Unsubscribe here</a>.\n"
+"                                </t>\n"
+"                            </p>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </table>\n"
+"            </td>\n"
+"        </tr>\n"
+"    </table>\n"
+"</div>\n"
+"            "
+msgstr ""
+"<t t-set=\"portal_url\" t-value=\"object.get_portal_url()\"/>\n"
+"<t t-set=\"unsubscribe_url\" t-value=\"ctx.get('unsubscribe_url', False)\"/>"
+"\n"
+"\n"
+"<div style=\"margin:0; padding:0; color:#2c2431;\">\n"
+"    <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" "
+"style=\"width:100%; background:#f7f4f8; padding:40px 0;\">\n"
+"       <tr>\n"
+"            <td align=\"center\"> \n"
+"               <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" "
+"width=\"640\" style=\"width:100%; max-width:640px; background:#ffffff; "
+"border-radius:16px; overflow:hidden; box-shadow:0 20px 45px rgba(56, 37, 60, "
+"0.12);\">\n"
+"                    <tr> \n"
+"                       <td colspan=\"2\" style=\"background:linear-gradient"
+"(140deg,#714B67 0%,#8a6381 55%,#bfa8c2 100%); color:#ffffff; padding:38px;\">"
+"\n"
+"                            <table cellpadding=\"0\" cellspacing=\"0\" "
+"border=\"0\" style=\"width:100%;\"> \n"
+"                               <tr>\n"
+"                                    <td style=\"font-size:13px; letter-"
+"spacing:0.3px; text-transform:uppercase; opacity:0.78;\"> \n"
+"                                       <t t-if=\"object.is_sale_document"
+"(include_receipts=True)\"> 销项发票</t>\n"
+"                                        <t t-else=\"\">进项发票</t>\n"
+"                                    </td>\n"
+"                                   <td align=\"right\">\n"
+"                                        <img alt=\"Odoo\" src=\"/web/static/"
+"img/logo_inverse_white_206px.png\" style=\"height:30px; width:92px; object-"
+"fit:contain;\"/> \n"
+"                                   </td>\n"
+"                                </tr> \n"
+"                               <tr>\n"
+"                                    <td colspan=\"2\" style=\"padding-"
+"top:22px; font-size:26px; line-height:1.45; font-weight:600; "
+"color:#ffffff;\"> \n"
+"                                       <t t-"
+"out=\"object.journal_id.display_name\"/>\n"
+"                                    </td> 中新增发票 \n"
+"                               </tr>\n"
+"                                <tr> \n"
+"                                   <td colspan=\"2\" style=\"padding-"
+"top:18px; font-size:14px; opacity:0.85; line-height:1.6; color:#ffffff;\"> \n"
+"                                        在<t t-"
+"out=\"object.journal_id.display_name\"/> 的<t t-"
+"out=\"object.company_id.name\"/> 日记账中创建了一张新发票！\n"
+"                                   </td>\n"
+"                                </tr> \n"
+"                           </table>\n"
+"                        </td> \n"
+"                   </tr>\n"
+"                    <tr> \n"
+"                       <td colspan=\"2\" style=\"padding:34px 38px;\">\n"
+"                            <table cellpadding=\"0\" cellspacing=\"0\" "
+"border=\"0\" style=\"width:100%; border-collapse:separate; border-spacing:0 "
+"16px;\"> \n"
+"                               <tr>\n"
+"                                    <td colspan=\"2\" style=\"padding:0;\"> "
+"\n"
+"                                       <table cellpadding=\"0\" "
+"cellspacing=\"0\" border=\"0\" style=\"width:100%; background:#fbf7fc; "
+"border-radius:16px;\">\n"
+"                                            <tr> \n"
+"                                               <td style=\"padding:24px "
+"26px;\">\n"
+"                                                    <div style=\"font-"
+"size:12px; color:#8d7a92; text-transform:uppercase; letter-"
+"spacing:0.45px;\"> 文档</div>\n"
+"                                                    <div style=\"margin-"
+"top:8px; font-size:20px; font-weight:600; color:#2c2431; word-break:break-"
+"word;\">\n"
+"                                                       <t t-"
+"out=\"object._get_move_display_name()\"/>\n"
+"                                                    </div> \n"
+"                                                   <t t-if=\"object.ref\">\n"
+"                                                        <div style=\"margin-"
+"top:6px; color:#7f6c84;\"> 参考号：<t t-out=\"object.ref\"/></div>\n"
+"                                                   </t>\n"
+"                                                </td> \n"
+"                                               <t t-if=\"not "
+"object.currency_id.is_zero(object.amount_total)\">\n"
+"                                                    <td style=\"padding:24px "
+"26px; border-left:1px solid #efe6f3;\" align=\"right\"> \n"
+"                                                       <div style=\"font-"
+"size:12px; color:#8d7a92; text-transform:uppercase; letter-"
+"spacing:0.45px;\"> 总计</div>\n"
+"                                                        <div style=\"margin-"
+"top:8px; font-size:22px; font-weight:600; color:#2c2431;\">\n"
+"                                                           <t t-"
+"out=\"format_amount(object.amount_total, object.currency_id)\"/>\n"
+"                                                        </div> \n"
+"                                                   </td>\n"
+"                                                </t> \n"
+"                                           </tr>\n"
+"                                        </table> \n"
+"                                   </td>\n"
+"                                </tr> \n"
+"                               <tr>\n"
+"                                    <td colspan=\"2\" style=\"padding:0;\"> "
+"\n"
+"                                       <table cellpadding=\"0\" "
+"cellspacing=\"0\" border=\"0\" style=\"width:100%; margin-top:18px;\">\n"
+"                                            <tr> \n"
+"                                               <td style=\"padding:0;\">\n"
+"                                                    <div "
+"style=\"display:flex; flex-wrap:wrap; gap:12px; justify-content:flex-"
+"start;\"> \n"
+"                                                       <t t-"
+"if=\"object.partner_id\">\n"
+"                                                            <div "
+"style=\"flex:0 1 180px; min-width:160px; background:#fff; border:1px solid "
+"#efe6f3; border-radius:12px; padding:12px 16px;\"> \n"
+"                                                               <div "
+"style=\"font-size:12px; color:#8d7a92; text-transform:uppercase; letter-"
+"spacing:0.45px;\"> 合作伙伴</div>\n"
+"                                                                <div "
+"style=\"margin-top:6px; font-size:15px; font-weight:500; color:#2c2431; word-"
+"break:break-word;\">\n"
+"                                                                   <t t-"
+"out=\"object.partner_id.display_name\"/>\n"
+"                                                                </div> \n"
+"                                                           </div>\n"
+"                                                        </t> \n"
+"                                                       <div style=\"flex:0 1 "
+"150px; min-width:140px; background:#fff; border:1px solid #efe6f3; border-"
+"radius:12px; padding:12px 16px;\">\n"
+"                                                            <div "
+"style=\"font-size:12px; color:#8d7a92; text-transform:uppercase; letter-"
+"spacing:0.45px;\"> 发票日期</div>\n"
+"                                                            <div "
+"style=\"margin-top:6px; font-size:15px; color:#2c2431;\">\n"
+"                                                               <t t-"
+"out=\"format_date(object.invoice_date or object.date)\"/>\n"
+"                                                            </div> \n"
+"                                                       </div>\n"
+"                                                        <t t-"
+"if=\"object.invoice_date_due\"> \n"
+"                                                           <div "
+"style=\"flex:0 1 150px; min-width:140px; background:#fff; border:1px solid "
+"#efe6f3; border-radius:12px; padding:12px 16px;\">\n"
+"                                                                <div "
+"style=\"font-size:12px; color:#8d7a92; text-transform:uppercase; letter-"
+"spacing:0.45px;\"> 到期日</div>\n"
+"                                                                <div "
+"style=\"margin-top:6px; font-size:15px; color:#2c2431;\">\n"
+"                                                                   <t t-"
+"out=\"format_date(object.invoice_date_due)\"/>\n"
+"                                                                </div> \n"
+"                                                           </div>\n"
+"                                                        </t> \n"
+"                                                       <t t-"
+"if=\"object.payment_state in ('paid', 'in_payment')\">\n"
+"                                                            <div "
+"style=\"flex:0 1 180px; min-width:160px; background:#fff; border:1px solid "
+"#efe6f3; border-radius:12px; padding:12px 16px;\"> \n"
+"                                                               <div "
+"style=\"font-size:12px; color:#8d7a92; text-transform:uppercase; letter-"
+"spacing:0.45px;\"> 付款状态</div>\n"
+"                                                                <div "
+"style=\"margin-top:6px; font-size:15px; color:#2c2431; text-"
+"transform:capitalize;\">\n"
+"                                                                    此发票已"
+"支付\n"
+"                                                               </div>\n"
+"                                                            </div> \n"
+"                                                       </t>\n"
+"                                                        <t t-"
+"if=\"object.currency_id != object.company_currency_id\"> \n"
+"                                                           <div "
+"style=\"flex:0 1 150px; min-width:140px; background:#fff; border:1px solid "
+"#efe6f3; border-radius:12px; padding:12px 16px;\">\n"
+"                                                                <div "
+"style=\"font-size:12px; color:#8d7a92; text-transform:uppercase; letter-"
+"spacing:0.45px;\"> 货币</div>\n"
+"                                                                <div "
+"style=\"margin-top:6px; font-size:15px; color:#2c2431;\">\n"
+"                                                                   <t t-"
+"out=\"object.currency_id.display_name\"/>\n"
+"                                                                </div> \n"
+"                                                           </div>\n"
+"                                                        </t> \n"
+"                                                   </div>\n"
+"                                                </td> \n"
+"                                           </tr>\n"
+"                                        </table> \n"
+"                                   </td>\n"
+"                                </tr> \n"
+"                           </table>\n"
+"\n"
+"                            <div style=\"margin:18px 0 0; padding:18px 22px; "
+"background:#f9f2f9; border-radius:12px; border:1px solid #eadff0; font-"
+"size:13px; color:#6f5c73; line-height:1.6;\"> \n"
+"                               <strong style=\"color:#2c2431;\"> 包含文件：</"
+"strong> 已附上原始文件供您查阅。\n"
+"                           </div>\n"
+"\n"
+"                            <div style=\"margin-top:32px; text-"
+"align:center;\" t-if=\"object.move_type != 'in_invoice'\"> \n"
+"                               <a t-if=\"portal_url\" t-attf-href=\"{{ "
+"portal_url }}\" style=\"display:inline-block; margin:0 10px 14px; "
+"padding:13px 30px; min-width:210px; background:linear-gradient"
+"(135deg,#714B67 0%,#9b77a3 100%); color:#FFFFFF; text-decoration:none; "
+"border-radius:12px; font-weight:600; font-size:14px;\" target=\"_blank\"> \n"
+"                                    在门户上查看\n"
+"                               </a>\n"
+"                            </div> \n"
+"\n"
+"                           <p style=\"margin:28px 0 0; font-size:12px; "
+"color:#8f8596; text-align:center;\"> \n"
+"                                您收到此消息是因为您被列为\n"
+"                               <strong t-"
+"out=\"object.journal_id.display_name or 'this journal'\"/> 的关注者。\n"
+"                               <span style=\"display:block; margin:18px "
+"auto; height:1px; max-width:420px; background:#ece3ed;\"/>\n"
+"                                <t t-if=\"unsubscribe_url\"> \n"
+"                                    不想再接收此类消息？请访问<a t-attf-"
+"href=\"{{ unsubscribe_url }}\" style=\"color:#8f8596; text-"
+"decoration:underline;\" target=\"_blank\">取消订阅</a> 。\n"
+"                               </t>\n"
+"                            </p> \n"
+"                       </td>\n"
+"                    </tr> \n"
+"               </table>\n"
+"            </td> \n"
+"       </tr>\n"
+"    </table> \n"
+"</div>\n"
+"            "
+
+#. module: account
 #. odoo-python
 #: code:addons/account/models/account_move.py:0
 msgid "@From: %(email)s"
@@ -2559,6 +2748,14 @@ msgstr "账户现金舍入"
 #: model:ir.model,name:account.model_account_chart_template
 msgid "Account Chart Template"
 msgstr "科目表模版"
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/account_code_mapping.py:0
+msgid ""
+"Account Code Mapping cannot be accessed directly. It is designed to be used "
+"only through the Chart of Accounts."
+msgstr ""
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_report_line__account_codes_formula
@@ -3092,6 +3289,12 @@ msgid "Accumulated Depreciation"
 msgstr "累计折旧"
 
 #. module: account
+#: model:account.account,name:account.1_retained_earnings
+#: model:account.account,name:account.2_account_account_us_retained_earnings
+msgid "Accumulated Retained Earnings"
+msgstr ""
+
+#. module: account
 #: model:ir.model.fields,field_description:account.field_account_automatic_entry_wizard__action
 #: model:ir.model.fields,field_description:account.field_account_report_line__action_id
 msgid "Action"
@@ -3581,6 +3784,13 @@ msgid "Already Paid:"
 msgstr "已支付："
 
 #. module: account
+#. odoo-python
+#: code:addons/account/controllers/portal.py:0
+#, fuzzy
+msgid "Already unsubscribed"
+msgstr "已取消订阅"
+
+#. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_report__availability_condition__always
 #: model:ir.model.fields.selection,name:account.selection__res_partner__autopost_bills__always
 msgid "Always"
@@ -3981,6 +4191,11 @@ msgstr ""
 "如果满足匹配标准（增值税/国家/地区），则自动在发票上应用税项和科目映射。"
 
 #. module: account
+#: model:account.account,description:account.2_account_account_us_profit_or_loss_appropriation
+msgid "Appropriation of the profit or loss"
+msgstr ""
+
+#. module: account
 #: model:ir.model.fields.selection,name:account.selection__res_company__fiscalyear_last_month__4
 msgid "April"
 msgstr "四月"
@@ -4086,6 +4301,12 @@ msgstr "附件数量"
 #: model:ir.model.fields,field_description:account.field_account_payment__attachment_ids
 msgid "Attachments"
 msgstr "附件"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_move_send_wizard__attachments_not_supported
+#, fuzzy
+msgid "Attachments Not Supported"
+msgstr "不支持附件"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_audit_trail_report
@@ -4335,8 +4556,8 @@ msgstr "余额百分比不能为0"
 #. odoo-python
 #: code:addons/account/models/account_journal.py:0
 #: code:addons/account/models/chart_template.py:0
-#: model:account.account,name:account.1_bank_journal_default_account_45
-#: model:account.account,name:account.2_bank_journal_default_account_150
+#: model:account.account,name:account.1_bank_journal_default_account_47
+#: model:account.account,name:account.2_bank_journal_default_account_153
 #: model:account.journal,name:account.1_bank
 #: model:account.journal,name:account.2_bank
 #: model:ir.model.fields,field_description:account.field_account_journal__bank_id
@@ -4528,6 +4749,12 @@ msgid ""
 msgstr "银行账户类型：普通账户或国际银行账号（IBAN）。根据银行账号推断。"
 
 #. module: account
+#: model_terms:ir.ui.view,arch_db:account.view_partner_property_form
+#, fuzzy
+msgid "Bank accounts"
+msgstr "银行账户"
+
+#. module: account
 #: model:ir.actions.act_window,name:account.action_account_moves_journal_bank_cash
 #: model:ir.model.fields.selection,name:account.selection__account_account__account_type__asset_cash
 msgid "Bank and Cash"
@@ -4537,6 +4764,13 @@ msgstr "银行和现金"
 #: model_terms:ir.ui.view,arch_db:account.report_statement
 msgid "Bank of odoo"
 msgstr "Odoo 银行"
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/account_move.py:0
+#, fuzzy
+msgid "Bank settings"
+msgstr "银行设置"
 
 #. module: account
 #: model:ir.model,name:account.model_account_setup_bank_manual_config
@@ -4862,6 +5096,13 @@ msgstr "取消勾选该有效的字段，可以隐藏用不到的国际贸易术
 
 #. module: account
 #. odoo-python
+#: code:addons/account/wizard/account_automatic_entry_wizard.py:0
+#, fuzzy
+msgid "C"
+msgstr "C"
+
+#. module: account
+#. odoo-python
 #: code:addons/account/models/chart_template.py:0
 msgid "CABA"
 msgstr "CABA"
@@ -5059,7 +5300,7 @@ msgstr "结转至"
 #. module: account
 #. odoo-python
 #: code:addons/account/models/account_journal.py:0
-#: model:account.account,name:account.1_cash_journal_default_account_161
+#: model:account.account,name:account.1_cash_journal_default_account_163
 #: model:ir.model.fields.selection,name:account.selection__account_journal__type__cash
 #: model_terms:ir.ui.view,arch_db:account.view_account_move_filter
 #: model_terms:ir.ui.view,arch_db:account.view_account_move_line_filter
@@ -5072,12 +5313,12 @@ msgid "Cash Account"
 msgstr "现金科目"
 
 #. module: account
-#: model:account.account,name:account.1_cash_journal_default_account_158
+#: model:account.account,name:account.1_cash_journal_default_account_160
 msgid "Cash Bakery"
 msgstr "现金 - 烘焙店"
 
 #. module: account
-#: model:account.account,name:account.1_cash_journal_default_account_160
+#: model:account.account,name:account.1_cash_journal_default_account_162
 msgid "Cash Bar"
 msgstr "现金酒吧"
 
@@ -5119,7 +5360,7 @@ msgid "Cash Basis Transition Account"
 msgstr "现金收付转移科目"
 
 #. module: account
-#: model:account.account,name:account.1_cash_journal_default_account_157
+#: model:account.account,name:account.1_cash_journal_default_account_159
 msgid "Cash Clothes Shop"
 msgstr "现金 - 服裝店"
 
@@ -5181,7 +5422,7 @@ msgid "Cash Discount Write-Off Loss Account"
 msgstr "现金折扣冲销损失科目"
 
 #. module: account
-#: model:account.account,name:account.1_cash_journal_default_account_156
+#: model:account.account,name:account.1_cash_journal_default_account_158
 msgid "Cash Furn. Shop"
 msgstr "现金 - 家俱店"
 
@@ -5192,7 +5433,7 @@ msgid "Cash Registers"
 msgstr "收银台"
 
 #. module: account
-#: model:account.account,name:account.1_cash_journal_default_account_159
+#: model:account.account,name:account.1_cash_journal_default_account_161
 msgid "Cash Restaurant"
 msgstr "现金餐厅"
 
@@ -5315,6 +5556,8 @@ msgid "Chart of accounts set!"
 msgstr "账目总表已设置！"
 
 #. module: account
+#. odoo-python
+#: code:addons/account/models/account_move_send.py:0
 #: model_terms:ir.ui.view,arch_db:account.report_hash_integrity
 msgid "Check"
 msgstr "检查"
@@ -5853,6 +6096,12 @@ msgid "Cost of office furniture, fixtures, and business equipment"
 msgstr "办公家具、固定装置和业务设备的成本"
 
 #. module: account
+#: model_terms:ir.ui.view,arch_db:account.view_account_search
+#, fuzzy
+msgid "Cost of revenue"
+msgstr "收入成本"
+
+#. module: account
 #: model:account.account,description:account.2_account_account_us_postage
 msgid ""
 "Costs for shipping products or materials to customers or receiving inventory."
@@ -6386,6 +6635,12 @@ msgid ""
 msgstr "累积余额取决于域和视图中选择的序列。"
 
 #. module: account
+#: model:account.account,description:account.2_account_account_us_retained_earnings
+#, fuzzy
+msgid "Cumulative undistributed profits and losses"
+msgstr "累计未分配盈亏"
+
+#. module: account
 #: model:ir.ui.menu,name:account.menu_action_currency_form
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
 msgid "Currencies"
@@ -6662,6 +6917,13 @@ msgstr "截止 {label}"
 #: code:addons/account/wizard/account_automatic_entry_wizard.py:0
 msgid "Cut-off {label} {percent}%"
 msgstr "截止 {label} {percent}%"
+
+#. module: account
+#. odoo-python
+#: code:addons/account/wizard/account_automatic_entry_wizard.py:0
+#, fuzzy
+msgid "D"
+msgstr "D"
 
 #. module: account
 #: model:account.incoterms,name:account.incoterm_DAP
@@ -7117,6 +7379,12 @@ msgid "Deprecated"
 msgstr "已弃用"
 
 #. module: account
+#. odoo-python
+#: code:addons/account/controllers/portal.py:0
+msgid "Deprecated link"
+msgstr ""
+
+#. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_account__account_type__expense_depreciation
 msgid "Depreciation"
 msgstr "折旧"
@@ -7327,6 +7595,11 @@ msgstr "显示替代税种字段"
 #: model:ir.model.fields,field_description:account.field_account_accrued_orders_wizard__display_amount
 msgid "Display Amount"
 msgstr "显示金额"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_move_send_wizard__display_attachments_widget
+msgid "Display Attachments Widget"
+msgstr ""
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_payment_term_line__display_days_next_month
@@ -7975,6 +8248,14 @@ msgid "Email Templates"
 msgstr "EMail模板"
 
 #. module: account
+#: model:ir.model.fields,help:account.field_account_journal__incoming_einvoice_notification_email
+#, fuzzy
+msgid ""
+"Email addresses that will receive copy for sent and received invoices. "
+"Separate entries with ';'."
+msgstr "将接收已发送和已接收发票副本的电子邮件地址。各条目之间用 ';' 分隔。"
+
+#. module: account
 #. odoo-javascript
 #: code:addons/account/static/src/components/bill_guide/bill_guide.xml:0
 msgid "Email bills"
@@ -8082,11 +8363,6 @@ msgstr "期末余额"
 #: code:addons/account/static/src/components/product_label_section_and_note_field/product_label_section_and_note_field.xml:0
 msgid "Enter a description"
 msgstr "输入描述"
-
-#. module: account
-#: model_terms:ir.ui.view,arch_db:account.view_account_journal_form
-msgid "Enter an email to get notified"
-msgstr "输入邮箱以接收通知"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_move_line_form
@@ -9134,6 +9410,20 @@ msgid "Goods"
 msgstr "货物"
 
 #. module: account
+#. odoo-python
+#: code:addons/account/wizard/accrued_orders.py:0
+#, fuzzy
+msgid "Goods Delivered not Invoiced (perpetual valuation)"
+msgstr "已交付但未开票的货物（永续估值）"
+
+#. module: account
+#. odoo-python
+#: code:addons/account/wizard/accrued_orders.py:0
+#, fuzzy
+msgid "Goods Invoiced not Delivered (perpetual valuation)"
+msgstr "已开票但未交付的货物（永续估值）"
+
+#. module: account
 #: model:account.account,name:account.2_account_account_us_ground_transportation
 msgid "Ground Transportation"
 msgstr "陆路交通费"
@@ -9409,6 +9699,12 @@ msgstr "住宿费"
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
 msgid "How total tax amount is computed in orders and invoices"
 msgstr "订单和发票中计算总税额的方式"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
+#, fuzzy
+msgid "ICE:"
+msgstr "ICE："
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_account__id
@@ -10222,6 +10518,13 @@ msgid ""
 msgstr "\"%(line)s\"行的\"%(label)s\"公式错误：%(formula)s"
 
 #. module: account
+#. odoo-python
+#: code:addons/account/controllers/portal.py:0
+#, fuzzy
+msgid "Invalid token"
+msgstr "无效令牌"
+
+#. module: account
 #: model:account.account,name:account.2_account_account_us_inventory_valuation
 #: model:account.journal,name:account.1_inventory_valuation
 #: model:account.journal,name:account.2_inventory_valuation
@@ -10345,7 +10648,6 @@ msgid "Invoice Lines"
 msgstr "发票行"
 
 #. module: account
-#: model:ir.model.fields,field_description:account.field_account_journal__incoming_einvoice_notification_email
 #: model_terms:ir.ui.view,arch_db:account.portal_my_journal_mail_notifications
 msgid "Invoice Notifications"
 msgstr "发票通知"
@@ -10655,6 +10957,12 @@ msgid "Is Domestic"
 msgstr "是本地"
 
 #. module: account
+#: model:ir.model.fields,field_description:account.field_account_bank_statement_line__is_draft_duplicated_ref_ids
+#: model:ir.model.fields,field_description:account.field_account_move__is_draft_duplicated_ref_ids
+msgid "Is Draft Duplicated Ref"
+msgstr ""
+
+#. module: account
 #: model:ir.model.fields,field_description:account.field_account_move_send_wizard__is_mail_template_editor
 msgid "Is Editor"
 msgstr "是编辑者"
@@ -10663,6 +10971,12 @@ msgstr "是编辑者"
 #: model:ir.model.fields,field_description:account.field_validate_account_move__is_entries
 msgid "Is Entries"
 msgstr "是记项"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_bank_statement_line__is_exact_move_duplicate
+#: model:ir.model.fields,field_description:account.field_account_move__is_exact_move_duplicate
+msgid "Is Exact Move Duplicate"
+msgstr ""
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_account__message_is_follower
@@ -10720,6 +11034,12 @@ msgstr "是退款"
 #: model:ir.model.fields,field_description:account.field_account_payment_register__is_register_payment_on_draft
 msgid "Is Register Payment On Draft"
 msgstr "是根据草稿登记付款"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_bank_statement_line__is_sale_installed
+#: model:ir.model.fields,field_description:account.field_account_move__is_sale_installed
+msgid "Is Sale Installed"
+msgstr ""
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_move_line__is_same_currency
@@ -10956,6 +11276,12 @@ msgid "Journal Name"
 msgstr "日记账名称"
 
 #. module: account
+#: model:mail.template,name:account.mail_template_invoice_subscriber
+#, fuzzy
+msgid "Journal Notification"
+msgstr "日记通知"
+
+#. module: account
 #: model:ir.model.fields,field_description:account.field_res_company__account_journal_suspense_account_id
 msgid "Journal Suspense Account"
 msgstr "日记账暂记科目"
@@ -11015,6 +11341,7 @@ msgstr "日记账："
 #: model:ir.model.fields,field_description:account.field_account_reconcile_model__match_journal_ids
 #: model:ir.model.fields,field_description:account.field_account_report__filter_journals
 #: model:ir.ui.menu,name:account.menu_action_account_journal_form
+#: model_terms:ir.ui.view,arch_db:account.view_account_move_line_filter
 msgid "Journals"
 msgstr "日记账"
 
@@ -12190,6 +12517,13 @@ msgid "Need Cancel Request"
 msgstr "需要取消请求"
 
 #. module: account
+#. odoo-python
+#: code:addons/account/models/chart_template.py:0
+#, fuzzy
+msgid "Need to update"
+msgstr "需要更新"
+
+#. module: account
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_line__needed_terms
 #: model:ir.model.fields,field_description:account.field_account_move__needed_terms
 msgid "Needed Terms"
@@ -12773,14 +13107,6 @@ msgstr "文档格式新手简介"
 #: model:ir.model,name:account.model_onboarding_onboarding_step
 msgid "Onboarding Step"
 msgstr "入门步骤"
-
-#. module: account
-#. odoo-python
-#: code:addons/account/models/account_move.py:0
-msgid ""
-"Once a document has been posted once, its type is set in stone and you can't "
-"change it anymore."
-msgstr "文件只要经历过一次过账，其类型就会固定下来，您不可再更改。"
 
 #. module: account
 #. odoo-javascript
@@ -14145,6 +14471,7 @@ msgstr "产品类别"
 #: model:ir.model,name:account.model_product_category
 #: model:ir.model.fields,field_description:account.field_account_analytic_applicability__product_categ_id
 #: model:ir.model.fields,field_description:account.field_account_analytic_distribution_model__product_categ_id
+#: model:ir.model.fields,field_description:account.field_account_analytic_line__product_category
 #: model:ir.model.fields,field_description:account.field_account_invoice_report__product_categ_id
 #: model:ir.model.fields,field_description:account.field_account_move_line__product_category_id
 #: model_terms:ir.ui.view,arch_db:account.view_account_invoice_report_search
@@ -14225,6 +14552,15 @@ msgstr "损益"
 #: model:ir.model.fields,field_description:account.field_account_journal__profit_account_id
 msgid "Profit Account"
 msgstr "利润科目"
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/company.py:0
+#: model:account.account,name:account.1_profit_or_loss
+#: model:account.account,name:account.2_account_account_us_profit_or_loss_appropriation
+#, fuzzy
+msgid "Profit or Loss Appropriation"
+msgstr "盈亏分配"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.report_invoice_document
@@ -14415,12 +14751,6 @@ msgid "Quick encoding"
 msgstr "快速编码"
 
 #. module: account
-#. odoo-javascript
-#: code:addons/account/static/src/components/many2x_tax_tags/many2x_tax_tags.js:0
-msgid "Quick search: %s"
-msgstr "快速搜索: %s"
-
-#. module: account
 #: model:account.account,name:account.1_expense_rd
 msgid "RD Expenses"
 msgstr "研发费用"
@@ -14482,17 +14812,12 @@ msgstr "应收账款"
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_payment__payment_type__inbound
 msgid "Receive"
-msgstr "入库"
+msgstr "收款"
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_payment_register__payment_type__inbound
 msgid "Receive Money"
 msgstr "收到款项"
-
-#. module: account
-#: model:ir.model.fields,help:account.field_account_journal__incoming_einvoice_notification_email
-msgid "Receive an email for incoming electronic invoices."
-msgstr "收到电子发票时，接收电邮通知。"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.portal_my_details
@@ -14900,11 +15225,6 @@ msgstr "剩余金额币别"
 #: model:ir.model.fields,field_description:account.field_res_partner_bank__activity_user_id
 msgid "Responsible User"
 msgstr "责任用户"
-
-#. module: account
-#: model:ir.model.fields,help:account.field_account_tax__tax_scope
-msgid "Restrict the use of taxes to a type of product."
-msgstr "限制对某类产品使用税项。"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.report_hash_integrity
@@ -15396,6 +15716,7 @@ msgstr "搜索名称或税号..."
 
 #. module: account
 #. odoo-javascript
+#: code:addons/account/static/src/components/many2one_account_account/many2one_account_account.js:0
 #: code:addons/account/static/src/components/many2x_tax_tags/many2x_tax_tags.js:0
 msgid "Search: %s"
 msgstr "搜索: %s"
@@ -15568,6 +15889,12 @@ msgstr "销售和购买不同计量单位或包装的产品"
 #: model_terms:ir.ui.view,arch_db:account.view_out_invoice_tree
 msgid "Send"
 msgstr "发送"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_journal__incoming_einvoice_notification_email
+#, fuzzy
+msgid "Send Copy To"
+msgstr "发送副本至"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_setup_bank_manual_config__allow_out_payment
@@ -16293,8 +16620,9 @@ msgstr "库存估值"
 
 #. module: account
 #: model:account.account,name:account.1_stock_variation
+#, fuzzy
 msgid "Stock Variation"
-msgstr ""
+msgstr "库存变动"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
@@ -16357,8 +16685,8 @@ msgstr "小计"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.portal_my_journal_mail_notifications
-msgid "Successfully unsubscribed from invoice notifications"
-msgstr "成功取消订阅发票通知"
+msgid "Successfully unsubscribed"
+msgstr ""
 
 #. module: account
 #. odoo-python
@@ -17311,6 +17639,15 @@ msgid ""
 msgstr "银行日记账中的银行账户须属于同一公司（%s）。"
 
 #. module: account
+#. odoo-python
+#: code:addons/account/models/account_move.py:0
+#, fuzzy
+msgid ""
+"The bank account of your company is not trusted. Please ask an admin or "
+"someone with approval rights to check it."
+msgstr "贵公司的银行账户未通过验证。请联系管理员或具有审批权限的人员进行核查。"
+
+#. module: account
 #: model:ir.model.fields,help:account.field_account_move_line__statement_id
 msgid "The bank statement used for bank reconciliation"
 msgstr "用于银行对账的银行对账单"
@@ -17378,6 +17715,18 @@ msgstr "日记账中的参考模型和参考类型组合未实施"
 msgid ""
 "The commercial partner has been updated for all related accounting entries."
 msgstr "更新了商业伙伴的所有相关会计分录。"
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/account_move.py:0
+#, fuzzy
+msgid ""
+"The company bank account (%(account_number)s) linked to this invoice is not "
+"trusted. Go to the Bank Settings, double-check that it is yours or correct "
+"the number, and click on Send Money to trust it."
+msgstr ""
+"与本发票关联的公司银行账户（%(account_number)s ）尚未被信任。请前往“银行设置”"
+"，确认该账户是否属于您，或修正账号，然后点击“发送资金”以将其设为可信账户。"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_tax_repartition_line__company_id
@@ -17530,6 +17879,15 @@ msgid "The entry is secured with an inalterable hash."
 msgstr "记项使用不可更改的哈希值进行保护。"
 
 #. module: account
+#. odoo-python
+#: code:addons/account/models/account_move.py:0
+#, fuzzy
+msgid ""
+"The entry is using accounts (%(accounts_codes_names)s) from a different "
+"company."
+msgstr "该条目使用了来自另一家公司的账户（%(accounts_codes_names)s ）。"
+
+#. module: account
 #: model:ir.model.fields,help:account.field_product_category__property_account_expense_categ_id
 #: model:ir.model.fields,help:account.field_res_company__expense_account_id
 #: model:ir.model.fields,help:account.field_res_config_settings__expense_account_id
@@ -17625,14 +17983,6 @@ msgstr ""
 #: code:addons/account/models/account_journal.py:0
 msgid "The holder of a journal's bank account must be the company (%s)."
 msgstr "日记账的银行账户持有人须为公司（%s）。"
-
-#. module: account
-#. odoo-python
-#: code:addons/account/models/account_journal.py:0
-msgid ""
-"The incoming e-invoice notification email can only be set on purchase "
-"journals."
-msgstr "电子发票通知邮件仅可在采购日记账中设置。"
 
 #. module: account
 #. odoo-python
@@ -17861,6 +18211,14 @@ msgstr "日记账项目中以本币表示的剩余金额。"
 #: code:addons/account/models/account_bank_statement.py:0
 msgid "The running balance (%s) doesn't match the specified ending balance."
 msgstr "即时余额（%s）与指定的期末余额不匹配。"
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/account_move_send.py:0
+msgid ""
+"The scheduled action 'Send Invoices automatically' is archived. You won't be "
+"able to send invoices in batch."
+msgstr ""
 
 #. module: account
 #. odoo-python
@@ -18165,6 +18523,15 @@ msgstr ""
 
 #. module: account
 #. odoo-python
+#: code:addons/account/models/account_document_import_mixin.py:0
+#, fuzzy
+msgid ""
+"There was an error while importing the bill, you can find attached the "
+"incoming XML"
+msgstr "导入采购账单时出现错误，附件为收到的 XML 源文件。"
+
+#. module: account
+#. odoo-python
 #: code:addons/account/wizard/account_payment_register.py:0
 msgid ""
 "There's nothing left to pay for the selected journal items, so no payment "
@@ -18203,17 +18570,6 @@ msgstr "本周"
 #: model:ir.model.fields.selection,name:account.selection__account_report__default_opening_date_filter__this_year
 msgid "This Year"
 msgstr "本年"
-
-#. module: account
-#. odoo-python
-#: code:addons/account/models/account_account.py:0
-msgid ""
-"This account is configured in %(journal_names)s journal(s) (ids %"
-"(journal_ids)s) as payment debit or credit account. This means that this "
-"account's type should be reconcilable."
-msgstr ""
-"该科目在%(journal_names)s日记账（ID%(journal_ids)s）中配置为付款借方或贷方科"
-"目。这意味著该科目的类型应为可对账。"
 
 #. module: account
 #. odoo-python
@@ -18465,8 +18821,9 @@ msgstr "该经常性分录将在该日期（含）前过账。"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
+#, fuzzy
 msgid "This setting locks once a journal entry is created."
-msgstr ""
+msgstr "一旦生成会计凭证，此项配置将被锁定不可修改。"
 
 #. module: account
 #. odoo-python
@@ -18482,13 +18839,6 @@ msgid ""
 "                such as for sending by email or reviewing a batch of records."
 msgstr ""
 "本视图仅显示从其他上下文（如邮件发送或批量记录审核）中选择的日记账分录。"
-
-#. module: account
-#: model_terms:ir.ui.view,arch_db:account.view_move_form
-msgid ""
-"This will update all taxes and accounts based on the currently selected "
-"fiscal position."
-msgstr "此操作将根据当前选定的应税设定，更新所有税费。"
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.action_account_reconcile_model
@@ -18860,6 +19210,12 @@ msgid "Transfer to %s"
 msgstr "转账至%s"
 
 #. module: account
+#: model:ir.model.fields,field_description:account.field_account_move_line__translated_product_name
+#, fuzzy
+msgid "Translated Product Name"
+msgstr "已翻译的产品名称"
+
+#. module: account
 #: model:account.group,name:account.2_us_group_661
 msgid "Travel Expenses"
 msgstr "差旅费用"
@@ -18961,14 +19317,6 @@ msgid "Undefined Yet"
 msgstr "未定义"
 
 #. module: account
-#. odoo-python
-#: code:addons/account/models/company.py:0
-#: model:account.account,name:account.1_unaffected_earnings_account
-#: model:account.account,name:account.2_unaffected_earnings_account
-msgid "Undistributed Profits/Losses"
-msgstr "未分配利润/损失"
-
-#. module: account
 #: model:account.account,name:account.2_account_account_us_unemployment_insurance
 msgid "Unemployment Insurance"
 msgstr "失业保险"
@@ -19009,6 +19357,12 @@ msgstr "单价"
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
 msgid "Unit Price:"
 msgstr "单价："
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
+#, fuzzy
+msgid "Units"
+msgstr "单位"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
@@ -19163,6 +19517,13 @@ msgstr "更新条款"
 #: code:addons/account/models/res_config_settings.py:0
 msgid "Update Terms & Conditions"
 msgstr "更新条款与细则"
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/chart_template.py:0
+#, fuzzy
+msgid "Update app"
+msgstr "更新应用"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
@@ -19435,6 +19796,7 @@ msgstr "值"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_reconcile_model_line__amount_string
+#, fuzzy
 msgid ""
 "Value for the amount of the writeoff line\n"
 "    * Percentage: Percentage of the balance, between 0 and 100.\n"
@@ -19444,17 +19806,31 @@ msgid ""
 "needed. For instance if you want to extract the amount from\n"
 "R:9672938 10/07 AX 9415126318 T:5L:NA BRT: 3358,07 C:\n"
 "You could enter\n"
-"BRT: ([\\d,]+)"
+"BRT: ([\\d,]+)\n"
+"    If the label is \"01870912 0009065 00115\" and you need the amount in "
+"decimal\n"
+"    format (e.g. 90.65), you can use a regex with capturing groups, for "
+"example:\n"
+"        \\s+0*(\\d+?)(\\d{2})(?=\\s)\n"
+"    In this case:\n"
+"    • the first group captures the integer part\n"
+"    • the second group captures the decimal part (last two digits)\n"
+"    "
 msgstr ""
-"销记行金额的值\n"
-"    * 百分比：余额的百分比，介于0~100之间。\n"
-"    * 固定：销记固定值。如果为负值，金额将计作借方，如果为正值，则计为贷"
-"方。\n"
-"    * 自标签：不需要正则表达式分隔符，只需要正则表达式。例如，如果希望从以下"
-"内容提取金额\n"
+"核销行金额的值\n"
+"    * 百分比：余额的百分比，范围为 0 到 100。\n"
+"    * 固定值：核销的固定金额。若为负数则计为借记，若为正数则计为信用。\n"
+"    * 来自标签：无需正则表达式分隔符，仅需正则表达式本身。例如，若要从\n"
 "R:9672938 10/07 AX 9415126318 T:5L:NA BRT: 3358,07 C:\n"
-"可以输入\n"
-"BRT: ([\\d,]+)"
+"中提取金额，可输入\n"
+"BRT: ([\\d,]+)\n"
+"    如果标签为 \"01870912 0009065 00115\"，且需要以十进制\n"
+"    格式（例如 90.65）获取金额，可以使用带捕获组的正则表达式，例如：\n"
+"        \\s+0*(\\d+?)(\\d{2})(?=\\s)\n"
+"    在此情况下：\n"
+"    • 第一组捕获整数部分\n"
+"    • 第二组捕获小数部分（最后两位数字）\n"
+"    "
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_partial_reconcile__draft_caba_move_vals
@@ -19812,6 +20188,12 @@ msgid "You are about to send"
 msgstr "您即将发送"
 
 #. module: account
+#: model_terms:ir.ui.view,arch_db:account.portal_my_journal_mail_notifications
+#, fuzzy
+msgid "You are about to unsubscribe"
+msgstr "您即将取消订阅"
+
+#. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_currency_form_inherit
 msgid ""
 "You are changing decimals in your entire database, including invoices,\n"
@@ -19911,8 +20293,11 @@ msgstr ""
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.portal_my_journal_mail_notifications
-msgid "You can unsubscribe from emails received upon invoice reception here."
-msgstr "您可以在此退订收到发票后的电子邮件。"
+#, fuzzy
+msgid ""
+"You can unsubscribe from emails received upon invoice sending and reception "
+"here."
+msgstr "您可在此取消订阅发票发送及接收相关的电子邮件。"
 
 #. module: account
 #. odoo-python
@@ -20059,6 +20444,14 @@ msgstr "您不能在以下各项之前添加/修改分录：%(lock_date_info)s�
 
 #. module: account
 #. odoo-python
+#: code:addons/account/models/account_payment.py:0
+#, fuzzy
+msgid ""
+"You cannot change the amount of a payment with multiple liquidity lines."
+msgstr "含有多条资金流水记录的付款单据，无法修改付款金额。"
+
+#. module: account
+#. odoo-python
 #: code:addons/account/models/company.py:0
 msgid ""
 "You cannot change the currency of the company since some journal items "
@@ -20122,6 +20515,15 @@ msgstr "不能删除税项行，因为会影响税务报表"
 #: code:addons/account/models/account_move_line.py:0
 msgid "You cannot delete journal items belonging to a locked journal entry."
 msgstr "您不能删除锁定日记账分录的日记账项目."
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/account_tax.py:0
+#, fuzzy
+msgid ""
+"You cannot delete taxes that are currently in use. Consider archiving them "
+"instead."
+msgstr "无法删除正在使用中的税种，建议将其归档停用。"
 
 #. module: account
 #. odoo-python
@@ -20232,14 +20634,6 @@ msgstr "不能有不可对账的应收/应付账款科目。（科目代码：%s
 
 #. module: account
 #. odoo-python
-#: code:addons/account/models/account_account.py:0
-msgid ""
-"You cannot have more than one account with \"Current Year Earnings\" as "
-"type. (accounts: %s)"
-msgstr "不能有一个以上\"当年收入\"类型的科目。（科目：%s）"
-
-#. module: account
-#. odoo-python
 #: code:addons/account/models/company.py:0
 msgid ""
 "You cannot import the \"openning_balance\" if the opening move (%s) is "
@@ -20298,6 +20692,13 @@ msgstr "不能对包含日记账项目的科目执行该操作。"
 #: code:addons/account/models/account_move.py:0
 msgid "You cannot post an entry in an archived journal (%(journal)s)"
 msgstr "不能在已归档日记账（%(journal)s）中过账分录"
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/account_move.py:0
+#, fuzzy
+msgid "You cannot post an entry with an archived analytic account: %s"
+msgstr "您无法使用已归档的分析账户发布条目：%s"
 
 #. module: account
 #. odoo-python
@@ -20392,6 +20793,14 @@ msgid ""
 "You cannot switch an account to prevent the reconciliation if some partial "
 "reconciliations are still pending."
 msgstr "如果部分对账未结，则不能将科目切换为防止对账。"
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/account_move.py:0
+#, fuzzy
+msgid ""
+"You cannot switch the type of a document with an existing sequence number."
+msgstr "您无法更改已分配序列号的文档类型。"
 
 #. module: account
 #. odoo-python
@@ -20492,6 +20901,15 @@ msgid ""
 "to differences between exchange rates."
 msgstr ""
 "须在公司设置中配置“汇兑损益日记账”，以自动管理与汇率差异相关的会计分录记录。"
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/account_journal_dashboard.py:0
+#, fuzzy
+msgid ""
+"You may only use samples in demo mode, try uploading one of your invoices "
+"instead."
+msgstr "您仅可在演示模式下使用示例，建议尝试上传您自己的发票。"
 
 #. module: account
 #. odoo-python
@@ -20767,6 +21185,12 @@ msgid "e.g. My Company"
 msgstr "例如：我的公司"
 
 #. module: account
+#: model_terms:ir.ui.view,arch_db:account.view_account_journal_form
+#, fuzzy
+msgid "e.g. finance@example.com; accountant@example.com"
+msgstr "例如：finance@example.com；accountant@example.com"
+
+#. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_company_form_view_onboarding
 msgid "e.g. https://www.odoo.com"
 msgstr "例如：https://www.odoo.com"
@@ -20803,6 +21227,11 @@ msgstr "超出了典型范围。"
 #: code:addons/account/models/partner.py:0
 msgid "fiscal position [%s]"
 msgstr "财政状况[%s]"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.portal_my_journal_mail_notifications
+msgid "from invoice notifications."
+msgstr ""
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_payment_register_form
@@ -21113,6 +21542,13 @@ msgid "{amount} ({debit_credit}) from {link}"
 msgstr "{amount} ({debit_credit})，链接为 {link}"
 
 #. module: account
+#: model:mail.template,subject:account.mail_template_invoice_subscriber
+msgid ""
+"{{ object.company_id.name }} - New invoice in "
+"{{ object.journal_id.display_name or 'Invoices' }} journal"
+msgstr ""
+
+#. module: account
 #: model:mail.template,subject:account.email_template_edi_credit_note
 msgid ""
 "{{ object.company_id.name }} Credit Note (Ref {{ object.name or 'n/a' }})"
@@ -21146,6 +21582,253 @@ msgid ""
 msgstr ""
 "{{ object.company_id.name }} 自助开票发票（参考号 {{ object.name or 'n/"
 "a' }}）"
+
+#~ msgid "Quick search: %s"
+#~ msgstr "快速搜索: %s"
+
+#~ msgid "Undistributed Profits/Losses"
+#~ msgstr "未分配利润/损失"
+
+#~ msgid "1.00"
+#~ msgstr "1.00"
+
+#~ msgid "1.05"
+#~ msgstr "1.05"
+
+#~ msgid "100.0"
+#~ msgstr "100.0"
+
+#~ msgid "1000.0"
+#~ msgstr "1000.0"
+
+#~ msgid "11.05"
+#~ msgstr "11.05"
+
+#~ msgid "12345"
+#~ msgstr "12345"
+
+#~ msgid "15%"
+#~ msgstr "15%"
+
+#~ msgid "1500.0"
+#~ msgstr "1500.0"
+
+#, fuzzy
+#~ msgid "2.9%"
+#~ msgstr "2.9%"
+
+#~ msgid "20.00"
+#~ msgstr "20.00"
+
+#~ msgid "2021-09-19"
+#~ msgstr "2021 年 9 月 19 日"
+
+#~ msgid "2023-01-01"
+#~ msgstr "2023 年 1 月 1 日"
+
+#~ msgid "2023-01-05"
+#~ msgstr "2023 年 1 月 5 日"
+
+#~ msgid "2023-08-11"
+#~ msgstr "2023 年 8 月 11 日"
+
+#~ msgid "2023-08-15"
+#~ msgstr "2023 年 8 月 15 日"
+
+#~ msgid "2023-08-31"
+#~ msgstr "2023 年 8 月 31 日"
+
+#~ msgid "2023-09-12"
+#~ msgstr "2023 年 9 月 12 日"
+
+#~ msgid "2023-09-25"
+#~ msgstr "2023 年 9 月 25 日"
+
+#~ msgid "2023-10-31"
+#~ msgstr "2023 年 10 月 31 日"
+
+#~ msgid "2024-01-01"
+#~ msgstr "2024年 1 月 1 日"
+
+#~ msgid "27.00"
+#~ msgstr "27.00"
+
+#~ msgid "3.00"
+#~ msgstr "3.00"
+
+#~ msgid "30.00"
+#~ msgstr "30.00"
+
+#~ msgid "31.05"
+#~ msgstr "31.05"
+
+#~ msgid "4.05"
+#~ msgstr "4.05"
+
+#, fuzzy
+#~ msgid "4.2%"
+#~ msgstr "4.2%"
+
+#, fuzzy
+#~ msgid "4.225%"
+#~ msgstr "4.225%"
+
+#, fuzzy
+#~ msgid "4.5%"
+#~ msgstr "4.5%"
+
+#, fuzzy
+#~ msgid "4.75%"
+#~ msgstr "4.75%"
+
+#, fuzzy
+#~ msgid "4.875%"
+#~ msgstr "4.875%"
+
+#, fuzzy
+#~ msgid "5.3%"
+#~ msgstr "5.3%"
+
+#, fuzzy
+#~ msgid "5.5%"
+#~ msgstr "5.5%"
+
+#, fuzzy
+#~ msgid "5.6%"
+#~ msgstr "5.6%"
+
+#, fuzzy
+#~ msgid "5.75%"
+#~ msgstr "5.75%"
+
+#~ msgid "534677881234"
+#~ msgstr "534677881234"
+
+#, fuzzy
+#~ msgid "6.1%"
+#~ msgstr "6.1%"
+
+#, fuzzy
+#~ msgid "6.25%"
+#~ msgstr "6.25%"
+
+#, fuzzy
+#~ msgid "6.35%"
+#~ msgstr "6.35%"
+
+#, fuzzy
+#~ msgid "6.5%"
+#~ msgstr "6.5%"
+
+#, fuzzy
+#~ msgid "6.625%"
+#~ msgstr "6.625%"
+
+#, fuzzy
+#~ msgid "6.85%"
+#~ msgstr "6.85%"
+
+#, fuzzy
+#~ msgid "6.875%"
+#~ msgstr "6.875%"
+
+#, fuzzy
+#~ msgid "7.25%"
+#~ msgstr "7.25%"
+
+#~ msgid "9.00"
+#~ msgstr "9.00"
+
+#~ msgid "Restrict the use of taxes to a type of product."
+#~ msgstr "限制对某类产品使用税项。"
+
+#~ msgid "(*) Goods Delivered not Invoiced (perpetual valuation)"
+#~ msgstr "(*) 已发货未开票（永续计价法）"
+
+#~ msgid "(*) Goods Invoiced not Delivered (perpetual valuation)"
+#~ msgstr "(*) 已开票未发货（永续计价法）"
+
+#~ msgid ""
+#~ "Value for the amount of the writeoff line\n"
+#~ "    * Percentage: Percentage of the balance, between 0 and 100.\n"
+#~ "    * Fixed: The fixed value of the writeoff. The amount will count as a "
+#~ "debit if it is negative, as a credit if it is positive.\n"
+#~ "    * From Label: There is no need for regex delimiter, only the regex is "
+#~ "needed. For instance if you want to extract the amount from\n"
+#~ "R:9672938 10/07 AX 9415126318 T:5L:NA BRT: 3358,07 C:\n"
+#~ "You could enter\n"
+#~ "BRT: ([\\d,]+)"
+#~ msgstr ""
+#~ "销记行金额的值\n"
+#~ "    * 百分比：余额的百分比，介于0~100之间。\n"
+#~ "    * 固定：销记固定值。如果为负值，金额将计作借方，如果为正值，则计为贷"
+#~ "方。\n"
+#~ "    * 自标签：不需要正则表达式分隔符，只需要正则表达式。例如，如果希望从以"
+#~ "下内容提取金额\n"
+#~ "R:9672938 10/07 AX 9415126318 T:5L:NA BRT: 3358,07 C:\n"
+#~ "可以输入\n"
+#~ "BRT: ([\\d,]+)"
+
+#~ msgid ""
+#~ "<span>1.00</span>\n"
+#~ "                                                        <span "
+#~ "groups=\"uom.group_uom\">Units</span>"
+#~ msgstr ""
+#~ "<span>1.00</span>\n"
+#~ "                                                        <span "
+#~ "groups=\"uom.group_uom\">单位</span>"
+
+#~ msgid ""
+#~ "<br/>\n"
+#~ "                        <span>Please make sure that this is a wanted "
+#~ "behavior.</span>"
+#~ msgstr ""
+#~ "<br/>\n"
+#~ "                        <span>老哥，你确定要这么干吗？</span>"
+
+#~ msgid ""
+#~ "Once a document has been posted once, its type is set in stone and you "
+#~ "can't change it anymore."
+#~ msgstr "文件只要经历过一次过账，其类型就会固定下来，您不可再更改。"
+
+#~ msgid ""
+#~ "This account is configured in %(journal_names)s journal(s) (ids %"
+#~ "(journal_ids)s) as payment debit or credit account. This means that this "
+#~ "account's type should be reconcilable."
+#~ msgstr ""
+#~ "该科目在%(journal_names)s日记账（ID%(journal_ids)s）中配置为付款借方或贷方"
+#~ "科目。这意味著该科目的类型应为可对账。"
+
+#~ msgid "%(ref)s (%(currency_amount)s)"
+#~ msgstr "%(ref)s（%(currency_amount)s）"
+
+#~ msgid ""
+#~ "This will update all taxes and accounts based on the currently selected "
+#~ "fiscal position."
+#~ msgstr "此操作将根据当前选定的应税设定，更新所有税费。"
+
+#~ msgid "Enter an email to get notified"
+#~ msgstr "输入邮箱以接收通知"
+
+#~ msgid "Receive an email for incoming electronic invoices."
+#~ msgstr "收到电子发票时，接收电邮通知。"
+
+#~ msgid "Successfully unsubscribed from invoice notifications"
+#~ msgstr "成功取消订阅发票通知"
+
+#~ msgid ""
+#~ "The incoming e-invoice notification email can only be set on purchase "
+#~ "journals."
+#~ msgstr "电子发票通知邮件仅可在采购日记账中设置。"
+
+#~ msgid ""
+#~ "You can unsubscribe from emails received upon invoice reception here."
+#~ msgstr "您可以在此退订收到发票后的电子邮件。"
+
+#~ msgid ""
+#~ "You cannot have more than one account with \"Current Year Earnings\" as "
+#~ "type. (accounts: %s)"
+#~ msgstr "不能有一个以上\"当年收入\"类型的科目。（科目：%s）"
 
 #~ msgid "This setting cannot be changed after an invoice is created."
 #~ msgstr "创建发票后，无法更改此设置。"

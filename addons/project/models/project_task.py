@@ -245,7 +245,7 @@ class ProjectTask(models.Model):
     # In the domain of displayed_image_id, we couln't use attachment_ids because a one2many is represented as a list of commands so we used res_model & res_id
     displayed_image_id = fields.Many2one('ir.attachment', domain="[('res_model', '=', 'project.task'), ('res_id', '=', id), ('mimetype', 'ilike', 'image')]", string='Cover Image')
 
-    parent_id = fields.Many2one('project.task', string='Parent Task', inverse="_inverse_parent_id", index=True, domain="['!', ('id', 'child_of', id)]", tracking=True)
+    parent_id = fields.Many2one('project.task', string='Parent Task', inverse="_inverse_parent_id", index=True, domain="['!', ('id', 'child_of', id), ('project_id', '!=', False)]", tracking=True)
     child_ids = fields.One2many('project.task', 'parent_id', string="Sub-tasks", domain="[('recurring_task', '=', False)]", export_string_translation=False)
     subtask_count = fields.Integer("Sub-task Count", compute='_compute_subtask_count', export_string_translation=False)
     closed_subtask_count = fields.Integer("Closed Sub-tasks Count", compute='_compute_subtask_count', export_string_translation=False)
@@ -425,8 +425,14 @@ class ProjectTask(models.Model):
 
     @api.onchange('project_id')
     def _onchange_project_id(self):
-        if self.state != '04_waiting_normal':
+        if self.state != '04_waiting_normal' and self.state not in CLOSED_STATES:
             self.state = '01_in_progress'
+        if not self.project_id and not self.user_ids:
+            self.user_ids = self.env.user
+
+        if not self.project_id and self.parent_id and self.parent_id.project_id:
+            self.project_id = self.parent_id.project_id.id
+            self.display_in_project = False
 
     def is_blocked_by_dependences(self):
         return any(blocking_task.state not in CLOSED_STATES for blocking_task in self.depend_on_ids)
@@ -599,10 +605,10 @@ class ProjectTask(models.Model):
         )
         for task in task_linked_to_calendar:
             dt_create_date = fields.Datetime.from_string(task.create_date)
-
+            domain = [('company_id', 'in', task.project_id.company_id.ids), ('time_type', '=', 'leave')]
             if task.date_assign:
                 dt_date_assign = fields.Datetime.from_string(task.date_assign)
-                duration_data = task.project_id.resource_calendar_id.get_work_duration_data(dt_create_date, dt_date_assign, compute_leaves=True)
+                duration_data = task.project_id.resource_calendar_id.get_work_duration_data(dt_create_date, dt_date_assign, compute_leaves=True, domain=domain)
                 task.working_hours_open = duration_data['hours']
                 task.working_days_open = duration_data['days']
             else:
@@ -611,7 +617,7 @@ class ProjectTask(models.Model):
 
             if task.date_end:
                 dt_date_end = fields.Datetime.from_string(task.date_end)
-                duration_data = task.project_id.resource_calendar_id.get_work_duration_data(dt_create_date, dt_date_end, compute_leaves=True)
+                duration_data = task.project_id.resource_calendar_id.get_work_duration_data(dt_create_date, dt_date_end, compute_leaves=True, domain=domain)
                 task.working_hours_close = duration_data['hours']
                 task.working_days_close = duration_data['days']
             else:
@@ -655,8 +661,8 @@ class ProjectTask(models.Model):
 
     def _inverse_partner_phone(self):
         for task in self:
-            if task.partner_id:
-                task.partner_id.phone = task.partner_phone
+            if task.partner_id and task.partner_phone != task.partner_id.phone:
+                task.partner_id.sudo().phone = task.partner_phone
 
     @api.onchange('company_id')
     def _onchange_task_company(self):
@@ -851,6 +857,8 @@ class ProjectTask(models.Model):
             active_users = self.user_ids.filtered('active')
         milestone_mapping = self.env.context.get('milestone_mapping', {})
         for task, vals in zip(self, vals_list):
+            if self.env.context.get('convert_to_template'):
+                vals['date_deadline'] = task.date_deadline
 
             if not default.get('stage_id'):
                 vals['stage_id'] = task.stage_id.id
@@ -863,14 +871,14 @@ class ProjectTask(models.Model):
             if task.allow_milestones:
                 vals['milestone_id'] = milestone_mapping.get(vals['milestone_id'], vals['milestone_id'])
             if not default.get('child_ids') and task.child_ids:
-                default = {
-                    'parent_id': False,
-                }
+                whitelisted_fields = self._get_template_default_context_whitelist() if self.env.context.get('copy_from_template') else []
+                default = {key: value for key, value in default.items() if key in whitelisted_fields}
+                default['parent_id'] = False
                 current_task = task
                 if self.env.context.get('copy_from_template'):
                     current_task = current_task.with_context(active_test=True)
                 child_ids = current_task.child_ids
-                vals['child_ids'] = [Command.create(child_id.copy_data(default)[0]) for child_id in child_ids]
+                vals['child_ids'] = [Command.create(child_id.copy_data(default)[0]) for child_id in child_ids.filtered(lambda c: c.active)]
             if not has_default_users and vals['user_ids']:
                 task_active_users = task.user_ids & active_users
                 vals['user_ids'] = [Command.set(task_active_users.ids)]
@@ -925,12 +933,13 @@ class ProjectTask(models.Model):
         copied_tasks = super(ProjectTask, self.with_context(
             mail_auto_subscribe_no_notify=True,
             mail_create_nosubscribe=True,
-            mail_create_nolog=True,
+            mail_create_nolog=bool(not self.env.context.get('copy_from_template')),
         )).copy(default=default)
 
         self._resolve_copied_dependencies(copied_tasks)
-        log_message = _("Task Created")
-        copied_tasks._message_log_batch(bodies={task.id: log_message for task in copied_tasks})
+        if not self.env.context.get('copy_from_template'):
+            log_message = _("Task Created")
+            copied_tasks._message_log_batch(bodies={task.id: log_message for task in copied_tasks})
 
         return copied_tasks
 
@@ -955,10 +964,10 @@ class ProjectTask(models.Model):
 
     def stage_find(self, section_id, domain=[], order='sequence, id'):
         """ Override of the base.stage method
-            Parameter of the stage search taken from the lead:
-            - section_id: if set, stages must belong to this section or
-              be a default stage; if not set, stages must be default
-              stages
+        Parameter of the stage search taken from the lead:
+
+        :param section_id: if set, stages must belong to this section or
+            be a default stage; if not set, stages must be default stages
         """
         # collect all section_ids
         section_ids = []
@@ -1076,7 +1085,8 @@ class ProjectTask(models.Model):
     def _load_records_create(self, vals_list):
         for vals in vals_list:
             if vals.get('recurring_task'):
-                if not vals.get('recurrence_id'):
+                rec_fields = vals.keys() & self._get_recurrence_fields()
+                if not vals.get('recurrence_id') and not rec_fields:
                     default_val = self.default_get(self._get_recurrence_fields())
                     vals.update(**default_val)
             project_id = vals.get('project_id')
@@ -1343,7 +1353,7 @@ class ProjectTask(models.Model):
                         task.state = '04_waiting_normal'
                 task.date_last_stage_update = now
         elif 'project_id' in vals:
-            self.filtered(lambda t: t.state != '04_waiting_normal').state = '01_in_progress'
+            self.filtered(lambda t: t.state != '04_waiting_normal' and t.state not in CLOSED_STATES).state = '01_in_progress'
 
         # Do not recompute the state when changing the parent (to avoid resetting the state)
         if 'parent_id' in vals:
@@ -1400,10 +1410,15 @@ class ProjectTask(models.Model):
             for dom in domain:
                 if len(dom) == 3:
                     _, op, value = dom
+                    if op in ("any", "not any"):
+                        new_op = "in" if op == "any" else "not in"
+                        ids = [val[2] for val in value if isinstance(val, (tuple, list)) and isinstance(val[2], int)]
+                        new_domain.append(("id", new_op, ids))
+                        continue
                     op = "ilike" if op == "child_of" else op
                     if isinstance(value, list) and all(isinstance(val, int) for val in value):
                         new_domain.append(("id", op, value))
-                    if isinstance(value, str) or (isinstance(value, list) and not all(isinstance(val, str) for val in value)):
+                    elif isinstance(value, str) or (isinstance(value, list) and not all(isinstance(val, str) for val in value)):
                         new_domain.append(("name", op, value))
                     if isinstance(value, int):
                         if op == "=":
@@ -1553,7 +1568,7 @@ class ProjectTask(models.Model):
                     partner_ids=user.partner_id.ids,
                     email_layout_xmlid='mail.mail_notification_layout',
                     model_description=task_model_description,
-                    mail_auto_delete=False,
+                    mail_auto_delete=True,
                 )
 
     def _message_auto_subscribe_followers(self, updated_values, default_subtype_ids):
@@ -2070,8 +2085,25 @@ class ProjectTask(models.Model):
         child_tasks = self.child_ids.filtered(lambda child_task: not child_task.display_in_project)
         if child_tasks:
             child_tasks.action_archive()
-        self.filtered(lambda t: not t.display_in_project and t.parent_id).display_in_project = True
         return super().action_archive()
+
+    def _get_access_action(self, access_uid=None, force_website=False):
+        self.ensure_one()
+        user = self.env['res.users'].sudo().browse(access_uid) if access_uid else self.env.user
+        if (
+            user
+            and user._is_portal()
+            and self.with_user(user).has_access('read')
+            and self.project_id
+            and self.project_id.with_user(user).has_access('read')
+            and self.project_id._check_project_sharing_access()
+        ):
+            return {
+                'type': 'ir.actions.act_url',
+                'url': f'/my/projects/{self.project_id.id}/project_sharing/{self.id}',
+                'target': 'self',
+            }
+        return super()._get_access_action(access_uid, force_website)
 
     # ---------------------------------------------------
     # Rating business

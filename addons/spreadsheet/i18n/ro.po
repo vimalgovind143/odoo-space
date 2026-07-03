@@ -5,22 +5,23 @@
 # "Tiffany Chang (tic)" <tic@odoo.com>, 2025.
 # Weblate <noreply-mt-weblate@weblate.org>, 2025.
 # Dorin Hongu <dhongu@gmail.com>, 2025.
+# Odoo Translation Bot <c3p@odoo.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-07 18:37+0000\n"
-"PO-Revision-Date: 2025-12-02 14:56+0000\n"
-"Last-Translator: Dorin Hongu <dhongu@gmail.com>\n"
+"POT-Creation-Date: 2026-06-19 17:36+0000\n"
+"PO-Revision-Date: 2026-04-13 20:51+0000\n"
+"Last-Translator: Odoo Translation Bot <c3p@odoo.com>\n"
 "Language-Team: Romanian <https://translate.odoo.com/projects/odoo-19/"
 "spreadsheet/ro/>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : "
-"(n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2;\n"
-"X-Generator: Weblate 5.14.3\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -206,7 +207,8 @@ msgstr ""
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 msgid "%s is not a valid day of month (it should be a number between 1 and 31)"
-msgstr "%s nu este o zi validă din lună (trebuie să fie un număr între 1 și 31)"
+msgstr ""
+"%s nu este o zi validă din lună (trebuie să fie un număr între 1 și 31)"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -256,6 +258,12 @@ msgstr "%s nu este o săptămână validă (trebuie să fie un număr între 0 �
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 msgid "%s matches in all sheets"
 msgstr "%s potriviri în toate foile"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
+msgid "'${str}'"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -350,6 +358,12 @@ msgstr "2 rânduri"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 msgid "=PIVOT(${"
 msgstr "=PIVOT(${"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+msgid "A"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -466,7 +480,8 @@ msgstr "Un număr ridicat la o putere."
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 msgid "A number representing the day that a week starts on. Sunday = 1."
-msgstr "Un număr care reprezintă ziua în care începe o săptămână. Duminică = 1"
+msgstr ""
+"Un număr care reprezintă ziua în care începe o săptămână. Duminică = 1."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -527,6 +542,12 @@ msgid "A range or array constant containing the dates to consider holidays."
 msgstr ""
 "Un interval sau o constantă de tip șir care conține datele considerate "
 "sărbători."
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
+msgid "A reference to a cell."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -618,7 +639,13 @@ msgstr "Valoarea absolută"
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 msgid "Absolute value of a number."
-msgstr "Valoarea absolută a unui număr"
+msgstr "Valoarea absolută a unui număr."
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/actions/spreadsheet_download_action.js:0
+msgid "Access Error"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1149,27 +1176,6 @@ msgstr "A apărut o eroare neașteptată în timpul transferului de imagini"
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
-msgid ""
-"An unexpected error occurred while pasting content.\n"
-"          Additional information can be found in the browser console."
-msgstr ""
-"A apărut o eroare neașteptată în timpul lipirii conținutului.\n"
-"Informații suplimentare pot fi găsite în consola browserului."
-
-#. module: spreadsheet
-#. odoo-javascript
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
-msgid ""
-"An unexpected error occurred while pasting content.\n"
-"          This is probably due to a spreadsheet version mismatch."
-msgstr ""
-"A apărut o eroare neașteptată la lipirea conținutului.\n"
-"          Probabil este cauzată de o nepotrivire de versiune a foii de "
-"calcul."
-
-#. module: spreadsheet
-#. odoo-javascript
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 msgid "An unexpected error occurred. Submit a support ticket at odoo.com/help."
 msgstr ""
 "A apărut o eroare neașteptată. Trimiteți un tichet de suport la odoo.com/"
@@ -1191,13 +1197,13 @@ msgstr "Anual"
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 msgid "Annual effective interest rate."
-msgstr "Rata anuală efectivă a dobânzii"
+msgstr "Rata anuală efectivă a dobânzii."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 msgid "Annual nominal interest rate."
-msgstr "Rata anuală nominală a dobânzii"
+msgstr "Rata anuală nominală a dobânzii."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1385,9 +1391,8 @@ msgstr "Șir sau interval care conține setul de date de luat în considerare."
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
-msgid "Array result was not expanded because it would overwrite data in %s."
+msgid "Array result was not expanded because it would overwrite data."
 msgstr ""
-"Rezultatul șirului nu a fost extins, deoarece ar suprascrie datele în %s."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1690,7 +1695,7 @@ msgstr "Măsură calculată 1"
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 msgid "Calculates effective interest rate."
-msgstr "Calculează rata efectivă a dobânzii"
+msgstr "Calculează rata efectivă a dobânzii."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1791,8 +1796,8 @@ msgid ""
 "(Grand Column Total))"
 msgstr ""
 "Calculează valorile astfel:\n"
-"((valoarea din celulă) x (Totalul general al totalurilor generale)) / (("
-"Totalul general pe rând) x (Totalul general pe coloană))"
+"((valoarea din celulă) x (Totalul general al totalurilor generale)) / "
+"((Totalul general pe rând) x (Totalul general pe coloană))"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1847,7 +1852,7 @@ msgstr "Nu se poate duplica un pivot cu eroare."
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 msgid "Cannot find workbook relations file"
-msgstr "Nu se poate găsi fișierul de relații al registrului de lucru."
+msgstr "Nu se poate găsi fișierul de relații al registrului de lucru"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1907,7 +1912,7 @@ msgstr "Selecția nu poate fi divizată dintr-un motiv necunoscut"
 msgid "Cannot use custom pivot groups with \"Count Distinct\" measure"
 msgstr ""
 "Nu se pot utiliza grupuri pivot personalizate cu măsura „Count Distinct” "
-"(Număr distinct)."
+"(Număr distinct)"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2068,6 +2073,14 @@ msgstr "Tip grafic"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 msgid "Checkbox"
 msgstr "Checkbox"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
+msgid ""
+"Checks whether there is a reference to a cell that contains a formula, and "
+"returns TRUE or FALSE."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2339,6 +2352,14 @@ msgstr "Comparați două valori numerice, returnând 1 dacă sunt egale."
 
 #. module: spreadsheet
 #. odoo-javascript
+#: code:addons/spreadsheet/static/src/pivot/pivot_functions.js:0
+msgid ""
+"Compatibility version of ODOO.FILTER.VALUE for v18 spreadsheets. Required "
+"for date filters. Optional for others."
+msgstr ""
+
+#. module: spreadsheet
+#. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 msgid "Compute from totals"
 msgstr "Calculează din totaluri"
@@ -2499,7 +2520,7 @@ msgstr "Convertește o valoare numerică într-o altă unitate de măsură."
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 msgid "Converts a specified string to lowercase."
-msgstr "Convertește un șir specificat în minuscule"
+msgstr "Convertește un șir specificat în minuscule."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2615,7 +2636,7 @@ msgstr "Număr distinct"
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 msgid "Count Numbers"
-msgstr "Numărătoare."
+msgstr "Numărătoare"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4019,7 +4040,8 @@ msgstr "Primul meci"
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 msgid "First position of string found in text, case-sensitive."
-msgstr "Prima poziție a șirului care se găsește în text, sensibilă cu majuscule"
+msgstr ""
+"Prima poziție a șirului care se găsește în text, sensibilă cu majuscule"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4248,25 +4270,6 @@ msgstr "Funcția [[FUNCTION_NAME]] a provocat o eroare de divizare la zero."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 msgid "Function [[FUNCTION_NAME]] didn't find any result."
 msgstr "Funcția [[FUNCTION_NAME]] nu a găsit niciun rezultat."
-
-#. module: spreadsheet
-#. odoo-javascript
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
-msgid ""
-"Function [[FUNCTION_NAME]] expects criteria_range and criterion to be in "
-"pairs."
-msgstr ""
-"Funcția [[FUNCTION_NAME]] se așteaptă ca intervalul de criterii și criteriul "
-"să fie în perechi."
-
-#. module: spreadsheet
-#. odoo-javascript
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
-msgid ""
-"Function [[FUNCTION_NAME]] expects criteria_range to have the same dimension"
-msgstr ""
-"Funcția [[FUNCTION_NAME]] se așteaptă ca intervalul de criterii să aibă "
-"aceeași dimensiune"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4894,12 +4897,8 @@ msgstr "În [[FUNCTION_NAME]] evaluare, nu se poate găsi '%s' în '%s'."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 msgid ""
 "In [[FUNCTION_NAME]], the number of columns of the first matrix (%s) must be "
-"equal to the \n"
-"          number of rows of the second matrix (%s)."
+"equal to the           number of rows of the second matrix (%s)."
 msgstr ""
-"În [[FUNCTION_NAME]], numărul de coloane al primei matrice (%s) trebuie să "
-"fie egal cu \n"
-"        numărul de rânduri al celei de-a doua matrice (%s)."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5224,6 +5223,12 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 msgid "Invalid reference"
 msgstr "Referință nevalidă"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
+msgid "Invalid regular expression"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -6191,6 +6196,12 @@ msgstr "Următoarea dată a cuponului după data decontării."
 
 #. module: spreadsheet
 #. odoo-javascript
+#: code:addons/spreadsheet/static/src/hooks.js:0
+msgid "No"
+msgstr ""
+
+#. module: spreadsheet
+#. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 msgid "No Color"
 msgstr "Fără culoare"
@@ -6461,6 +6472,12 @@ msgstr "OFFSET evaluează la un interval în afara limitelor."
 
 #. module: spreadsheet
 #. odoo-javascript
+#: code:addons/spreadsheet/static/src/helpers/geo_json_service.js:0
+msgid "Oceania"
+msgstr ""
+
+#. module: spreadsheet
+#. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 msgid "October"
 msgstr "Octombrie"
@@ -6470,6 +6487,24 @@ msgstr "Octombrie"
 #: code:addons/spreadsheet/static/src/chart/plugins/odoo_chart_core_plugin.js:0
 msgid "Odoo Bar Chart"
 msgstr "Diagramă Bară Odoo"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/chart/plugins/odoo_chart_core_plugin.js:0
+msgid "Odoo Combo Chart"
+msgstr ""
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/chart/plugins/odoo_chart_core_plugin.js:0
+msgid "Odoo Funnel Chart"
+msgstr ""
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/chart/plugins/odoo_chart_core_plugin.js:0
+msgid "Odoo Geo Chart"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -6486,14 +6521,44 @@ msgstr "Diagramă Plăcintă Odoo"
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/chart/plugins/odoo_chart_core_plugin.js:0
+msgid "Odoo Pyramid Chart"
+msgstr ""
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/chart/plugins/odoo_chart_core_plugin.js:0
 msgid "Odoo Radar Chart"
 msgstr "Diagrama radar Odoo"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/chart/plugins/odoo_chart_core_plugin.js:0
+msgid "Odoo Scatter Chart"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/hooks.js:0
 msgid "Odoo Spreadsheet"
 msgstr "Foaie de Calcul Odoo"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/chart/plugins/odoo_chart_core_plugin.js:0
+msgid "Odoo Sunburst Chart"
+msgstr ""
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/chart/plugins/odoo_chart_core_plugin.js:0
+msgid "Odoo Treemap Chart"
+msgstr ""
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/chart/plugins/odoo_chart_core_plugin.js:0
+msgid "Odoo Waterfall Chart"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -7208,7 +7273,8 @@ msgstr ""
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 msgid "Result couldn't be automatically expanded. Please insert more columns."
-msgstr "Rezultatul nu a putut fi extins automat. Introduceți mai multe coloane."
+msgstr ""
+"Rezultatul nu a putut fi extins automat. Introduceți mai multe coloane."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -7246,6 +7312,12 @@ msgstr "Returnează elementele care apar o singură dată"
 #: code:addons/spreadsheet/static/src/pivot/pivot_functions.js:0
 msgid "Return the current value of a spreadsheet filter."
 msgstr "Returnează valoarea curentă a unui filtru de foaie de calcul."
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/pivot/pivot_functions.js:0
+msgid "Return the label of the current value of a spreadsheet filter."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -9750,8 +9822,8 @@ msgid ""
 "The function [[FUNCTION_NAME]] result must be greater than or equal "
 "01/01/1900."
 msgstr ""
-"Rezultatul funcției [[FUNCTION_NAME]] trebuie să fie mai mare sau egal cu 01/"
-"01/1900."
+"Rezultatul funcției [[FUNCTION_NAME]] trebuie să fie mai mare sau egal cu "
+"01/01/1900."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -9875,9 +9947,9 @@ msgid ""
 "search_for is replaced."
 msgstr ""
 "Instanța de search_for din cadrul text_to_search de înlocuit cu "
-"replace_with. În mod implicit, toate aparițiile de search_for sunt înlocuite;"
-" cu toate acestea, dacă este specificat numărul DE apariție, numai instanța "
-"indicată de search_for este înlocuită."
+"replace_with. În mod implicit, toate aparițiile de search_for sunt "
+"înlocuite; cu toate acestea, dacă este specificat numărul DE apariție, numai "
+"instanța indicată de search_for este înlocuită."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -10396,7 +10468,8 @@ msgstr "Numărul de rânduri de returnat."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 msgid ""
 "The number of significant digits to the right of the decimal point to retain."
-msgstr "Numărul de cifre semnificative la dreapta punctului zecimal de reținut."
+msgstr ""
+"Numărul de cifre semnificative la dreapta punctului zecimal de reținut."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -10865,7 +10938,8 @@ msgstr "Gama de celule din care se va determina minimul."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 msgid ""
 "The range of cells from which the number of unique values will be counted."
-msgstr "Intervalul de celule din care va fi contorizat numărul de valori unice."
+msgstr ""
+"Intervalul de celule din care va fi contorizat numărul de valori unice."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -12084,7 +12158,8 @@ msgstr "Valoarea de returnat dacă valoarea în sine nu este o eroare."
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 msgid "The value to round down to the nearest integer multiple of factor."
-msgstr "Valoarea de rotunjit la cel mai apropiat multiplu întreg al factorului."
+msgstr ""
+"Valoarea de rotunjit la cel mai apropiat multiplu întreg al factorului."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -12124,7 +12199,8 @@ msgstr "Valoarea de rotunjit la următorul cel mai mare număr impar."
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 msgid "The value to round up to the nearest integer multiple of factor."
-msgstr "Valoarea de rotunjit la cel mai apropiat multiplu întreg al factorului."
+msgstr ""
+"Valoarea de rotunjit la cel mai apropiat multiplu întreg al factorului."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -12322,8 +12398,8 @@ msgid ""
 "There must be both positive and negative values in [payment_amount, "
 "present_value, future_value]."
 msgstr ""
-"Trebuie să existe atât valori pozitive, cât și negative în "
-"[payment_amount, present_value, future_value]."
+"Trebuie să existe atât valori pozitive, cât și negative în [payment_amount, "
+"present_value, future_value]."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -12772,6 +12848,12 @@ msgstr "Funcție necunoscută: „%s”"
 
 #. module: spreadsheet
 #. odoo-javascript
+#: code:addons/spreadsheet/static/src/pivot/pivot_helpers.js:0
+msgid "Unnamed Field"
+msgstr ""
+
+#. module: spreadsheet
+#. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 msgid "Unsorted"
 msgstr "Nesortat"
@@ -12926,8 +13008,8 @@ msgstr "Valoarea este egală cu %s"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 msgid "Value is greater or equal to %s"
 msgstr ""
-"|||UNTRANSLATED_CONTENT_START|||Value is greater or equal to "
-"%s|||UNTRANSLATED_CONTENT_END|||"
+"|||UNTRANSLATED_CONTENT_START|||Value is greater or equal to %s|||"
+"UNTRANSLATED_CONTENT_END|||"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -13288,15 +13370,9 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 msgid ""
 "Whether or not to remove empty text messages from the split results. The "
-"default behavior is to treat \n"
-"        consecutive delimiters as one (if TRUE). If FALSE, empty cells "
-"values are added between consecutive delimiters."
+"default behavior is to treat         consecutive delimiters as one (if "
+"TRUE). If FALSE, empty cells values are added between consecutive delimiters."
 msgstr ""
-"Dacă să eliminați sau nu mesajele text goale din rezultatele divizate. "
-"Comportamentul implicit este de a trata \n"
-"        delimitatori consecutivi ca unul (dacă ESTE ADEVĂRAT). Dacă sunt "
-"FALSE, valorile celulelor goale sunt adăugate între delimitatorii "
-"consecutivi."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -13521,6 +13597,12 @@ msgstr "Ani"
 
 #. module: spreadsheet
 #. odoo-javascript
+#: code:addons/spreadsheet/static/src/hooks.js:0
+msgid "Yes"
+msgstr ""
+
+#. module: spreadsheet
+#. odoo-javascript
 #: code:addons/spreadsheet/static/src/global_filters/helpers.js:0
 msgid "Yesterday"
 msgstr "Ieri"
@@ -13536,6 +13618,21 @@ msgstr "Nu puteți îmbina celule în interiorul unui filtru existent."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 msgid "You cannot create overlapping tables."
 msgstr "Nu puteți crea tabele suprapuse."
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
+msgid ""
+"You copied content from a different version of the application. Only text "
+"and image content will be pasted."
+msgstr ""
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/actions/spreadsheet_download_action.js:0
+msgid ""
+"You don't have the rights to export data. Please contact an Administrator."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -13925,6 +14022,12 @@ msgstr "mâine"
 
 #. module: spreadsheet
 #. odoo-javascript
+#: code:addons/spreadsheet/static/src/public_readonly_app/public_readonly.xml:0
+msgid "x"
+msgstr ""
+
+#. module: spreadsheet
+#. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 msgid "yesterday"
 msgstr "Ieri"
@@ -13934,3 +14037,53 @@ msgstr "Ieri"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 msgid "zero"
 msgstr "zero"
+
+#~ msgid ""
+#~ "An unexpected error occurred while pasting content.\n"
+#~ "          Additional information can be found in the browser console."
+#~ msgstr ""
+#~ "A apărut o eroare neașteptată în timpul lipirii conținutului.\n"
+#~ "Informații suplimentare pot fi găsite în consola browserului."
+
+#~ msgid ""
+#~ "An unexpected error occurred while pasting content.\n"
+#~ "          This is probably due to a spreadsheet version mismatch."
+#~ msgstr ""
+#~ "A apărut o eroare neașteptată la lipirea conținutului.\n"
+#~ "          Probabil este cauzată de o nepotrivire de versiune a foii de "
+#~ "calcul."
+
+#~ msgid ""
+#~ "Function [[FUNCTION_NAME]] expects criteria_range and criterion to be in "
+#~ "pairs."
+#~ msgstr ""
+#~ "Funcția [[FUNCTION_NAME]] se așteaptă ca intervalul de criterii și "
+#~ "criteriul să fie în perechi."
+
+#~ msgid ""
+#~ "Function [[FUNCTION_NAME]] expects criteria_range to have the same "
+#~ "dimension"
+#~ msgstr ""
+#~ "Funcția [[FUNCTION_NAME]] se așteaptă ca intervalul de criterii să aibă "
+#~ "aceeași dimensiune"
+
+#~ msgid ""
+#~ "In [[FUNCTION_NAME]], the number of columns of the first matrix (%s) must "
+#~ "be equal to the \n"
+#~ "          number of rows of the second matrix (%s)."
+#~ msgstr ""
+#~ "În [[FUNCTION_NAME]], numărul de coloane al primei matrice (%s) trebuie "
+#~ "să fie egal cu \n"
+#~ "        numărul de rânduri al celei de-a doua matrice (%s)."
+
+#~ msgid ""
+#~ "Whether or not to remove empty text messages from the split results. The "
+#~ "default behavior is to treat \n"
+#~ "        consecutive delimiters as one (if TRUE). If FALSE, empty cells "
+#~ "values are added between consecutive delimiters."
+#~ msgstr ""
+#~ "Dacă să eliminați sau nu mesajele text goale din rezultatele divizate. "
+#~ "Comportamentul implicit este de a trata \n"
+#~ "        delimitatori consecutivi ca unul (dacă ESTE ADEVĂRAT). Dacă sunt "
+#~ "FALSE, valorile celulelor goale sunt adăugate între delimitatorii "
+#~ "consecutivi."

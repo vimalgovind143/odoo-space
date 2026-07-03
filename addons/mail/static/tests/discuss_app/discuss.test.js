@@ -21,6 +21,7 @@ import {
     STORE_FETCH_ROUTES,
     triggerHotkey,
     waitStoreFetch,
+    getChannelCommandsForThread,
 } from "@mail/../tests/mail_test_helpers";
 import { mailDataHelpers } from "@mail/../tests/mock_server/mail_mock_server";
 import { describe, expect, test } from "@odoo/hoot";
@@ -299,6 +300,14 @@ test("Click on avatar opens its partner chat window", async () => {
     await contains(".o_card_user_infos > span", { text: "testPartner" });
     await contains(".o_card_user_infos > a", { text: "test@partner.com" });
     await contains(".o_card_user_infos > a", { text: "+45687468" });
+});
+
+test("guests are not allowed to use commands", async () => {
+    const pyEnv = await startServer();
+    const channelId = pyEnv["discuss.channel"].create({ name: "wololo" });
+    await start({ authenticateAs: false });
+    await openDiscuss(channelId);
+    expect(getChannelCommandsForThread(channelId)).toHaveLength(0);
 });
 
 test("sidebar: chat im_status rendering", async () => {
@@ -2051,10 +2060,12 @@ test("failure on loading more messages should display error and prompt retry but
 });
 
 test("Retry loading more messages on failed load more messages should load more messages", async () => {
-    // first call needs to be successful as it is the initial loading of messages
-    // second call comes from load more and needs to fail in order to show the error alert
-    // any later call should work so that retry button and load more clicks would now work
-    let messageFetchShouldFail = false;
+    // The initial load and the retry/success loads use the real handler; only the
+    // "load more" that must fail goes through messageFetchDeferred. It is rejected
+    // only once the fetch is in flight (waitForSteps), so that while it is pending a
+    // duplicate IntersectionObserver fire no-ops on status "loading" and cannot leave
+    // an orphaned fetch racing the retry click.
+    let messageFetchDeferred;
     const pyEnv = await startServer();
     const channelId = pyEnv["discuss.channel"].create({
         channel_type: "channel",
@@ -2074,19 +2085,22 @@ test("Retry loading more messages on failed load more messages should load more 
     pyEnv["discuss.channel.member"].write([selfMember.id], {
         new_message_separator: messageIds.at(-1) + 1,
     });
-    onRpcBefore("/discuss/channel/messages", () => {
-        if (messageFetchShouldFail) {
-            return Promise.reject();
+    onRpcBefore("/discuss/channel/messages", async () => {
+        if (messageFetchDeferred) {
+            asyncStep("load more messages");
+            await messageFetchDeferred;
         }
     });
     await start();
     await openDiscuss(channelId);
     await contains(".o-mail-Message", { count: 30 });
-    messageFetchShouldFail = true;
+    messageFetchDeferred = new Deferred();
     await contains(".o-mail-Thread", { scroll: "bottom" });
     await scroll(".o-mail-Thread", 0);
+    await waitForSteps(["load more messages"]);
+    messageFetchDeferred.reject(new Error("Simulated load more failure"));
     await contains("button", { text: "Click here to retry" });
-    messageFetchShouldFail = false;
+    messageFetchDeferred = undefined;
     await click("button", { text: "Click here to retry" });
     await contains(".o-mail-Message", { count: 60 });
     await scroll(".o-mail-Thread", 0);
@@ -2307,6 +2321,7 @@ test("Notification settings: basic rendering", async () => {
     });
     await start();
     await openDiscuss(channelId);
+    await contains(".o-discuss-ChannelMemberList"); // wait for auto-open of this panel
     await click("[title='Notification Settings']");
     await contains("button", { text: "All Messages" });
     await contains("button", { text: "Mentions Only", count: 2 }); // the extra is in the Use Default as subtitle
@@ -2379,6 +2394,7 @@ test("Notification settings: mute/unmute conversation works correctly", async ()
     });
     await start();
     await openDiscuss(channelId);
+    await contains(".o-discuss-ChannelMemberList"); // wait for auto-open of this panel
     await click("[title='Notification Settings']");
     // dropdown requires an extra delay before click (because handler is registered in useEffect)
     await contains("button", { text: "Mute Conversation" });
@@ -2422,7 +2438,7 @@ test("Newly created chat is at the top of the DM list", async () => {
     await start();
     await openDiscuss();
     await click("input[placeholder='Search conversations']");
-    await contains(".o_command_name", { count: 6 });
+    await contains(".o_command_name", { count: 5 });
     await insertText("input[placeholder='Search a conversation']", "Jer");
     await contains(".o_command_name", { count: 3 });
     await click(".o_command_name", { text: "Jerry Golay" });

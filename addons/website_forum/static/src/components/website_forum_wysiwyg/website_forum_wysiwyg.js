@@ -56,7 +56,9 @@ export class WebsiteForumWysiwyg extends Wysiwyg {
 
     /** @override */
     getEditorConfig() {
+        const config = super.getEditorConfig();
         return {
+            localOverlayContainers: config.localOverlayContainers,
             getRecordInfo: this.props.getRecordInfo,
             Plugins: this.props.fullEdit ? FULL_EDIT_PLUGINS : BASIC_PLUGINS,
             content: this.getTextAreaContent(),
@@ -64,10 +66,11 @@ export class WebsiteForumWysiwyg extends Wysiwyg {
                 start_edition_handlers: () => this.cleanImageClasses(this.editor.editable),
                 clean_for_save_handlers: ({ root }) => this.cleanImageClasses(root),
             },
-            defaultLinkAttributes: { rel: "ugc" },
+            defaultLinkAttributes: { rel: "ugc noreferrer noopener", target: "_blank" },
             dropImageAsAttachment: true,
-            allowImageTransform: this.props.fullEdit,
+            allowImageTransform: false,
             height: this.props.height,
+            allowImageResize: false,
         };
     }
 
@@ -89,6 +92,7 @@ export class WebsiteForumWysiwyg extends Wysiwyg {
 
     onSubmitButtonClick(ev) {
         if (this.readyToSubmit) {
+            this.readyToSubmit = false;
             return;
         }
         ev.preventDefault();

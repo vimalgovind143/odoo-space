@@ -25,9 +25,10 @@ export class EditorOverlay extends Component {
         props: { type: Object, optional: true },
         editable: { validate: (el) => el.nodeType === Node.ELEMENT_NODE },
         bus: Object,
-        history: Object,
+        shared: Object,
         close: Function,
         isOverlayOpen: Function,
+        getCustomRect: { type: Function, optional: true },
 
         // Props from createOverlay
         positionOptions: { type: Object, optional: true },
@@ -120,10 +121,11 @@ export class EditorOverlay extends Component {
     getSelectionTarget() {
         const doc = this.props.editable.ownerDocument;
         const selection = doc.getSelection();
+        const selectionData = this.props.shared.getSelectionData();
         if (!selection || !selection.rangeCount || !this.props.isOverlayOpen()) {
             return null;
         }
-        const inEditable = this.props.editable.contains(selection.anchorNode);
+        const inEditable = selectionData.currentSelectionIsInEditable;
         let range;
         if (inEditable) {
             range = selection.getRangeAt(0);
@@ -134,12 +136,15 @@ export class EditorOverlay extends Component {
             }
             range = this.lastSelection.range;
         }
-        let rect = range.getBoundingClientRect();
+        let rect =
+            this.props.getCustomRect?.() ||
+            this.lastSelection.rect ||
+            range.getBoundingClientRect();
         if (rect.x === 0 && rect.width === 0 && rect.height === 0) {
             // Attention, ignoring DOM mutations is always dangerous (when we add or remove nodes)
             // because if another mutation uses the target that is not observed, that mutation can never be applied
             // again (when undo/redo and in collaboration).
-            this.props.history.ignoreDOMMutations(() => {
+            this.props.shared.ignoreDOMMutations(() => {
                 const clonedRange = range.cloneRange();
                 const shadowCaret = doc.createTextNode("|");
                 clonedRange.insertNode(shadowCaret);
@@ -181,7 +186,14 @@ export class EditorOverlay extends Component {
             return true;
         }
         const scrollContainerRect = scrollContainer.getBoundingClientRect();
-        const top = Math.max(scrollContainerRect.top, 0);
+        let scrollContainerTop = scrollContainerRect.top;
+        if (scrollContainer.ownerDocument !== overlayElement.ownerDocument) {
+            const frameElement = scrollContainer.ownerDocument.defaultView?.frameElement;
+            if (frameElement) {
+                scrollContainerTop += frameElement.getBoundingClientRect().top;
+            }
+        }
+        const top = Math.max(scrollContainerTop, 0);
         const bottom = top + scrollContainerRect.height;
         const overflowsTop = solution.top < top;
         const overflowsBottom = solution.top + overlayElement.offsetHeight > bottom;
